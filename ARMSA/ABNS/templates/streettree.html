@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% load filterfortree %}
+{% block content %}
+<div id="leftmenu">
+<ol>
+    {% for street in streets_query %}
+        <li>
+        <label for={{ street.short_name }}>{{ street.long_name }}</label>
+        {% if street.short_name == address_query.0.street %}
+        <input type="checkbox" id={{ street.short_name }} checked="checked">
+        {% else %}
+        <input type="checkbox" id={{ street.short_name }}>
+        {% endif %}
+        <ol id={{ street.short_name }}>
+            {% for houses in clients_query|filter_house:street.short_name %}
+            <li class="file"><a href="." rel="ids" id={{ houses.house }}>{{ houses.house }}</a></li>
+            {% endfor %}
+        </ol>
+        </li>
+    {% endfor %}
+</ol>
+</div>
+<div id="content">
+</div>
+{% endblock %}
+
+{% block javascript %}
+    <script language="javascript" type="text/javascript">
+    $(document).ready(function () {
+        var host=$(location).attr('pathname');
+        host = host.replace('tree','clients')
+        var path="//127.0.0.1:8000"+host;
+        $("#content").load(path);
+    });
+    </script>
+
+    <script language="javascript" type="text/javascript">
+    $("a[rel^='ids']").click(function (event) {
+        event.preventDefault();
+        var host=$(location).attr('host');
+        console.log(host);
+        var ho=$(this).attr('id');
+        var st=$(this).parent().parent().attr('id');
+        console.log(host+"/clients/"+st+"/"+ho+"/");
+        var path="//127.0.0.1:8000/clients/"+st+"/"+ho+"/";
+        $(location).attr('href',"//127.0.0.1:8000/tree/"+st+"/"+ho+"/");
+        $("#content").load(path);
+    });
+    </script>
+
+    <script language="javascript" type="text/javascript">
+    $("a[rel^='srv']").click(function () {
+        console.log("service");
+    });
+    </script>
+
+    <script language="javascript" type="text/javascript">
+    $("a[rel^='chg']").click(function (event) {
+        event.preventDefault();
+        $(this).parents().find("form").first().submit();
+    });
+    </script>
+{% endblock %}

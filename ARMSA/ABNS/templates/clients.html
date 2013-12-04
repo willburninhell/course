@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block content %}
+<table class="users-table" id="#usertable">
+        <tr>
+                <td>Квартал</td>
+                <td>Дом</td>
+                <td>Кв</td>
+                <td>Договор</td>
+                <td>IP</td>
+                <td>Основной IP</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Блок</td>
+                <td>Актив</td>
+        </tr>
+{% for entry in entries %}
+        <tr class="table-row">
+                {% with template="//127.0.0.1:8000/tree/"|add:entry.street|add:"/"|add:entry.house|add:"/" %}
+                <form action={{ template }} method="post">
+                {% endwith %}
+                {% csrf_token %}
+                <input type="hidden" name="id" value={{ entry.id }}>
+                {% include "streetsfield.html" %}
+                {% include "userrowfield.html" %}
+                <td width="5%"><a href="." class="service-button" rel="srv">Сервис</a></td>
+                <td width="5%"><a href="." class="change-button" rel="chg">Изменить</a></td>
+                <td width="5%"><a href="." class="delete-button" rel="del">Удалить</a></td>
+                <td>{{ entry.lock }}</td>
+                <td>{{ entry.active }}</td>
+                </form>
+        </tr>
+{% endfor %}
+</table>
+{% endblock %}
+
+{% block javascript %}
+    <script language="javascript" type="text/javascript">
+    $("a[rel^='chg']").click(function (event) {
+        event.preventDefault();
+        $(this).parents().find("form").first().submit();
+    });
+    </script>
+{% endblock %}

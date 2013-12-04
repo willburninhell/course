@@ -1,0 +1,11 @@
+<td width="5%">
+<select name="street" id="id_street">
+        {% for street in streets %}
+        {% if street.short_name != entry.street %}
+        <option value={{ street.short_name }}>{{ street.long_name }}</option>
+        {% else %}
+        <option value={{ street.short_name }} selected="selected">{{ street.long_name }}</option>
+        {% endif %}
+        {% endfor %}
+</select>
+</td>
