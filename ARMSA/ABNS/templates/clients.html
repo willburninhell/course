@@ -74,11 +74,15 @@
 <script language="javascript" type="text/javascript">
     $("a[rel^='chg']").click(function (event) {
         event.preventDefault();
+        var path = window.location.href;
+        path = path.replace('ABNS/','');
+        var data = $(this).parents().find("form").eq(parseInt($(this).attr("name"))).serialize();
         var n = $(this).parents().find("form").eq(parseInt($(this).attr("name"))).attr("name");
-        console.log($(this).parents().find("form").eq(parseInt($(this).attr("name"))).serialize());
         var action = confirm('Вы уверены, что желаете внести изменения в данные клиента '+n+'?');
         if(action){
-            $(this).parents().find("form").eq(parseInt($(this).attr("name"))).submit();
+            $.post( "ajax/test.html", data, function() {
+                $("#content").load(path);
+            });
         }
     });
 </script>
@@ -88,7 +92,7 @@
         event.preventDefault();
         var n = $(this).attr("name").split("/");
         
-        var action = confirm('Вы уверены, что желаете внести изменения в данные клиента '+n[1]+'-'+n[2]+'-'+n[3]+'?');
+        var action = confirm('Вы уверены, что желаете удалить информацию про клиента '+n[1]+'-'+n[2]+'-'+n[3]+'?');
         if(action){
             window.location.replace("//127.0.0.1:8000/delete/"+n[0]+"/"+n[1]+"/"+n[2]+"/");
         }
