@@ -10,31 +10,37 @@ overflow-y: scroll;
 
 #content {
   * position: absolute;position: fixed;
-top: 7%;
+top: 50px;
 left: 17%;
-height: 93%;
+height: -webkit-calc(100% - 50px);
+height: -moz-calc(100% - 50px);
+height: calc(100% - 50px);
 width: 83%;
 background-color:#FFFFCC;
 overflow-y: scroll;
 }
 
-table,th,td {
+#uppermenu {
+  * position: absolute;position: fixed;
+top: 0;
+left: 17%;
+height: 50px;
+width: 83%;
+background-color:#CCCCFF;
+}
+
+table,tr,td {
 	border: 1px solid white;
 	padding: 0px;
 }
 
 .table-row {
-	background-color: lightgray;
 	padding: 0px;
 }
 
 .users-table {
 	width: 100%;
 	padding: 0px;
-}
-
-.table-row:hover {
-	background-color: lightyellow;
 }
 
 .service-button {
@@ -171,4 +177,19 @@ table,th,td {
 }.delete-button:active {
     position:relative;
     top:1px;
+}
+
+#yeslbl {
+    font-family:Arial;
+    font-size:13px;
+    font-weight:bold;
+    font-style:normal;
+    color:#006B00;
+}
+#nolbl {
+    font-family:Arial;
+    font-size:13px;
+    font-weight:bold;
+    font-style:normal;
+    color:#941515;
 }

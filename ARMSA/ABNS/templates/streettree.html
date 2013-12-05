@@ -20,15 +20,39 @@
     {% endfor %}
 </ol>
 </div>
+
+<div id="uppermenu">
+<table>
+    <tr>
+        <td><a href>Пользователи</a></td>
+        <td><a href>Порты</a></td>
+        <td><a href>VPN</a></td>
+        <td><a href>Ограничения</a></td>
+        <td><a href>Коммутаторы</a></td>
+        <td><a href>Безопасность</a></td>
+        <td><a href>МАС</a></td>
+    </tr>
+</table>
+
+    <form action="//127.0.0.1:8000/ABNS/search/" method="post">
+        {% csrf_token %}
+        Договор: <INPUT type="text" name="dogovor" id="id_dogovor" size="5" maxlength="6" value="">
+        IP: <INPUT type="text" name="ip" id="id_ip" size="12" maxlength="15" value="">
+        MAC: <INPUT type="text" name="mac" id="id_mac" size="15" maxlength="17" value="">
+        <a href="." class="service-button" rel="srch">Найти</a>
+    </form>
+</div>
+
 <div id="content">
 </div>
+
 {% endblock %}
 
 {% block javascript %}
     <script language="javascript" type="text/javascript">
     $(document).ready(function () {
         var host=$(location).attr('pathname');
-        host = host.replace('tree','clients')
+        host = host.replace('ABNS/','');
         var path="//127.0.0.1:8000"+host;
         $("#content").load(path);
     });
@@ -43,7 +67,7 @@
         var st=$(this).parent().parent().attr('id');
         console.log(host+"/clients/"+st+"/"+ho+"/");
         var path="//127.0.0.1:8000/clients/"+st+"/"+ho+"/";
-        $(location).attr('href',"//127.0.0.1:8000/tree/"+st+"/"+ho+"/");
+        $(location).attr('href',"//127.0.0.1:8000/ABNS/clients/"+st+"/"+ho+"/");
         $("#content").load(path);
     });
     </script>
@@ -55,8 +79,9 @@
     </script>
 
     <script language="javascript" type="text/javascript">
-    $("a[rel^='chg']").click(function (event) {
+    $("a[rel^='srch']").click(function (event) {
         event.preventDefault();
+        console.log($(this).parents().find("form").first().serialize());
         $(this).parents().find("form").first().submit();
     });
     </script>
