@@ -82,6 +82,10 @@
         var n = $(this).attr("name");
         
         var action = confirm('Вы уверены, что желаете внести изменения в данные клиента '+n+'?');
+        if(action){
+            window.location.replace("//127.0.0.1:8000/delete/"+n+"/Ba/3/");
+        }
+        
 
     });
     </script>

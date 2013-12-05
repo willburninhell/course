@@ -1,5 +1,5 @@
 # Create your views here.
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 from .models import client, street
 
 
@@ -61,4 +61,4 @@ def delete_id(request, del_id, st="Ba", ho="1"):
     i = int(del_id)
     e = client.objects.get(id=i)
     e.delete()
-    return HttpResponse('OK')
+    return redirect('//127.0.0.1:8000/ABNS/clients/'+st+"/"+ho+"/")

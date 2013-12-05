@@ -4,6 +4,66 @@
 		"selected_items":
 		[
 			[
+				"de",
+				"delete"
+			],
+			[
+				"l",
+				"label	Tag"
+			],
+			[
+				"a",
+				"attr"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"s",
+				"serialize"
+			],
+			[
+				"t",
+				"this"
+			],
+			[
+				"form",
+				"formid"
+			],
+			[
+				"ho",
+				"house"
+			],
+			[
+				"get",
+				"getdata	statement"
+			],
+			[
+				"re",
+				"request	param"
+			],
+			[
+				"cliet",
+				"clients"
+			],
+			[
+				"if",
+				"iframe	Tag"
+			],
+			[
+				"q",
+				"query	param"
+			],
+			[
+				"stree",
+				"streets	function"
+			],
+			[
+				"def",
+				"default"
+			],
+			[
 				"co",
 				"core"
 			],
@@ -14,14 +74,6 @@
 			[
 				"se",
 				"settings	import"
-			],
-			[
-				"re",
-				"requests"
-			],
-			[
-				"de",
-				"default"
 			],
 			[
 				"r",
@@ -56,10 +108,6 @@
 				"testproj	import"
 			],
 			[
-				"s",
-				"static"
-			],
-			[
 				"asse",
 				"assertEqual	function"
 			],
@@ -76,20 +124,12 @@
 				"Context"
 			],
 			[
-				"a",
-				"article"
-			],
-			[
 				"h",
 				"html"
 			],
 			[
 				"H",
 				"HttpResponse"
-			],
-			[
-				"ho",
-				"home"
 			],
 			[
 				"to",
@@ -104,16 +144,8 @@
 				"points"
 			],
 			[
-				"l",
-				"len"
-			],
-			[
 				"tt",
 				"ttopt"
-			],
-			[
-				"t",
-				"topt"
 			],
 			[
 				"in",
@@ -163,15 +195,55 @@
 			"file": "ARMSA/ARMSA/settings.py",
 			"settings":
 			{
-				"buffer_size": 2037,
+				"buffer_size": 2378,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "ARMSA/Makefile",
+			"file": "ARMSA/ABNS/views.py",
 			"settings":
 			{
-				"buffer_size": 222,
+				"buffer_size": 2471,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "ARMSA/ARMSA/urls.py",
+			"settings":
+			{
+				"buffer_size": 677,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "ARMSA/ABNS/templates/streettree.html",
+			"settings":
+			{
+				"buffer_size": 2890,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "ARMSA/ABNS/templates/clients.html",
+			"settings":
+			{
+				"buffer_size": 3529,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "ARMSA/ABNS/templates/results.html",
+			"settings":
+			{
+				"buffer_size": 4725,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "ARMSA/static/css/main.css",
+			"settings":
+			{
+				"buffer_size": 5981,
 				"line_ending": "Unix"
 			}
 		}
@@ -182,6 +254,14 @@
 		"height": 375.0,
 		"selected_items":
 		[
+			[
+				"",
+				"Anaconda: Autoformat PEP8 Errors"
+			],
+			[
+				"spa",
+				"Indentation: Convert to Spaces"
+			],
 			[
 				"tab",
 				"Indentation: Convert to Tabs"
@@ -233,6 +313,26 @@
 	},
 	"file_history":
 	[
+		"/home/antisocial/coursework/ARMSA/static/css/main.css",
+		"/home/antisocial/coursework/ARMSA/ABNS/templates/clients.html",
+		"/home/antisocial/coursework/ARMSA/ABNS/templates/streetsfield.html",
+		"/home/antisocial/coursework/ARMSA/ABNS/templates/results.html",
+		"/home/antisocial/coursework/ARMSA/ABNS/templates/streettree.html",
+		"/home/antisocial/coursework/ARMSA/ARMSA/urls.py",
+		"/home/antisocial/coursework/ARMSA/ABNS/models.py",
+		"/home/antisocial/coursework/ARMSA/templates/base.html",
+		"/home/antisocial/coursework/ARMSA/ABNS/templates/abns.html",
+		"/home/antisocial/coursework/ARMSA/static/js/mytest.js",
+		"/home/antisocial/coursework/ARMSA/ABNS/templatetags/flatfilter.py",
+		"/home/antisocial/coursework/ARMSA/static/css/treeview.css",
+		"/home/antisocial/coursework/ARMSA/static/js/jquery-1.10.2.min.js",
+		"/home/antisocial/coursework/ARMSA/static/js/abns_load_content.js",
+		"/home/antisocial/coursework/ARMSA/ABNS/templatetags/filterfortree.py",
+		"/home/antisocial/coursework/ARMSA/ABNS/fixtures/initial_data.json",
+		"/home/antisocial/coursework/ARMSA/ABNS/templatetags/__init__.py",
+		"/home/antisocial/coursework/ARMSA/ABNS/admin.py",
+		"/home/antisocial/Downloads/admin/arm/usermanagement/fixtures/initial_data.json",
+		"/home/antisocial/coursework/ARMSA/Makefile",
 		"/home/antisocial/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
 		"/home/antisocial/coding/42cctest/testproj/core/models.py",
 		"/home/antisocial/coding/42cctest/testproj/core/fixtures/initial_data.json",
@@ -279,7 +379,7 @@
 	],
 	"find":
 	{
-		"height": 35.0
+		"height": 37.0
 	},
 	"find_in_files":
 	{
@@ -293,6 +393,21 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"streets_query",
+			"/a>",
+			"<a",
+			"tree/",
+			".png)",
+			"url(",
+			"img/",
+			"</span>",
+			"<span>",
+			"house\": \"\"",
+			"квартал",
+			"\\|.*\\n",
+			"\\n\\|",
+			"\\|.*\\n",
+			"\\n\\|",
 			"white",
 			"Contact.",
 			")))",
@@ -304,6 +419,16 @@
 		"regex": false,
 		"replace_history":
 		[
+			"streets",
+			"/a></td>",
+			"<td><a",
+			"ABNS/",
+			".png\")",
+			"url(\"../img/",
+			"",
+			"house\": \"0\"",
+			"кв-л",
+			"\\n",
 			"contact.",
 			"arr"
 		],
@@ -316,7 +441,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 5,
 			"sheets":
 			[
 				{
@@ -325,15 +450,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2037,
+						"buffer_size": 2378,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1673,
-								1673
+								2164,
+								2164
 							]
 						],
 						"settings":
@@ -343,35 +468,179 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 510.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "ARMSA/Makefile",
+					"file": "ARMSA/ABNS/views.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 222,
+						"buffer_size": 2471,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								177,
-								177
+								2440,
+								2440
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Makefile/Makefile.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 510.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "ARMSA/ARMSA/urls.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 677,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								629,
+								629
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "ARMSA/ABNS/templates/streettree.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2890,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2584,
+								2584
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1122.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "ARMSA/ABNS/templates/clients.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3529,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3492,
+								3492
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 968.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "ARMSA/ABNS/templates/results.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4725,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4380,
+								4380
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1734.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "ARMSA/static/css/main.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5981,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								310,
+								310
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 408.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -417,7 +686,7 @@
 	"project": "ARMSA.sublime-project",
 	"replace":
 	{
-		"height": 64.0
+		"height": 66.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -451,7 +720,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 247.0,
+	"side_bar_width": 191.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
