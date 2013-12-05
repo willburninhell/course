@@ -2,45 +2,45 @@
 {% load filterfortree %}
 {% block content %}
 <div id="leftmenu">
-<ol>
-    {% for street in streets_query %}
+    <ol>
+        {% for street in streets_query %}
         <li>
-        <label for={{ street.short_name }}>{{ street.long_name }}</label>
-        {% if street.short_name == address_query.0.street %}
-        <input type="checkbox" id={{ street.short_name }} checked="checked">
-        {% else %}
-        <input type="checkbox" id={{ street.short_name }}>
-        {% endif %}
-        <ol id={{ street.short_name }}>
-            {% for houses in clients_query|filter_house:street.short_name %}
-            <li class="file"><a href="." rel="ids" id={{ houses.house }}>{{ houses.house }}</a></li>
-            {% endfor %}
-        </ol>
+            <label for={{ street.short_name }}>{{ street.long_name }}</label>
+            {% if street.short_name == address_query.0.street %}
+            <input type="checkbox" id={{ street.short_name }} checked="checked">
+            {% else %}
+            <input type="checkbox" id={{ street.short_name }}>
+            {% endif %}
+            <ol id={{ street.short_name }}>
+                {% for houses in clients_query|filter_house:street.short_name %}
+                <li class="file"><a href="." rel="ids" id={{ houses.house }}>{{ houses.house }}</a></li>
+                {% endfor %}
+            </ol>
         </li>
-    {% endfor %}
-</ol>
+        {% endfor %}
+    </ol>
 </div>
 
 <div id="uppermenu">
-<table>
-    <tr>
-        <td><a href>Пользователи</a></td>
-        <td><a href>Порты</a></td>
-        <td><a href>VPN</a></td>
-        <td><a href>Ограничения</a></td>
-        <td><a href>Коммутаторы</a></td>
-        <td><a href>Безопасность</a></td>
-        <td><a href>МАС</a></td>
-    </tr>
-</table>
-
     <form action="//127.0.0.1:8000/ABNS/search/" method="post">
         {% csrf_token %}
         Договор: <INPUT type="text" name="dogovor" id="id_dogovor" size="5" maxlength="6" value="">
         IP: <INPUT type="text" name="ip" id="id_ip" size="12" maxlength="15" value="">
         MAC: <INPUT type="text" name="mac" id="id_mac" size="15" maxlength="17" value="">
-        <a href="." class="service-button" rel="srch">Найти</a>
+        <a href="." class="flat-grey-button" rel="srch">Найти</a>
     </form>
+
+    <table class="menu-table">
+        <tr>
+            <td><a href="." class="menu-grey-button" rel="menu" name="users">Пользователи</a></td>
+            <td><a href="." class="menu-grey-button" rel="menu" name="vpn">VPN</a></td>
+            <td><a href="." class="menu-grey-button" rel="menu" name="ports">Порты</a></td>
+            <td><a href="." class="menu-grey-button" rel="menu" name="limits">Ограничения</a></td>
+            <td><a href="." class="menu-grey-button" rel="menu" name="switches">Коммутаторы</a></td>
+            <td><a href="." class="menu-grey-button" rel="menu" name="security">Безопасность</a></td>
+            <td><a href="." class="menu-grey-button" rel="menu" name="mac">MAC</a></td>
+        </tr>
+    </table>
 </div>
 
 <div id="content">
@@ -49,16 +49,16 @@
 {% endblock %}
 
 {% block javascript %}
-    <script language="javascript" type="text/javascript">
+<script language="javascript" type="text/javascript">
     $(document).ready(function () {
         var host=$(location).attr('pathname');
         host = host.replace('ABNS/','');
         var path="//127.0.0.1:8000"+host;
         $("#content").load(path);
     });
-    </script>
+</script>
 
-    <script language="javascript" type="text/javascript">
+<script language="javascript" type="text/javascript">
     $("a[rel^='ids']").click(function (event) {
         event.preventDefault();
         var host=$(location).attr('host');
@@ -70,19 +70,32 @@
         $(location).attr('href',"//127.0.0.1:8000/ABNS/clients/"+st+"/"+ho+"/");
         $("#content").load(path);
     });
-    </script>
+</script>
 
-    <script language="javascript" type="text/javascript">
+<script language="javascript" type="text/javascript">
     $("a[rel^='srv']").click(function () {
         console.log("service");
     });
-    </script>
+</script>
 
-    <script language="javascript" type="text/javascript">
+<script language="javascript" type="text/javascript">
+    $("a[rel^='menu']").click(function (event) {
+        event.preventDefault();
+        console.log($(this).attr("name"));
+        if ($(this).attr("name")){
+            var host=$(location).attr('pathname');
+            host = host.replace('ABNS/','');
+            var path="//127.0.0.1:8000"+host;
+            $("#content").load(path);
+        }
+    });
+</script>
+
+<script language="javascript" type="text/javascript">
     $("a[rel^='srch']").click(function (event) {
         event.preventDefault();
         console.log($(this).parents().find("form").first().serialize());
         $(this).parents().find("form").first().submit();
     });
-    </script>
+</script>
 {% endblock %}

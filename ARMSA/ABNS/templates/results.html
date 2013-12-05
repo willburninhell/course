@@ -2,102 +2,107 @@
 {% load filterfortree %}
 {% block content %}
 <div id="leftmenu">
-<ol>
-    {% for street in streets %}
+    <ol>
+        {% for street in streets %}
         <li>
-        <label for={{ street.short_name }}>{{ street.long_name }}</label>
-        <input type="checkbox" id={{ street.short_name }}>
-        <ol id={{ street.short_name }}>
-            {% for houses in clients_query|filter_house:street.short_name %}
-            <li class="file"><a href="." rel="ids" id={{ houses.house }}>{{ houses.house }}</a></li>
-            {% endfor %}
-        </ol>
+            <label for={{ street.short_name }}>{{ street.long_name }}</label>
+            <input type="checkbox" id={{ street.short_name }}>
+            <ol id={{ street.short_name }}>
+                {% for houses in clients_query|filter_house:street.short_name %}
+                <li class="file"><a href="." rel="ids" id={{ houses.house }}>{{ houses.house }}</a></li>
+                {% endfor %}
+            </ol>
         </li>
-    {% endfor %}
-</ol>
+        {% endfor %}
+    </ol>
 </div>
 
 <div id="uppermenu">
-<table>
-    <tr>
-        <td><a href>Пользователи</a></td>
-        <td><a href>Порты</a></td>
-        <td><a href>VPN</a></td>
-        <td><a href>Ограничения</a></td>
-        <td><a href>Коммутаторы</a></td>
-        <td><a href>Безопасность</a></td>
-        <td><a href>МАС</a></td>
-    </tr>
-</table>
+    <form action="//127.0.0.1:8000/ABNS/search/" method="post">
+        {% csrf_token %}
+        Договор: <INPUT type="text" name="dogovor" id="id_dogovor" size="5" maxlength="6" value="">
+        IP: <INPUT type="text" name="ip" id="id_ip" size="12" maxlength="15" value="">
+        MAC: <INPUT type="text" name="mac" id="id_mac" size="15" maxlength="17" value="">
+        <a href="." class="flat-grey-button" rel="srch">Найти</a>
+    </form>
 </div>
 
 <div id="content">
-<table class="users-table" id="#usertable">
+    <table class="users-table" id="#usertable">
         <tr>
-                <td>Квартал</td>
-                <td>Дом</td>
-                <td>Кв</td>
-                <td>Договор</td>
-                <td>IP</td>
-                <td>Основной IP</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>Блок</td>
-                <td>Актив</td>
+            <td>Квартал/улица</td>
+            <td>Дом</td>
+            <td>Квартира</td>
+            <td>Договор</td>
+            <td>IP</td>
+            <td>Основной IP</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Активация</td>
+            <td>Блокировка</td>
+            <td>Порт</td>
+            <td>link</td>
         </tr>
-{% for entry in results_query %}
+        {% for entry in results_query %}
         <tr class="table-row">
-                {% with template="//127.0.0.1:8000/ABNS/clients/"|add:entry.street|add:"/"|add:entry.house|add:"/" %}
-                {% with n=entry.street|add:"-"|add:entry.house|add:"-"|add:entry.flat %}
-                <form action={{ template }} method="post" name={{ n }}>
+            {% with template="//127.0.0.1:8000/ABNS/clients/"|add:entry.street|add:"/"|add:entry.house|add:"/" %}
+            {% with n=entry.street|add:"-"|add:entry.house|add:"-"|add:entry.flat %}
+            <form action={{ template }} method="post" name={{ n }}>
                 {% endwith %}
                 {% endwith %}
                 {% csrf_token %}
                 <input type="hidden" name="id" value={{ entry.id }}>
                 {% include "streetsfield.html" %}
                 {% include "userrowfield.html" %}
-                <td width="5%"><a href="." class="service-button" rel="srv">Сервис</a></td>
-                {% with r=forloop.counter0|stringformat:"d" %}
-                <td width="5%"><a href="." class="change-button" name={{ r }} rel="chg">Изменить</a></td>
+                <td><a href="." class="flat-grey-button" rel="srv">Сервис</a></td>
+                {% with r=forloop.counter|stringformat:"d" %}
+                <td><a href="." class="flat-grey-button" name={{ r }} rel="chg">Изменить</a></td>
                 {% endwith %}
-                
-                <td width="5%"><a href="." class="delete-button" rel="del">Удалить</a></td>
+                {% with i=entry.id|stringformat:"d"|add:"/"|add:entry.street|add:"/"|add:entry.house|add:"/"|add:entry.flat %}
+                <td><a href="." class="flat-grey-button" name={{ i }} rel="del">Удалить</a></td>
+                {% endwith %}
+
                 {% if entry.active_state %}
-                <td width="5%">
-                <label id="yeslbl"><input type="checkbox" class="checkbox" value="1" name="1" checked="checked" />YES</label>
-                </div>
+                <td>
+                    <label id="yeslbl">
+                        <input type="checkbox" class="checkbox" value="1" checked="checked" />YES
+                    </label>
                 </td>
                 {% else %}
-                <td width="5%">
-                <label id="nolbl"><input type="checkbox" class="checkbox" value="1" name="1"/>NO</label>
-                </div>
+                <td>
+                    <label id="nolbl">
+                        <input type="checkbox" class="checkbox" value="1" />NO
+                    </label>
                 </td>
                 {% endif %}
 
                 {% if entry.lock_state %}
-                <td width="5%">
-                <label id="yeslbl"><input type="checkbox" class="checkbox" value="1" name="1" checked="checked" />YES</label>
-                </div>
+                <td>
+                    <label id="yeslbl">
+                        <input type="checkbox" class="checkbox" value="1" checked="checked" />YES
+                    </label>
                 </td>
                 {% else %}
-                <td width="5%">
-                <label id="nolbl"><input type="checkbox" class="checkbox" value="1" name="1"/>NO</label>
-                </div>
+                <td>
+                    <label id="nolbl">
+                        <input type="checkbox" class="checkbox" value="1" />NO
+                    </label>
                 </td>
                 {% endif %}
                 <td>port</td>
-                </form>
+                <td>link</td>
+            </form>
         </tr>
-{% endfor %}
-</table>
+        {% endfor %}
+    </table>
 </div>
 
 {% endblock %}
 
 {% block javascript %}
 
-    <script language="javascript" type="text/javascript">
+<script language="javascript" type="text/javascript">
     $("a[rel^='ids']").click(function (event) {
         event.preventDefault();
         var host=$(location).attr('host');
@@ -109,15 +114,15 @@
         $(location).attr('href',"//127.0.0.1:8000/ABNS/clients/"+st+"/"+ho+"/");
         $("#content").load(path);
     });
-    </script>
+</script>
 
-    <script language="javascript" type="text/javascript">
+<script language="javascript" type="text/javascript">
     $("a[rel^='srv']").click(function () {
         console.log("service");
     });
-    </script>
+</script>
 
-    <script language="javascript" type="text/javascript">
+<script language="javascript" type="text/javascript">
     $("a[rel^='chg']").click(function (event) {
         event.preventDefault();
         var n = $(this).parents().find("form").eq(parseInt($(this).attr("name"))).attr("name");
@@ -127,5 +132,25 @@
             $(this).parents().find("form").eq(parseInt($(this).attr("name"))).submit();
         }
     });
-    </script>
+</script>
+
+<script language="javascript" type="text/javascript">
+    $("a[rel^='del']").click(function (event) {
+        event.preventDefault();
+        var n = $(this).attr("name").split("/");
+        
+        var action = confirm('Вы уверены, что желаете внести изменения в данные клиента '+n[1]+'-'+n[2]+'-'+n[3]+'?');
+        if(action){
+            window.location.replace("//127.0.0.1:8000/delete/"+n[0]+"/"+n[1]+"/"+n[2]+"/");
+        }
+    });
+</script>
+
+<script language="javascript" type="text/javascript">
+    $("a[rel^='srch']").click(function (event) {
+        event.preventDefault();
+        console.log($(this).parents().find("form").first().serialize());
+        $(this).parents().find("form").first().submit();
+    });
+</script>
 {% endblock %}
