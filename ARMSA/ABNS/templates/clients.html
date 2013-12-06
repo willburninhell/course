@@ -2,7 +2,7 @@
 {% block content %}
 <b>Направление {{ entrance }}</b>
 <br>
-<table class="users-table" id="#usertable">
+<table class="users-table" id="usertable">
     <tr>
         <td>Квартал/улица</td>
         <td>Дом</td>
@@ -21,7 +21,7 @@
     {% for entry in entries %}
     <tr class="table-row">
         {% with template="//127.0.0.1:8000/ABNS/clients/"|add:entry.street|add:"/"|add:entry.house|add:"/" %}
-        {% with n=entry.street|add:"-"|add:entry.house|add:"-"|add:entry.flat %}
+        {% with n=entry.street|add:"/"|add:entry.house|add:"/"|add:entry.flat %}
         <form action={{ template }} method="post" name={{ n }}>
             {% endwith %}
             {% endwith %}
@@ -77,13 +77,15 @@
     $("a[rel^='chg']").click(function (event) {
         event.preventDefault();
         var path = window.location.href;
-        path = path.replace('ABNS/','');
-        var data = $(this).parents().find("form").eq(parseInt($(this).attr("name"))).serialize();
+        path = "/clients/";
         var n = $(this).parents().find("form").eq(parseInt($(this).attr("name"))).attr("name");
-        var action = confirm('Вы уверены, что желаете внести изменения в данные клиента '+n+'?');
+        var addr = n.split("/");
+        var data = $(this).parents().find("form").eq(parseInt($(this).attr("name"))).serialize();
+
+        var action = confirm('Вы уверены, что желаете внести изменения в данные клиента '+addr[0]+'-'+addr[1]+'-'+addr[2]+'?');
         if(action){
             $.post( path, data, function() {
-                $("#content").load(path);
+                $("#content").load("//127.0.0.1:8000/clients/"+addr[0]+'/'+addr[1]+'/');
             });
         }
     });
@@ -99,5 +101,9 @@
             window.location.replace("//127.0.0.1:8000/delete/"+n[0]+"/"+n[1]+"/"+n[2]+"/");
         }
     });
+
+
 </script>
+
+
 {% endblock %}

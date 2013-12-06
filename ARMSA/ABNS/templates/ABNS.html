@@ -6,14 +6,12 @@
         {% for street in streets_query %}
         <li>
             <label for={{ street.short_name }}>{{ street.long_name }}</label>
-            {% if street.short_name == address_query.0.street %}
-            <input type="checkbox" id={{ street.short_name }} checked="checked">
-            {% else %}
             <input type="checkbox" id={{ street.short_name }}>
-            {% endif %}
             <ol id={{ street.short_name }}>
                 {% for houses in clients_query|filter_house:street.short_name %}
-                <li class="file"><a href="." rel="ids" id={{ houses.house }}>{{ houses.house }}</a></li>
+                {% with h=street.short_name|add:"/"|add:houses.house %}
+                <li class="file"><a href="." rel="ids" id={{ h }}>{{ houses.house }}</a></li>
+                {% endwith %}
                 {% endfor %}
             </ol>
         </li>
@@ -22,11 +20,11 @@
 </div>
 
 <div id="uppermenu">
-    <form action="//127.0.0.1:8000/ABNS/search/" method="post">
+    <form action="//127.0.0.1:8000/ABNS/" method="post" id="search">
         {% csrf_token %}
-        Договор: <INPUT type="text" name="dogovor" id="id_dogovor" size="5" maxlength="6" value="">
-        IP: <INPUT type="text" name="ip" id="id_ip" size="12" maxlength="15" value="">
-        MAC: <INPUT type="text" name="mac" id="id_mac" size="15" maxlength="17" value="">
+        Договор: <INPUT type="text" name="dogovor" size="5" maxlength="6">
+        IP: <INPUT type="text" name="ip" size="12" maxlength="15">
+        MAC: <INPUT type="text" name="mac" size="15" maxlength="17">
         <a href="." class="flat-grey-button" rel="srch">Найти</a>
     </form>
 
@@ -47,35 +45,6 @@
 
 {% block javascript %}
 <script language="javascript" type="text/javascript">
-    $(document).ready(function () {
-        var host=$(location).attr('pathname');
-        host = host.replace('ABNS/','');
-        var path="//127.0.0.1:8000"+host;
-        $("#content").load(path);
-    });
-</script>
-
-<script language="javascript" type="text/javascript">
-    $("a[rel^='ids']").click(function (event) {
-        event.preventDefault();
-        var host=$(location).attr('host');
-        console.log(host);
-        var ho=$(this).attr('id');
-        var st=$(this).parent().parent().attr('id');
-        console.log(host+"/clients/"+st+"/"+ho+"/");
-        var path="//127.0.0.1:8000/clients/"+st+"/"+ho+"/";
-        $(location).attr('href',"//127.0.0.1:8000/ABNS/clients/"+st+"/"+ho+"/");
-        $("#content").load(path);
-    });
-</script>
-
-<script language="javascript" type="text/javascript">
-    $("a[rel^='srv']").click(function () {
-        console.log("service");
-    });
-</script>
-
-<script language="javascript" type="text/javascript">
     $("a[rel^='menu']").click(function (event) {
         event.preventDefault();
         var key = $(this).attr("name");
@@ -95,13 +64,40 @@
         }
         $("#content").load(path);
     });
-</script>
 
-<script language="javascript" type="text/javascript">
+    // search functions block
     $("a[rel^='srch']").click(function (event) {
         event.preventDefault();
-        console.log($(this).parents().find("form").first().serialize());
-        $(this).parents().find("form").first().submit();
+        var data = $("#search").serialize();
+        console.log(data);
+        $("#content").load("//127.0.0.1:8000/search/",data);
     });
+
+    $("#search").submit(function (event) {
+        event.preventDefault();
+        var data = $("#search").serialize();
+        console.log(data);
+        $("#content").load("//127.0.0.1:8000/search/",data);
+    });
+
+    $('#search input').keydown(function(e) {
+        if (e.keyCode == 13) {
+            var data = $("#search").serialize();
+            console.log(data);
+            $("#content").load("//127.0.0.1:8000/search/",data);
+        }
+        
+    });
+    // end search functions block
+
+    // left treeview menu functions
+    $("a[rel^='ids']").click(function (event) {
+        event.preventDefault();
+        var host=$(location).attr('host');
+        var addr=$(this).attr('id').split("/");
+        var path="//127.0.0.1:8000/clients/"+addr[0]+"/"+addr[1]+"/";
+        $("#content").load(path);
+    });
+    // end treeview menu functions
 </script>
 {% endblock %}

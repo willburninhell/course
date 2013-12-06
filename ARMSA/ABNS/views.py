@@ -3,59 +3,65 @@ from django.shortcuts import render,redirect
 from .models import client, street
 
 
-def streets_view(request, st="Ba", ho="1"):
+def ABNS(request, st="Ba", ho="1"):
     streets_query = street.objects.all().order_by('long_name')
     clients_query = client.objects.all()
     address_query = client.objects.filter(street=st).filter(house=ho)
     #form = UserRowForm()
 
 
-    return render(request, "streettree.html", {'streets_query': streets_query, 'clients_query': clients_query, 'address_query': address_query})
+    return render(request, "ABNS.html", {'streets_query': streets_query, 'clients_query': clients_query, 'address_query': address_query})
 
 
 def search(request):
-    if request.method == 'POST':
-        postdata = request.POST
+    if request.method == 'GET':
+        postdata = request.GET
         dogovor = postdata['dogovor']
         ip = postdata['ip']
         mac = postdata['mac']
 
-    streets = street.objects.all().order_by('long_name')
-    clients_query = client.objects.all()
-    results_query = client.objects.all()
-    if (dogovor != ""):
-        results_query = results_query.filter(dogovor__contains=dogovor)
-    if (ip != ""):
-        results_query = results_query.filter(ip__contains=ip)
-    if (mac != ""):
-        results_query = results_query.filter(mac__contains=mac)
-    #form = UserRowForm()
+        streets = street.objects.all().order_by('long_name')
+        entries = client.objects.all()
+        if (dogovor != ""):
+            entries = entries.filter(dogovor__contains=dogovor)
+            if (ip != ""):
+                entries = entries.filter(ip__contains=ip)
+                if (mac != ""):
+                    entries = entries.filter(mac__contains=mac)
+#form = UserRowForm()
 
-    return render(request, "results.html", {'streets': streets, 'clients_query': clients_query, 'results_query': results_query})
+    return render(request, "results.html", {'entries': entries, 'streets': streets})
 
 
 def clients(request, st="Ba", ho="1"):
+
+
     entries = client.objects.filter(street=st, house=ho).extra(
         select={'flatint': 'CAST(REPLACE(REPLACE(REPLACE(REPLACE(flat,"b",""),"B",""),"a",""),"A","") AS UNSIGNED)'}).order_by('flatint')
     streets = street.objects.all()
     entrance = entries[:1].get()
+
     if request.method == 'POST':
         postdata = request.POST
-        # print postdata['id']
-        change_client = client.objects.get(id=postdata['id'])
-        change_client.ip = postdata['ip']
-        if change_client.ip[3] in '1234':
-            change_client.entrance = int(change_client.ip[3])
+
+        if "mac" in postdata:
+            print "search"
         else:
-            change_client.entrance = 51
-        change_client.main_ip = postdata['main_ip']
-        change_client.dogovor = postdata['dogovor']
-        change_client.street = postdata['street']
-        change_client.house = postdata['house']
-        change_client.flat = postdata['flat']
-        change_client.save(
-            update_fields=['ip', 'main_ip', 'dogovor', 'street', 'house', 'flat', 'entrance'])
+            change_client = client.objects.get(id=postdata['id'])
+            change_client.ip = postdata['ip']
+            if change_client.ip[3] in '1234':
+                change_client.entrance = int(change_client.ip[3])
+            else:
+                change_client.entrance = 51
+            change_client.main_ip = postdata['main_ip']
+            change_client.dogovor = postdata['dogovor']
+            change_client.street = postdata['street']
+            change_client.house = postdata['house']
+            change_client.flat = postdata['flat']
+            change_client.save(
+                update_fields=['ip', 'main_ip', 'dogovor', 'street', 'house', 'flat', 'entrance'])
     return render(request, "clients.html", {'entries': entries, 'streets': streets, 'entrance':entrance.entrance})
+
 
 def ports(request, st="Ba", ho="1"):
     entries = client.objects.filter(street=st, house=ho).extra(

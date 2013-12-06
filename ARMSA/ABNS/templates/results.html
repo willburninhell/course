@@ -1,135 +1,91 @@
 {% extends "base.html" %}
-{% load filterfortree %}
 {% block content %}
-<div id="leftmenu">
-    <ol>
-        {% for street in streets %}
-        <li>
-            <label for={{ street.short_name }}>{{ street.long_name }}</label>
-            <input type="checkbox" id={{ street.short_name }}>
-            <ol id={{ street.short_name }}>
-                {% for houses in clients_query|filter_house:street.short_name %}
-                <li class="file"><a href="." rel="ids" id={{ houses.house }}>{{ houses.house }}</a></li>
-                {% endfor %}
-            </ol>
-        </li>
-        {% endfor %}
-    </ol>
-</div>
+<br>
+<table class="users-table" id="usertable">
+    <tr>
+        <td>Квартал/улица</td>
+        <td>Дом</td>
+        <td>Квартира</td>
+        <td>Договор</td>
+        <td>IP</td>
+        <td>Основной IP</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Активация</td>
+        <td>Блокировка</td>
+        <td>Порт</td>
+        <td>link</td>
+    </tr>
+    {% for entry in entries %}
+    <tr class="table-row">
+        {% with template="//127.0.0.1:8000/ABNS/clients/"|add:entry.street|add:"/"|add:entry.house|add:"/" %}
+        {% with n=entry.street|add:"/"|add:entry.house|add:"/"|add:entry.flat %}
+        <form action={{ template }} method="post" name={{ n }}>
+            {% endwith %}
+            {% endwith %}
+            {% csrf_token %}
+            <input type="hidden" name="id" value={{ entry.id }}>
+            {% include "streetsfield.html" %}
+            {% include "userrowfield.html" %}
+            <td><a href="." class="flat-grey-button" rel="srv">Сервис</a></td>
+            {% with r=forloop.counter|stringformat:"d" %}
+            <td><a href="." class="flat-grey-button" name={{ r }} rel="chg">Изменить</a></td>
+            {% endwith %}
+            {% with i=entry.id|stringformat:"d"|add:"/"|add:entry.street|add:"/"|add:entry.house|add:"/"|add:entry.flat %}
+            <td><a href="." class="flat-grey-button" name={{ i }} rel="del">Удалить</a></td>
+            {% endwith %}
 
-<div id="uppermenu">
-    <form action="//127.0.0.1:8000/ABNS/search/" method="post">
-        {% csrf_token %}
-        Договор: <INPUT type="text" name="dogovor" id="id_dogovor" size="5" maxlength="6" value="">
-        IP: <INPUT type="text" name="ip" id="id_ip" size="12" maxlength="15" value="">
-        MAC: <INPUT type="text" name="mac" id="id_mac" size="15" maxlength="17" value="">
-        <a href="." class="flat-grey-button" rel="srch">Найти</a>
-    </form>
-</div>
+            {% if entry.active_state %}
+            <td>
+                <label id="yeslbl">
+                    <input type="checkbox" class="checkbox" value="1" checked="checked" />YES
+                </label>
+            </td>
+            {% else %}
+            <td>
+                <label id="nolbl">
+                    <input type="checkbox" class="checkbox" value="1" />NO
+                </label>
+            </td>
+            {% endif %}
 
-<div id="content">
-    <table class="users-table" id="#usertable">
-        <tr>
-            <td>Квартал/улица</td>
-            <td>Дом</td>
-            <td>Квартира</td>
-            <td>Договор</td>
-            <td>IP</td>
-            <td>Основной IP</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>Активация</td>
-            <td>Блокировка</td>
-            <td>Порт</td>
+            {% if entry.lock_state %}
+            <td>
+                <label id="yeslbl">
+                    <input type="checkbox" class="checkbox" value="1" checked="checked" />YES
+                </label>
+            </td>
+            {% else %}
+            <td>
+                <label id="nolbl">
+                    <input type="checkbox" class="checkbox" value="1" />NO
+                </label>
+            </td>
+            {% endif %}
+            <td>port</td>
             <td>link</td>
-        </tr>
-        {% for entry in results_query %}
-        <tr class="table-row">
-            {% with template="//127.0.0.1:8000/ABNS/clients/"|add:entry.street|add:"/"|add:entry.house|add:"/" %}
-            {% with n=entry.street|add:"-"|add:entry.house|add:"-"|add:entry.flat %}
-            <form action={{ template }} method="post" name={{ n }}>
-                {% endwith %}
-                {% endwith %}
-                {% csrf_token %}
-                <input type="hidden" name="id" value={{ entry.id }}>
-                {% include "streetsfield.html" %}
-                {% include "userrowfield.html" %}
-                <td><a href="." class="flat-grey-button" rel="srv">Сервис</a></td>
-                {% with r=forloop.counter|stringformat:"d" %}
-                <td><a href="." class="flat-grey-button" name={{ r }} rel="chg">Изменить</a></td>
-                {% endwith %}
-                {% with i=entry.id|stringformat:"d"|add:"/"|add:entry.street|add:"/"|add:entry.house|add:"/"|add:entry.flat %}
-                <td><a href="." class="flat-grey-button" name={{ i }} rel="del">Удалить</a></td>
-                {% endwith %}
-
-                {% if entry.active_state %}
-                <td>
-                    <label id="yeslbl">
-                        <input type="checkbox" class="checkbox" value="1" checked="checked" />YES
-                    </label>
-                </td>
-                {% else %}
-                <td>
-                    <label id="nolbl">
-                        <input type="checkbox" class="checkbox" value="1" />NO
-                    </label>
-                </td>
-                {% endif %}
-
-                {% if entry.lock_state %}
-                <td>
-                    <label id="yeslbl">
-                        <input type="checkbox" class="checkbox" value="1" checked="checked" />YES
-                    </label>
-                </td>
-                {% else %}
-                <td>
-                    <label id="nolbl">
-                        <input type="checkbox" class="checkbox" value="1" />NO
-                    </label>
-                </td>
-                {% endif %}
-                <td>port</td>
-                <td>link</td>
-            </form>
-        </tr>
-        {% endfor %}
-    </table>
-</div>
-
+        </form>
+    </tr>
+    {% endfor %}
+</table>
 {% endblock %}
 
 {% block javascript %}
-
-<script language="javascript" type="text/javascript">
-    $("a[rel^='ids']").click(function (event) {
-        event.preventDefault();
-        var host=$(location).attr('host');
-        console.log(host);
-        var ho=$(this).attr('id');
-        var st=$(this).parent().parent().attr('id');
-        console.log(host+"/clients/"+st+"/"+ho+"/");
-        var path="//127.0.0.1:8000/clients/"+st+"/"+ho+"/";
-        $(location).attr('href',"//127.0.0.1:8000/ABNS/clients/"+st+"/"+ho+"/");
-        $("#content").load(path);
-    });
-</script>
-
-<script language="javascript" type="text/javascript">
-    $("a[rel^='srv']").click(function () {
-        console.log("service");
-    });
-</script>
-
 <script language="javascript" type="text/javascript">
     $("a[rel^='chg']").click(function (event) {
         event.preventDefault();
+        var path = window.location.href;
+        path = "/clients/";
         var n = $(this).parents().find("form").eq(parseInt($(this).attr("name"))).attr("name");
-        console.log($(this).parents().find("form").eq(parseInt($(this).attr("name"))).serialize());
-        var action = confirm('Вы уверены, что желаете внести изменения в данные клиента '+n+'?');
+        var addr = n.split("/");
+        var data = $(this).parents().find("form").eq(parseInt($(this).attr("name"))).serialize();
+
+        var action = confirm('Вы уверены, что желаете внести изменения в данные клиента '+addr[0]+'-'+addr[1]+'-'+addr[2]+'?');
         if(action){
-            $(this).parents().find("form").eq(parseInt($(this).attr("name"))).submit();
+            $.post( path, data, function() {
+                $("#content").load("//127.0.0.1:8000/clients/"+addr[0]+'/'+addr[1]+'/');
+            });
         }
     });
 </script>
@@ -139,18 +95,14 @@
         event.preventDefault();
         var n = $(this).attr("name").split("/");
         
-        var action = confirm('Вы уверены, что желаете внести изменения в данные клиента '+n[1]+'-'+n[2]+'-'+n[3]+'?');
+        var action = confirm('Вы уверены, что желаете удалить информацию про клиента '+n[1]+'-'+n[2]+'-'+n[3]+'?');
         if(action){
             window.location.replace("//127.0.0.1:8000/delete/"+n[0]+"/"+n[1]+"/"+n[2]+"/");
         }
     });
+
+
 </script>
 
-<script language="javascript" type="text/javascript">
-    $("a[rel^='srch']").click(function (event) {
-        event.preventDefault();
-        console.log($(this).parents().find("form").first().serialize());
-        $(this).parents().find("form").first().submit();
-    });
-</script>
+
 {% endblock %}
