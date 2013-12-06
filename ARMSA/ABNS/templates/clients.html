@@ -1,5 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
+<b>Направление {{ entrance }}</b>
+<br>
 <table class="users-table" id="#usertable">
     <tr>
         <td>Квартал/улица</td>
@@ -80,7 +82,7 @@
         var n = $(this).parents().find("form").eq(parseInt($(this).attr("name"))).attr("name");
         var action = confirm('Вы уверены, что желаете внести изменения в данные клиента '+n+'?');
         if(action){
-            $.post( "ajax/test.html", data, function() {
+            $.post( path, data, function() {
                 $("#content").load(path);
             });
         }

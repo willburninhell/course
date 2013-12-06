@@ -20071,7 +20071,7 @@
         "entrance": 1, 
         "block_local": false, 
         "vpn_type": 0, 
-        "house": "", 
+        "house": "0", 
         "sw_ip": "0.0.0.0", 
         "active_state": true, 
         "local_limit": 0, 
@@ -94927,7 +94927,7 @@
         "entrance": 51, 
         "block_local": false, 
         "vpn_type": 0, 
-        "house": "", 
+        "house": "0", 
         "sw_ip": "0.0.0.0", 
         "active_state": false, 
         "local_limit": 0, 
@@ -95067,7 +95067,7 @@
     "pk": 1, 
     "model": "ABNS.street", 
     "fields": {
-        "long_name": "", 
+        "long_name": "\u0422\u0430\u043b\u043b\u0438\u043d\u0441\u043a\u0438\u0439 \u043a\u0432-\u043b", 
         "short_name": "Ta"
     }
 },
@@ -95075,7 +95075,7 @@
     "pk": 2, 
     "model": "ABNS.street", 
     "fields": {
-        "long_name": "", 
+        "long_name": "\u0411\u0430\u043a\u0438\u043d\u0441\u043a\u0438\u0439 \u043a\u0432-\u043b", 
         "short_name": "Ba"
     }
 },
@@ -95083,7 +95083,7 @@
     "pk": 3, 
     "model": "ABNS.street", 
     "fields": {
-        "long_name": "", 
+        "long_name": "\u041a\u0438\u0435\u0432\u0441\u043a\u0438\u0439 \u043a\u0432-\u043b", 
         "short_name": "Ki"
     }
 },
@@ -95091,7 +95091,7 @@
     "pk": 4, 
     "model": "ABNS.street", 
     "fields": {
-        "long_name": "", 
+        "long_name": "\u0420\u0438\u0436\u0441\u043a\u0438\u0439 \u043a\u0432-\u043b", 
         "short_name": "Ri"
     }
 },
@@ -95099,7 +95099,7 @@
     "pk": 5, 
     "model": "ABNS.street", 
     "fields": {
-        "long_name": "", 
+        "long_name": "\u0411\u0435\u043b\u0433\u043e\u0440\u043e\u0434\u0441\u043a\u0438\u0439 \u043a\u0432-\u043b", 
         "short_name": "Be"
     }
 },
@@ -95107,7 +95107,7 @@
     "pk": 6, 
     "model": "ABNS.street", 
     "fields": {
-        "long_name": "", 
+        "long_name": "\u041b\u0435\u043d\u0438\u043d\u0433\u0440\u0430\u0434\u0441\u043a\u0438\u0439 \u043a\u0432-\u043b", 
         "short_name": "Le"
     }
 },
@@ -95115,7 +95115,7 @@
     "pk": 7, 
     "model": "ABNS.street", 
     "fields": {
-        "long_name": "", 
+        "long_name": "\u041c\u043e\u0441\u043a\u043e\u0432\u0441\u043a\u0438\u0439 \u043a\u0432-\u043b", 
         "short_name": "Mo"
     }
 },
@@ -95123,7 +95123,7 @@
     "pk": 8, 
     "model": "ABNS.street", 
     "fields": {
-        "long_name": "", 
+        "long_name": "\u0422\u0431\u0438\u043b\u0438\u0441\u0441\u043a\u0438\u0439 \u043a\u0432-\u043b", 
         "short_name": "Tb"
     }
 },
@@ -95131,7 +95131,7 @@
     "pk": 9, 
     "model": "ABNS.street", 
     "fields": {
-        "long_name": "", 
+        "long_name": "\u0415\u0440\u0435\u0432\u0430\u043d\u0441\u043a\u0438\u0439 \u043a\u0432-\u043b", 
         "short_name": "Er"
     }
 },
@@ -95139,7 +95139,7 @@
     "pk": 10, 
     "model": "ABNS.street", 
     "fields": {
-        "long_name": "", 
+        "long_name": "\u043f\u0440-\u0442 \u0414\u0440\u0443\u0436\u0431\u044b \u041d\u0430\u0440\u043e\u0434\u043e\u0432", 
         "short_name": "Dr"
     }
 },
@@ -95147,7 +95147,7 @@
     "pk": 11, 
     "model": "ABNS.street", 
     "fields": {
-        "long_name": "", 
+        "long_name": "\u0414\u043e\u0431\u0440\u044b\u043d\u0438\u043d\u0441\u043a\u0438\u0439 \u043a\u0432-\u043b", 
         "short_name": "Do"
     }
 },
@@ -95155,7 +95155,7 @@
     "pk": 12, 
     "model": "ABNS.street", 
     "fields": {
-        "long_name": "", 
+        "long_name": "\u0427\u0435\u0440\u043d\u0438\u0433\u043e\u0432\u0441\u043a\u0438\u0439 \u043a\u0432-\u043b", 
         "short_name": "Ch"
     }
 },
@@ -95163,7 +95163,7 @@
     "pk": 13, 
     "model": "ABNS.street", 
     "fields": {
-        "long_name": "", 
+        "long_name": "\u0412\u0438\u043b\u044c\u043d\u044e\u0441\u0441\u043a\u0438\u0439 \u043a\u0432-\u043b", 
         "short_name": "Vi"
     }
 },
@@ -95171,7 +95171,7 @@
     "pk": 14, 
     "model": "ABNS.street", 
     "fields": {
-        "long_name": "", 
+        "long_name": "\u041f\u0435\u0447\u0435\u0440\u0441\u043a\u0438\u0439 \u043a\u0432-\u043b", 
         "short_name": "Pe"
     }
 },
@@ -95179,7 +95179,7 @@
     "pk": 15, 
     "model": "ABNS.street", 
     "fields": {
-        "long_name": "", 
+        "long_name": "\u0443\u043b. \u0413\u0435\u0440\u043e\u0435\u0432 \u0414\u043d\u0435\u043f\u0440\u0430", 
         "short_name": "GD"
     }
 },
@@ -95187,7 +95187,7 @@
     "pk": 16, 
     "model": "ABNS.street", 
     "fields": {
-        "long_name": "", 
+        "long_name": "\u041f\u0440\u0438\u0432\u043e\u043a\u0437\u0430\u043b\u044c\u043d\u0430\u044f \u043f\u043b.", 
         "short_name": "PP"
     }
 },
@@ -95195,7 +95195,7 @@
     "pk": 17, 
     "model": "ABNS.street", 
     "fields": {
-        "long_name": "", 
+        "long_name": "\u0426\u0435\u043d\u0442\u0440\u0430\u043b\u044c\u043d\u0430\u044f \u043f\u043b.", 
         "short_name": "CP"
     }
 },
@@ -95203,8 +95203,5498 @@
     "pk": 18, 
     "model": "ABNS.street", 
     "fields": {
-        "long_name": "", 
+        "long_name": "\u0443\u043b. \u0412\u043e\u0435\u043d\u043d\u044b\u0445 \u0421\u0442\u0440\u043e\u0438\u0442\u0435\u043b\u0435\u0439", 
         "short_name": "Vs"
+    }
+},
+{
+    "pk": 1, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 4, 
+        "house": "1", 
+        "sw_type": "HPProCurve-2626", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Tb", 
+        "sw_ip": "10.254.4.1", 
+        "sw_sn": "000053"
+    }
+},
+{
+    "pk": 2, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 4, 
+        "house": "3", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Tb", 
+        "sw_ip": "10.254.4.3", 
+        "sw_sn": "000003"
+    }
+},
+{
+    "pk": 3, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 4, 
+        "house": "4", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Tb", 
+        "sw_ip": "10.254.4.4", 
+        "sw_sn": "000013"
+    }
+},
+{
+    "pk": 4, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 4, 
+        "house": "5", 
+        "sw_type": "HPProCurve-2626", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Tb", 
+        "sw_ip": "10.254.4.5", 
+        "sw_sn": "000055"
+    }
+},
+{
+    "pk": 5, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 4, 
+        "house": "6", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Tb", 
+        "sw_ip": "10.254.4.6", 
+        "sw_sn": "000020"
+    }
+},
+{
+    "pk": 6, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 4, 
+        "house": "1", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Ba", 
+        "sw_ip": "10.254.4.11", 
+        "sw_sn": "000018"
+    }
+},
+{
+    "pk": 7, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 4, 
+        "house": "2", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Ba", 
+        "sw_ip": "10.254.4.12", 
+        "sw_sn": "000021"
+    }
+},
+{
+    "pk": 8, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 4, 
+        "house": "3", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Ba", 
+        "sw_ip": "10.254.4.13", 
+        "sw_sn": "01800"
+    }
+},
+{
+    "pk": 9, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 4, 
+        "house": "4", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Ba", 
+        "sw_ip": "10.254.4.14", 
+        "sw_sn": "01948"
+    }
+},
+{
+    "pk": 10, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 4, 
+        "house": "5", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Ba", 
+        "sw_ip": "10.254.4.15", 
+        "sw_sn": "000044"
+    }
+},
+{
+    "pk": 11, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 4, 
+        "house": "6", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Ba", 
+        "sw_ip": "10.254.4.16", 
+        "sw_sn": "000039"
+    }
+},
+{
+    "pk": 12, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 4, 
+        "house": "7", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Ba", 
+        "sw_ip": "10.254.4.17", 
+        "sw_sn": "000016"
+    }
+},
+{
+    "pk": 13, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 4, 
+        "house": "34", 
+        "sw_type": "HPProCurve-2626", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Ba", 
+        "sw_ip": "10.254.4.134", 
+        "sw_sn": "01656"
+    }
+},
+{
+    "pk": 14, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 4, 
+        "house": "35", 
+        "sw_type": "HPProCurve-2626", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Ba", 
+        "sw_ip": "10.254.4.135", 
+        "sw_sn": "000050"
+    }
+},
+{
+    "pk": 15, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 4, 
+        "house": "1", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Er", 
+        "sw_ip": "10.254.4.136", 
+        "sw_sn": "000035"
+    }
+},
+{
+    "pk": 16, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 4, 
+        "house": "2", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Er", 
+        "sw_ip": "10.254.4.137", 
+        "sw_sn": "000038"
+    }
+},
+{
+    "pk": 17, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 4, 
+        "house": "3", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Er", 
+        "sw_ip": "10.254.4.138", 
+        "sw_sn": "000033"
+    }
+},
+{
+    "pk": 18, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 4, 
+        "house": "4", 
+        "sw_type": "HPProCurve-2626", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Er", 
+        "sw_ip": "10.254.4.139", 
+        "sw_sn": "02027"
+    }
+},
+{
+    "pk": 19, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 4, 
+        "house": "1", 
+        "sw_type": "HPProCurve-2626", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Tb", 
+        "sw_ip": "10.254.4.111", 
+        "sw_sn": "01973"
+    }
+},
+{
+    "pk": 20, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 4, 
+        "house": "4", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Er", 
+        "sw_ip": "10.254.4.140", 
+        "sw_sn": "02035"
+    }
+},
+{
+    "pk": 21, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 3, 
+        "house": "17", 
+        "sw_type": "HPProCurve-2626", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Dr", 
+        "sw_ip": "10.254.3.104", 
+        "sw_sn": ""
+    }
+},
+{
+    "pk": 22, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 3, 
+        "house": "15", 
+        "sw_type": "HPProCurve-2626", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Dr", 
+        "sw_ip": "10.254.3.103", 
+        "sw_sn": ""
+    }
+},
+{
+    "pk": 23, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 4, 
+        "house": "1", 
+        "sw_type": "HPProCurve-2626", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Tb", 
+        "sw_ip": "10.254.4.211", 
+        "sw_sn": "01624"
+    }
+},
+{
+    "pk": 24, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 51, 
+        "house": "7", 
+        "sw_type": "HPProCurve-2626", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Mo", 
+        "sw_ip": "10.254.5.7", 
+        "sw_sn": "01651"
+    }
+},
+{
+    "pk": 25, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 51, 
+        "house": "5", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Mo", 
+        "sw_ip": "10.254.5.5", 
+        "sw_sn": "01979"
+    }
+},
+{
+    "pk": 26, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 51, 
+        "house": "4", 
+        "sw_type": "HPProCurve-2626", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Mo", 
+        "sw_ip": "10.254.5.4", 
+        "sw_sn": "01648"
+    }
+},
+{
+    "pk": 27, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 51, 
+        "house": "1", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Mo", 
+        "sw_ip": "10.254.5.2", 
+        "sw_sn": "01646"
+    }
+},
+{
+    "pk": 28, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 51, 
+        "house": "14", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Mo", 
+        "sw_ip": "10.254.5.9", 
+        "sw_sn": "01658"
+    }
+},
+{
+    "pk": 29, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 51, 
+        "house": "14", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Do", 
+        "sw_ip": "10.254.5.125", 
+        "sw_sn": "01678"
+    }
+},
+{
+    "pk": 30, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 51, 
+        "house": "16", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Mo", 
+        "sw_ip": "10.254.5.11", 
+        "sw_sn": "02031"
+    }
+},
+{
+    "pk": 31, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 51, 
+        "house": "3", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Do", 
+        "sw_ip": "10.254.5.114", 
+        "sw_sn": "01123"
+    }
+},
+{
+    "pk": 32, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 51, 
+        "house": "5", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Do", 
+        "sw_ip": "10.254.5.16", 
+        "sw_sn": "01968"
+    }
+},
+{
+    "pk": 33, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 51, 
+        "house": "9", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Do", 
+        "sw_ip": "10.254.5.119", 
+        "sw_sn": "01969"
+    }
+},
+{
+    "pk": 34, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 51, 
+        "house": "9", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Do", 
+        "sw_ip": "10.254.5.19", 
+        "sw_sn": "01670"
+    }
+},
+{
+    "pk": 35, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 51, 
+        "house": "11", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Do", 
+        "sw_ip": "10.254.5.21", 
+        "sw_sn": "01672"
+    }
+},
+{
+    "pk": 36, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 51, 
+        "house": "12", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Do", 
+        "sw_ip": "10.254.5.27", 
+        "sw_sn": "01691"
+    }
+},
+{
+    "pk": 37, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 51, 
+        "house": "16", 
+        "sw_type": "HPProCurve-2626", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Do", 
+        "sw_ip": "10.254.5.23", 
+        "sw_sn": "01674"
+    }
+},
+{
+    "pk": 38, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 51, 
+        "house": "14", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Do", 
+        "sw_ip": "10.254.5.25", 
+        "sw_sn": "01677"
+    }
+},
+{
+    "pk": 39, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 51, 
+        "house": "17", 
+        "sw_type": "HPProCurve-2626", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Ch", 
+        "sw_ip": "10.254.5.28", 
+        "sw_sn": "01688"
+    }
+},
+{
+    "pk": 40, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 51, 
+        "house": "15", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Ch", 
+        "sw_ip": "10.254.5.29", 
+        "sw_sn": "01686"
+    }
+},
+{
+    "pk": 41, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 51, 
+        "house": "16", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Ch", 
+        "sw_ip": "10.254.5.30", 
+        "sw_sn": "01687"
+    }
+},
+{
+    "pk": 42, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 51, 
+        "house": "8", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Ch", 
+        "sw_ip": "10.254.5.32", 
+        "sw_sn": "01683"
+    }
+},
+{
+    "pk": 43, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 51, 
+        "house": "10", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Ch", 
+        "sw_ip": "10.254.5.33", 
+        "sw_sn": "01684"
+    }
+},
+{
+    "pk": 44, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 51, 
+        "house": "12", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Ch", 
+        "sw_ip": "10.254.5.34", 
+        "sw_sn": "01685"
+    }
+},
+{
+    "pk": 45, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 51, 
+        "house": "3", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Ch", 
+        "sw_ip": "10.254.5.36", 
+        "sw_sn": "01681"
+    }
+},
+{
+    "pk": 46, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 51, 
+        "house": "1", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Ch", 
+        "sw_ip": "10.254.5.37", 
+        "sw_sn": "01679"
+    }
+},
+{
+    "pk": 47, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 51, 
+        "house": "1", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Mo", 
+        "sw_ip": "10.254.5.102", 
+        "sw_sn": "01964"
+    }
+},
+{
+    "pk": 48, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 51, 
+        "house": "2", 
+        "sw_type": "WGSW-2402A", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "GD", 
+        "sw_ip": "10.254.5.39", 
+        "sw_sn": "01803"
+    }
+},
+{
+    "pk": 49, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 51, 
+        "house": "7", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Ch", 
+        "sw_ip": "10.254.5.31", 
+        "sw_sn": "01682"
+    }
+},
+{
+    "pk": 50, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 51, 
+        "house": "3", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Do", 
+        "sw_ip": "10.254.5.14", 
+        "sw_sn": "01663"
+    }
+},
+{
+    "pk": 51, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 51, 
+        "house": "6", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Do", 
+        "sw_ip": "10.254.5.17", 
+        "sw_sn": "01668"
+    }
+},
+{
+    "pk": 52, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 51, 
+        "house": "12", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Do", 
+        "sw_ip": "10.254.5.127", 
+        "sw_sn": "01966"
+    }
+},
+{
+    "pk": 53, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 1, 
+        "house": "2", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Ki", 
+        "sw_ip": "10.254.1.2", 
+        "sw_sn": "02004"
+    }
+},
+{
+    "pk": 54, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 1, 
+        "house": "3", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Ki", 
+        "sw_ip": "10.254.1.3", 
+        "sw_sn": "02001"
+    }
+},
+{
+    "pk": 55, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 1, 
+        "house": "4", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Ki", 
+        "sw_ip": "10.254.1.4", 
+        "sw_sn": "02006"
+    }
+},
+{
+    "pk": 56, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 1, 
+        "house": "5", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Ki", 
+        "sw_ip": "10.254.1.5", 
+        "sw_sn": "02002"
+    }
+},
+{
+    "pk": 57, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 1, 
+        "house": "6", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Ki", 
+        "sw_ip": "10.254.1.6", 
+        "sw_sn": "02005"
+    }
+},
+{
+    "pk": 58, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 1, 
+        "house": "7", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Ki", 
+        "sw_ip": "10.254.1.7", 
+        "sw_sn": "01714"
+    }
+},
+{
+    "pk": 59, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 1, 
+        "house": "8", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Ki", 
+        "sw_ip": "10.254.1.8", 
+        "sw_sn": "02000"
+    }
+},
+{
+    "pk": 60, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 1, 
+        "house": "11", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Ki", 
+        "sw_ip": "10.254.1.11", 
+        "sw_sn": "01649"
+    }
+},
+{
+    "pk": 61, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 1, 
+        "house": "12", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Ki", 
+        "sw_ip": "10.254.1.12", 
+        "sw_sn": "01968"
+    }
+},
+{
+    "pk": 62, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 1, 
+        "house": "13", 
+        "sw_type": "HPProCurve-2626", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Ki", 
+        "sw_ip": "10.254.1.13", 
+        "sw_sn": "01666"
+    }
+},
+{
+    "pk": 63, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 51, 
+        "house": "1", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Mo", 
+        "sw_ip": "10.254.5.1", 
+        "sw_sn": "01645"
+    }
+},
+{
+    "pk": 64, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 51, 
+        "house": "5", 
+        "sw_type": "HPProCurve-2626", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Mo", 
+        "sw_ip": "10.254.5.6", 
+        "sw_sn": "01650"
+    }
+},
+{
+    "pk": 65, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 1, 
+        "house": "3", 
+        "sw_type": "HPProCurve-2626", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Vs", 
+        "sw_ip": "10.254.1.200", 
+        "sw_sn": "01952"
+    }
+},
+{
+    "pk": 66, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 1, 
+        "house": "14", 
+        "sw_type": "WGSW-2402A", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Ki", 
+        "sw_ip": "10.254.1.201", 
+        "sw_sn": "01951"
+    }
+},
+{
+    "pk": 67, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 1, 
+        "house": "130", 
+        "sw_type": "WGSW-2402A", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Ki", 
+        "sw_ip": "10.254.1.130", 
+        "sw_sn": "01574"
+    }
+},
+{
+    "pk": 68, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 51, 
+        "house": "13", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Do", 
+        "sw_ip": "10.254.5.26", 
+        "sw_sn": "01676"
+    }
+},
+{
+    "pk": 69, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 1, 
+        "house": "1", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Ki", 
+        "sw_ip": "10.254.1.101", 
+        "sw_sn": ""
+    }
+},
+{
+    "pk": 70, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 1, 
+        "house": "3", 
+        "sw_type": "HPProCurve-2626", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Vs", 
+        "sw_ip": "10.254.1.220", 
+        "sw_sn": "01947"
+    }
+},
+{
+    "pk": 71, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 51, 
+        "house": "2", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Mo", 
+        "sw_ip": "10.254.5.3", 
+        "sw_sn": "01647"
+    }
+},
+{
+    "pk": 72, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 51, 
+        "house": "10", 
+        "sw_type": "HPProCurve-2626", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Ch", 
+        "sw_ip": "10.254.5.133", 
+        "sw_sn": "01967"
+    }
+},
+{
+    "pk": 73, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 2, 
+        "house": "3", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Ta", 
+        "sw_ip": "10.254.2.3", 
+        "sw_sn": "01782"
+    }
+},
+{
+    "pk": 74, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 2, 
+        "house": "4", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Ta", 
+        "sw_ip": "10.254.2.4", 
+        "sw_sn": "01577"
+    }
+},
+{
+    "pk": 75, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 2, 
+        "house": "5", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Ta", 
+        "sw_ip": "10.254.2.5", 
+        "sw_sn": "01578"
+    }
+},
+{
+    "pk": 76, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 2, 
+        "house": "6", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Ta", 
+        "sw_ip": "10.254.2.6", 
+        "sw_sn": "01580"
+    }
+},
+{
+    "pk": 77, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 2, 
+        "house": "7", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Ta", 
+        "sw_ip": "10.254.2.7", 
+        "sw_sn": "01783"
+    }
+},
+{
+    "pk": 78, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 2, 
+        "house": "8", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Ta", 
+        "sw_ip": "10.254.2.8", 
+        "sw_sn": "01784"
+    }
+},
+{
+    "pk": 79, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 2, 
+        "house": "9", 
+        "sw_type": "HPProCurve-2626", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Ta", 
+        "sw_ip": "10.254.2.9", 
+        "sw_sn": "01582"
+    }
+},
+{
+    "pk": 80, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 2, 
+        "house": "10", 
+        "sw_type": "HPProCurve-2626", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Ta", 
+        "sw_ip": "10.254.2.10", 
+        "sw_sn": "01583"
+    }
+},
+{
+    "pk": 81, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 2, 
+        "house": "11", 
+        "sw_type": "HPProCurve-2626", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Ta", 
+        "sw_ip": "10.254.2.11", 
+        "sw_sn": ""
+    }
+},
+{
+    "pk": 82, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 2, 
+        "house": "2", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Ri", 
+        "sw_ip": "10.254.2.212", 
+        "sw_sn": "01585"
+    }
+},
+{
+    "pk": 83, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 2, 
+        "house": "4", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Ri", 
+        "sw_ip": "10.254.2.214", 
+        "sw_sn": "01953"
+    }
+},
+{
+    "pk": 84, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 2, 
+        "house": "6", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Ri", 
+        "sw_ip": "10.254.2.216", 
+        "sw_sn": "01589"
+    }
+},
+{
+    "pk": 85, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 2, 
+        "house": "8", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Ri", 
+        "sw_ip": "10.254.2.218", 
+        "sw_sn": "01590"
+    }
+},
+{
+    "pk": 86, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 2, 
+        "house": "9", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Ri", 
+        "sw_ip": "10.254.2.219", 
+        "sw_sn": "01591"
+    }
+},
+{
+    "pk": 87, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 2, 
+        "house": "29", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Ri", 
+        "sw_ip": "10.254.2.229", 
+        "sw_sn": "01593"
+    }
+},
+{
+    "pk": 88, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 2, 
+        "house": "2", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Vi", 
+        "sw_ip": "10.254.2.242", 
+        "sw_sn": "01595"
+    }
+},
+{
+    "pk": 89, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 2, 
+        "house": "3", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Vi", 
+        "sw_ip": "10.254.2.243", 
+        "sw_sn": "01596"
+    }
+},
+{
+    "pk": 90, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 2, 
+        "house": "4", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Vi", 
+        "sw_ip": "10.254.2.244", 
+        "sw_sn": "01597"
+    }
+},
+{
+    "pk": 91, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 2, 
+        "house": "5", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Vi", 
+        "sw_ip": "10.254.2.245", 
+        "sw_sn": "01956"
+    }
+},
+{
+    "pk": 92, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 2, 
+        "house": "6", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Vi", 
+        "sw_ip": "10.254.2.246", 
+        "sw_sn": "01599"
+    }
+},
+{
+    "pk": 93, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 2, 
+        "house": "7", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Vi", 
+        "sw_ip": "10.254.2.247", 
+        "sw_sn": "01600"
+    }
+},
+{
+    "pk": 94, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 2, 
+        "house": "49", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Vi", 
+        "sw_ip": "10.254.2.249", 
+        "sw_sn": "01602"
+    }
+},
+{
+    "pk": 95, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 2, 
+        "house": "50", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Vi", 
+        "sw_ip": "10.254.2.250", 
+        "sw_sn": "01603"
+    }
+},
+{
+    "pk": 96, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 2, 
+        "house": "10", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Ri", 
+        "sw_ip": "10.254.2.220", 
+        "sw_sn": "01786"
+    }
+},
+{
+    "pk": 97, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 2, 
+        "house": "5", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Ta", 
+        "sw_ip": "10.254.2.105", 
+        "sw_sn": "01579"
+    }
+},
+{
+    "pk": 98, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 2, 
+        "house": "7", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Ri", 
+        "sw_ip": "10.254.2.217", 
+        "sw_sn": "01610"
+    }
+},
+{
+    "pk": 99, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 1, 
+        "house": "1", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Ki", 
+        "sw_ip": "10.254.1.1", 
+        "sw_sn": "02022"
+    }
+},
+{
+    "pk": 100, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 3, 
+        "house": "13", 
+        "sw_type": "HPProCurve-2626", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Dr", 
+        "sw_ip": "10.254.3.102", 
+        "sw_sn": ""
+    }
+},
+{
+    "pk": 101, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 51, 
+        "house": "14", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Mo", 
+        "sw_ip": "10.254.5.109", 
+        "sw_sn": "01950"
+    }
+},
+{
+    "pk": 102, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 51, 
+        "house": "11", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Do", 
+        "sw_ip": "10.254.5.121", 
+        "sw_sn": "01991"
+    }
+},
+{
+    "pk": 103, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 51, 
+        "house": "15", 
+        "sw_type": "HPProCurve-2626", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Do", 
+        "sw_ip": "10.254.5.24", 
+        "sw_sn": "01675"
+    }
+},
+{
+    "pk": 104, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 51, 
+        "house": "18", 
+        "sw_type": "HPProCurve-2626", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Do", 
+        "sw_ip": "10.254.5.22", 
+        "sw_sn": "01673"
+    }
+},
+{
+    "pk": 105, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 51, 
+        "house": "10", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Do", 
+        "sw_ip": "10.254.5.20", 
+        "sw_sn": "01671"
+    }
+},
+{
+    "pk": 106, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 51, 
+        "house": "7", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Do", 
+        "sw_ip": "10.254.5.18", 
+        "sw_sn": "01101"
+    }
+},
+{
+    "pk": 107, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 51, 
+        "house": "5", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Do", 
+        "sw_ip": "10.254.5.15", 
+        "sw_sn": "02016"
+    }
+},
+{
+    "pk": 108, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 51, 
+        "house": "1", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Do", 
+        "sw_ip": "10.254.5.13", 
+        "sw_sn": "01662"
+    }
+},
+{
+    "pk": 109, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 51, 
+        "house": "4", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Do", 
+        "sw_ip": "10.254.5.12", 
+        "sw_sn": "01665"
+    }
+},
+{
+    "pk": 110, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 51, 
+        "house": "15", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Mo", 
+        "sw_ip": "10.254.5.10", 
+        "sw_sn": "01659"
+    }
+},
+{
+    "pk": 111, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 51, 
+        "house": "19", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Ch", 
+        "sw_ip": "10.254.5.38", 
+        "sw_sn": "01689"
+    }
+},
+{
+    "pk": 112, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 51, 
+        "house": "19", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Ch", 
+        "sw_ip": "10.254.5.138", 
+        "sw_sn": "01105"
+    }
+},
+{
+    "pk": 113, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 51, 
+        "house": "2", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Mo", 
+        "sw_ip": "10.254.5.103", 
+        "sw_sn": "01976"
+    }
+},
+{
+    "pk": 114, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 51, 
+        "house": "13", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Mo", 
+        "sw_ip": "10.254.5.108", 
+        "sw_sn": "01657"
+    }
+},
+{
+    "pk": 115, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 51, 
+        "house": "4", 
+        "sw_type": "HPProCurve-2626", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Do", 
+        "sw_ip": "10.254.5.112", 
+        "sw_sn": "02030"
+    }
+},
+{
+    "pk": 116, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 51, 
+        "house": "13", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Do", 
+        "sw_ip": "10.254.5.126", 
+        "sw_sn": "01992"
+    }
+},
+{
+    "pk": 117, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 51, 
+        "house": "2", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Ch", 
+        "sw_ip": "10.254.5.35", 
+        "sw_sn": "01970"
+    }
+},
+{
+    "pk": 118, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 3, 
+        "house": "11", 
+        "sw_type": "HPProCurve-2626", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Dr", 
+        "sw_ip": "10.254.3.1", 
+        "sw_sn": ""
+    }
+},
+{
+    "pk": 119, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 3, 
+        "house": "13", 
+        "sw_type": "HPProCurve-2626", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Dr", 
+        "sw_ip": "10.254.3.2", 
+        "sw_sn": "01624"
+    }
+},
+{
+    "pk": 120, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 3, 
+        "house": "15", 
+        "sw_type": "HPProCurve-2626", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Dr", 
+        "sw_ip": "10.254.3.3", 
+        "sw_sn": "01626"
+    }
+},
+{
+    "pk": 121, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 3, 
+        "house": "17", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Dr", 
+        "sw_ip": "10.254.3.4", 
+        "sw_sn": "01625"
+    }
+},
+{
+    "pk": 122, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 3, 
+        "house": "11", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Mo", 
+        "sw_ip": "10.254.3.5", 
+        "sw_sn": "01654"
+    }
+},
+{
+    "pk": 123, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 3, 
+        "house": "11", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Mo", 
+        "sw_ip": "10.254.3.6", 
+        "sw_sn": "01655"
+    }
+},
+{
+    "pk": 124, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 3, 
+        "house": "9", 
+        "sw_type": "HPProCurve-2626", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Mo", 
+        "sw_ip": "10.254.3.7", 
+        "sw_sn": "01653"
+    }
+},
+{
+    "pk": 125, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 3, 
+        "house": "10", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Mo", 
+        "sw_ip": "10.254.3.8", 
+        "sw_sn": "01652"
+    }
+},
+{
+    "pk": 126, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 3, 
+        "house": "1", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Le", 
+        "sw_ip": "10.254.3.14", 
+        "sw_sn": "0"
+    }
+},
+{
+    "pk": 127, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 3, 
+        "house": "2", 
+        "sw_type": "HPProCurve-2626", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Le", 
+        "sw_ip": "10.254.3.9", 
+        "sw_sn": "01617"
+    }
+},
+{
+    "pk": 128, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 3, 
+        "house": "2", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Le", 
+        "sw_ip": "10.254.3.10", 
+        "sw_sn": "01962"
+    }
+},
+{
+    "pk": 129, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 3, 
+        "house": "3", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Le", 
+        "sw_ip": "10.254.3.11", 
+        "sw_sn": "01616"
+    }
+},
+{
+    "pk": 130, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 3, 
+        "house": "4", 
+        "sw_type": "HPProCurve-2626", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Le", 
+        "sw_ip": "10.254.3.12", 
+        "sw_sn": "02026"
+    }
+},
+{
+    "pk": 131, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 3, 
+        "house": "4", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Le", 
+        "sw_ip": "10.254.3.13", 
+        "sw_sn": "01618"
+    }
+},
+{
+    "pk": 132, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 3, 
+        "house": "5", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Le", 
+        "sw_ip": "10.254.3.15", 
+        "sw_sn": "01619"
+    }
+},
+{
+    "pk": 133, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 3, 
+        "house": "2", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Be", 
+        "sw_ip": "10.254.3.16", 
+        "sw_sn": ""
+    }
+},
+{
+    "pk": 134, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 3, 
+        "house": "6", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Be", 
+        "sw_ip": "10.254.3.17", 
+        "sw_sn": "01102"
+    }
+},
+{
+    "pk": 135, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 3, 
+        "house": "7", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Be", 
+        "sw_ip": "10.254.3.18", 
+        "sw_sn": "01960"
+    }
+},
+{
+    "pk": 136, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 3, 
+        "house": "8", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Be", 
+        "sw_ip": "10.254.3.19", 
+        "sw_sn": ""
+    }
+},
+{
+    "pk": 137, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 3, 
+        "house": "9", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Be", 
+        "sw_ip": "10.254.3.20", 
+        "sw_sn": "01949"
+    }
+},
+{
+    "pk": 138, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 3, 
+        "house": "9", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Be", 
+        "sw_ip": "10.254.3.21", 
+        "sw_sn": "01111"
+    }
+},
+{
+    "pk": 139, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 3, 
+        "house": "10", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Be", 
+        "sw_ip": "10.254.3.22", 
+        "sw_sn": "01109"
+    }
+},
+{
+    "pk": 140, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 3, 
+        "house": "10", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Be", 
+        "sw_ip": "10.254.3.23", 
+        "sw_sn": ""
+    }
+},
+{
+    "pk": 141, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 3, 
+        "house": "4", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Be", 
+        "sw_ip": "10.254.3.24", 
+        "sw_sn": ""
+    }
+},
+{
+    "pk": 142, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 3, 
+        "house": "1", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Pe", 
+        "sw_ip": "10.254.3.25", 
+        "sw_sn": "01690"
+    }
+},
+{
+    "pk": 143, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 3, 
+        "house": "5", 
+        "sw_type": "HPProCurve-2626", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Le", 
+        "sw_ip": "10.254.3.115", 
+        "sw_sn": "01620"
+    }
+},
+{
+    "pk": 144, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 3, 
+        "house": "8", 
+        "sw_type": "HPProCurve-2626", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Be", 
+        "sw_ip": "10.254.3.119", 
+        "sw_sn": "01118"
+    }
+},
+{
+    "pk": 145, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 3, 
+        "house": "6", 
+        "sw_type": "HPProCurve-2626", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Be", 
+        "sw_ip": "10.254.3.117", 
+        "sw_sn": "01669"
+    }
+},
+{
+    "pk": 146, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 3, 
+        "house": "11", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Mo", 
+        "sw_ip": "10.254.3.105", 
+        "sw_sn": "01100"
+    }
+},
+{
+    "pk": 147, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 3, 
+        "house": "2", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Pe", 
+        "sw_ip": "10.254.3.30", 
+        "sw_sn": "01996"
+    }
+},
+{
+    "pk": 148, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 3, 
+        "house": "2", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Pe", 
+        "sw_ip": "10.254.3.130", 
+        "sw_sn": "02007"
+    }
+},
+{
+    "pk": 149, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 3, 
+        "house": "1", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Pe", 
+        "sw_ip": "10.254.3.125", 
+        "sw_sn": "02012"
+    }
+},
+{
+    "pk": 150, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 1, 
+        "house": "7", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Ki", 
+        "sw_ip": "10.254.1.107", 
+        "sw_sn": "01614"
+    }
+},
+{
+    "pk": 151, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 4, 
+        "house": "6", 
+        "sw_type": "HPProCurve-2626", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "PP", 
+        "sw_ip": "10.254.4.240", 
+        "sw_sn": "01947"
+    }
+},
+{
+    "pk": 152, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 3, 
+        "house": "11", 
+        "sw_type": "HPProCurve-2626", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Dr", 
+        "sw_ip": "10.254.3.101", 
+        "sw_sn": ""
+    }
+},
+{
+    "pk": 153, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 3, 
+        "house": "10", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Mo", 
+        "sw_ip": "10.254.3.108", 
+        "sw_sn": ""
+    }
+},
+{
+    "pk": 154, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 1, 
+        "house": "10", 
+        "sw_type": "HPProCurve-2626", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Ki", 
+        "sw_ip": "10.254.1.10", 
+        "sw_sn": ""
+    }
+},
+{
+    "pk": 155, 
+    "model": "ABNS.switches", 
+    "fields": {
+        "sw_mac": "00:00:00:00:00:00", 
+        "entrance": 1, 
+        "house": "2", 
+        "sw_type": "HPProCurve-2650", 
+        "sw_ro": "WGS_RO", 
+        "sw_wr": "SW_wRITE", 
+        "street": "Ki", 
+        "sw_ip": "10.254.1.102", 
+        "sw_sn": ""
+    }
+},
+{
+    "pk": 1, 
+    "model": "ABNS.sw_info", 
+    "fields": {
+        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9"
+    }
+},
+{
+    "pk": 2, 
+    "model": "ABNS.sw_info", 
+    "fields": {
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9"
+    }
+},
+{
+    "pk": 3, 
+    "model": "ABNS.sw_info", 
+    "fields": {
+        "sw_info": "\u00d2\u00e5\u00f1\u00f2\u00e8\u00f0\u00ee\u00e2\u00e0\u00ed\u00e8\u00e5"
+    }
+},
+{
+    "pk": 1, 
+    "model": "ABNS.sw_type", 
+    "fields": {
+        "sw_type": "HPProCurve-2626", 
+        "ports": 24
+    }
+},
+{
+    "pk": 2, 
+    "model": "ABNS.sw_type", 
+    "fields": {
+        "sw_type": "HPProCurve-2650", 
+        "ports": 48
+    }
+},
+{
+    "pk": 3, 
+    "model": "ABNS.sw_type", 
+    "fields": {
+        "sw_type": "WGSW-2402A", 
+        "ports": 24
+    }
+},
+{
+    "pk": 1, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 1, 
+        "sw_memo": "Nianai ?aai?ee", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "2-102542245-GIS"
+    }
+},
+{
+    "pk": 2, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 24, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "2-102542245-GIS"
+    }
+},
+{
+    "pk": 3, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 1, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "2-102542250-GIS"
+    }
+},
+{
+    "pk": 4, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 21, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "2-102542250-GIS"
+    }
+},
+{
+    "pk": 5, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 10, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "2-102542250-GIS"
+    }
+},
+{
+    "pk": 6, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 11, 
+        "sw_memo": "Auea 151 ea. Iaeaiueay nei?inou naoe.", 
+        "sw_info": "\u00d2\u00e5\u00f1\u00f2\u00e8\u00f0\u00ee\u00e2\u00e0\u00ed\u00e8\u00e5", 
+        "sw_sn": "5-1025451-GIS"
+    }
+},
+{
+    "pk": 7, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 9, 
+        "sw_memo": "Auea 12 ea.", 
+        "sw_info": "\u00d2\u00e5\u00f1\u00f2\u00e8\u00f0\u00ee\u00e2\u00e0\u00ed\u00e8\u00e5", 
+        "sw_sn": "4-102544139-GIS"
+    }
+},
+{
+    "pk": 8, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 13, 
+        "sw_memo": "Neeiy?a", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00118"
+    }
+},
+{
+    "pk": 9, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 22, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00002"
+    }
+},
+{
+    "pk": 10, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 2, 
+        "sw_memo": "ARB", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00122"
+    }
+},
+{
+    "pk": 11, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 3, 
+        "sw_memo": "ARB", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00122"
+    }
+},
+{
+    "pk": 12, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 11, 
+        "sw_memo": "dark NE UZAT!!!!!!!", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00060"
+    }
+},
+{
+    "pk": 13, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 2, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": ""
+    }
+},
+{
+    "pk": 14, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 3, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": ""
+    }
+},
+{
+    "pk": 15, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 10, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": ""
+    }
+},
+{
+    "pk": 16, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 18, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00009"
+    }
+},
+{
+    "pk": 17, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 4, 
+        "sw_memo": "lover", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00032"
+    }
+},
+{
+    "pk": 18, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 13, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": ""
+    }
+},
+{
+    "pk": 19, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 9, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": ""
+    }
+},
+{
+    "pk": 20, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 5, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00069"
+    }
+},
+{
+    "pk": 21, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 13, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00098"
+    }
+},
+{
+    "pk": 22, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 5, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00048"
+    }
+},
+{
+    "pk": 23, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 14, 
+        "sw_memo": "Spamer", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00069"
+    }
+},
+{
+    "pk": 24, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 13, 
+        "sw_memo": "Aeoue?", 
+        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_sn": "00061"
+    }
+},
+{
+    "pk": 25, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 17, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00032"
+    }
+},
+{
+    "pk": 26, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 9, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00052"
+    }
+},
+{
+    "pk": 27, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 5, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00070"
+    }
+},
+{
+    "pk": 28, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 2, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00038"
+    }
+},
+{
+    "pk": 29, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 12, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00026"
+    }
+},
+{
+    "pk": 30, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 20, 
+        "sw_memo": "bitiy", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00095"
+    }
+},
+{
+    "pk": 31, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 7, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00019"
+    }
+},
+{
+    "pk": 32, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 4, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00025"
+    }
+},
+{
+    "pk": 33, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 22, 
+        "sw_memo": "spam 011206", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00122"
+    }
+},
+{
+    "pk": 34, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 18, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": ""
+    }
+},
+{
+    "pk": 35, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 9, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00088"
+    }
+},
+{
+    "pk": 36, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 24, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00071"
+    }
+},
+{
+    "pk": 37, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 13, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00056"
+    }
+},
+{
+    "pk": 38, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 22, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00044"
+    }
+},
+{
+    "pk": 39, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 3, 
+        "sw_memo": "spamer", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00070"
+    }
+},
+{
+    "pk": 40, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 23, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00106"
+    }
+},
+{
+    "pk": 41, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 22, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00106"
+    }
+},
+{
+    "pk": 42, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 10, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00133"
+    }
+},
+{
+    "pk": 43, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 14, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00027"
+    }
+},
+{
+    "pk": 44, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 19, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00109"
+    }
+},
+{
+    "pk": 45, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 17, 
+        "sw_memo": "Polimer Savutich", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00001"
+    }
+},
+{
+    "pk": 46, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 23, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00005"
+    }
+},
+{
+    "pk": 47, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 23, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00027"
+    }
+},
+{
+    "pk": 48, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 19, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00099"
+    }
+},
+{
+    "pk": 49, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 4, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": ""
+    }
+},
+{
+    "pk": 50, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 19, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00083"
+    }
+},
+{
+    "pk": 51, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 24, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00054"
+    }
+},
+{
+    "pk": 52, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 6, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00089"
+    }
+},
+{
+    "pk": 53, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 24, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00117"
+    }
+},
+{
+    "pk": 54, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 22, 
+        "sw_memo": "caio", 
+        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_sn": "00022"
+    }
+},
+{
+    "pk": 55, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 6, 
+        "sw_memo": "spamer", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00077"
+    }
+},
+{
+    "pk": 56, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 5, 
+        "sw_memo": "spamer", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00049"
+    }
+},
+{
+    "pk": 57, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 2, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00006"
+    }
+},
+{
+    "pk": 58, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 9, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00098"
+    }
+},
+{
+    "pk": 59, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 7, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00062"
+    }
+},
+{
+    "pk": 60, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 2, 
+        "sw_memo": "?eaa 10 aeneo caanu", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00025"
+    }
+},
+{
+    "pk": 61, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 13, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00046"
+    }
+},
+{
+    "pk": 62, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 20, 
+        "sw_memo": "Spamer 05.01.2006", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00026"
+    }
+},
+{
+    "pk": 63, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 11, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00012"
+    }
+},
+{
+    "pk": 64, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 21, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00014"
+    }
+},
+{
+    "pk": 65, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 9, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00040"
+    }
+},
+{
+    "pk": 66, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 17, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00058"
+    }
+},
+{
+    "pk": 67, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 16, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00022"
+    }
+},
+{
+    "pk": 68, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 15, 
+        "sw_memo": "Geralt = )", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00104"
+    }
+},
+{
+    "pk": 69, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 11, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00013"
+    }
+},
+{
+    "pk": 70, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 23, 
+        "sw_memo": "Nedanchichi", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00055"
+    }
+},
+{
+    "pk": 71, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 14, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00026"
+    }
+},
+{
+    "pk": 72, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 8, 
+        "sw_memo": "Oaeeei 33/2", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00025"
+    }
+},
+{
+    "pk": 73, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 16, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00043"
+    }
+},
+{
+    "pk": 74, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 19, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00053"
+    }
+},
+{
+    "pk": 75, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 11, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00039"
+    }
+},
+{
+    "pk": 76, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 12, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00120"
+    }
+},
+{
+    "pk": 77, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 11, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00061"
+    }
+},
+{
+    "pk": 78, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 14, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00011"
+    }
+},
+{
+    "pk": 79, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 4, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00011"
+    }
+},
+{
+    "pk": 80, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 17, 
+        "sw_memo": "spamer", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00067"
+    }
+},
+{
+    "pk": 81, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 19, 
+        "sw_memo": "spamer 1-11-2007", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00117"
+    }
+},
+{
+    "pk": 82, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 21, 
+        "sw_memo": "Spamer 11.01.2007", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00081"
+    }
+},
+{
+    "pk": 83, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 17, 
+        "sw_memo": "Spamer 11.01.2007", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00010"
+    }
+},
+{
+    "pk": 84, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 21, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": ""
+    }
+},
+{
+    "pk": 85, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 13, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00087"
+    }
+},
+{
+    "pk": 86, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 23, 
+        "sw_memo": "aeoue", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "33333"
+    }
+},
+{
+    "pk": 87, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 2, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00022"
+    }
+},
+{
+    "pk": 88, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 2, 
+        "sw_memo": "bitui", 
+        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_sn": "00098"
+    }
+},
+{
+    "pk": 89, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 18, 
+        "sw_memo": "bitui", 
+        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_sn": "00098"
+    }
+},
+{
+    "pk": 90, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 19, 
+        "sw_memo": "", 
+        "sw_info": "\u00d2\u00e5\u00f1\u00f2\u00e8\u00f0\u00ee\u00e2\u00e0\u00ed\u00e8\u00e5", 
+        "sw_sn": "00091"
+    }
+},
+{
+    "pk": 91, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 20, 
+        "sw_memo": "", 
+        "sw_info": "\u00d2\u00e5\u00f1\u00f2\u00e8\u00f0\u00ee\u00e2\u00e0\u00ed\u00e8\u00e5", 
+        "sw_sn": "00091"
+    }
+},
+{
+    "pk": 92, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 16, 
+        "sw_memo": "", 
+        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_sn": "99998"
+    }
+},
+{
+    "pk": 93, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 23, 
+        "sw_memo": "N?aa i?eoiaeo n ?eae 9", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00035"
+    }
+},
+{
+    "pk": 94, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 23, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": ""
+    }
+},
+{
+    "pk": 95, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 24, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00074"
+    }
+},
+{
+    "pk": 96, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 5, 
+        "sw_memo": "GNTC (Roddom)", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00017"
+    }
+},
+{
+    "pk": 97, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 2, 
+        "sw_memo": "Ki-2-7", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00002"
+    }
+},
+{
+    "pk": 98, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 11, 
+        "sw_memo": "", 
+        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_sn": "00074"
+    }
+},
+{
+    "pk": 99, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 14, 
+        "sw_memo": "", 
+        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_sn": "00077"
+    }
+},
+{
+    "pk": 100, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 21, 
+        "sw_memo": "", 
+        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_sn": "00054"
+    }
+},
+{
+    "pk": 101, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 20, 
+        "sw_memo": "", 
+        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_sn": "00097"
+    }
+},
+{
+    "pk": 102, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 14, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": ""
+    }
+},
+{
+    "pk": 103, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 19, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00023"
+    }
+},
+{
+    "pk": 104, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 1, 
+        "sw_memo": "", 
+        "sw_info": "\u00d2\u00e5\u00f1\u00f2\u00e8\u00f0\u00ee\u00e2\u00e0\u00ed\u00e8\u00e5", 
+        "sw_sn": "00090"
+    }
+},
+{
+    "pk": 105, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 14, 
+        "sw_memo": "student mudak", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00090"
+    }
+},
+{
+    "pk": 106, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 6, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00071"
+    }
+},
+{
+    "pk": 107, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 7, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": ""
+    }
+},
+{
+    "pk": 108, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 16, 
+        "sw_memo": "", 
+        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_sn": "00040"
+    }
+},
+{
+    "pk": 109, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 18, 
+        "sw_memo": "", 
+        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_sn": "00040"
+    }
+},
+{
+    "pk": 110, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 21, 
+        "sw_memo": "", 
+        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_sn": "00040"
+    }
+},
+{
+    "pk": 111, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 23, 
+        "sw_memo": "", 
+        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_sn": "00040"
+    }
+},
+{
+    "pk": 112, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 2, 
+        "sw_memo": "", 
+        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_sn": "00040"
+    }
+},
+{
+    "pk": 113, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 6, 
+        "sw_memo": "ARB", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00125"
+    }
+},
+{
+    "pk": 114, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 7, 
+        "sw_memo": "ARB", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00125"
+    }
+},
+{
+    "pk": 115, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 15, 
+        "sw_memo": "geralt", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00106"
+    }
+},
+{
+    "pk": 116, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 6, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00011"
+    }
+},
+{
+    "pk": 117, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 5, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00011"
+    }
+},
+{
+    "pk": 118, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 19, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00011"
+    }
+},
+{
+    "pk": 119, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 9, 
+        "sw_memo": "ki-rus", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00022"
+    }
+},
+{
+    "pk": 120, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 9, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00083"
+    }
+},
+{
+    "pk": 121, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 21, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00099"
+    }
+},
+{
+    "pk": 122, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 11, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": ""
+    }
+},
+{
+    "pk": 123, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 9, 
+        "sw_memo": "aeoue", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00053"
+    }
+},
+{
+    "pk": 124, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 18, 
+        "sw_memo": "aeoue", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00053"
+    }
+},
+{
+    "pk": 125, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 14, 
+        "sw_memo": "aeoue", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00053"
+    }
+},
+{
+    "pk": 126, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 3, 
+        "sw_memo": "ii?o ?eaie", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00043"
+    }
+},
+{
+    "pk": 127, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 14, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00039"
+    }
+},
+{
+    "pk": 128, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 13, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00039"
+    }
+},
+{
+    "pk": 129, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 15, 
+        "sw_memo": "nedanchichi", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00039"
+    }
+},
+{
+    "pk": 130, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 17, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00011"
+    }
+},
+{
+    "pk": 131, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 19, 
+        "sw_memo": "strum, 27y kottedg", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00092"
+    }
+},
+{
+    "pk": 132, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 6, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": ""
+    }
+},
+{
+    "pk": 133, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 24, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": ""
+    }
+},
+{
+    "pk": 134, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 24, 
+        "sw_memo": "matvienko", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00013"
+    }
+},
+{
+    "pk": 135, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 17, 
+        "sw_memo": "KronPack", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00039"
+    }
+},
+{
+    "pk": 136, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 15, 
+        "sw_memo": "", 
+        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_sn": "00107"
+    }
+},
+{
+    "pk": 137, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 17, 
+        "sw_memo": "", 
+        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_sn": "00107"
+    }
+},
+{
+    "pk": 138, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 12, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": ""
+    }
+},
+{
+    "pk": 139, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 17, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": ""
+    }
+},
+{
+    "pk": 140, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 14, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00032"
+    }
+},
+{
+    "pk": 141, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 5, 
+        "sw_memo": "office", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00061"
+    }
+},
+{
+    "pk": 142, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 19, 
+        "sw_memo": "", 
+        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_sn": "00061"
+    }
+},
+{
+    "pk": 143, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 5, 
+        "sw_memo": "", 
+        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_sn": "00085"
+    }
+},
+{
+    "pk": 144, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 26, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00099"
+    }
+},
+{
+    "pk": 145, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 16, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": ""
+    }
+},
+{
+    "pk": 146, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 15, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": ""
+    }
+},
+{
+    "pk": 147, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 17, 
+        "sw_memo": "", 
+        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_sn": "00062"
+    }
+},
+{
+    "pk": 148, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 5, 
+        "sw_memo": "", 
+        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_sn": "00107"
+    }
+},
+{
+    "pk": 149, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 7, 
+        "sw_memo": "", 
+        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_sn": "00107"
+    }
+},
+{
+    "pk": 150, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 23, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00008"
+    }
+},
+{
+    "pk": 151, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 15, 
+        "sw_memo": "Ki-8-7", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00008"
+    }
+},
+{
+    "pk": 152, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 3, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00063"
+    }
+},
+{
+    "pk": 153, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 12, 
+        "sw_memo": "", 
+        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_sn": "00092"
+    }
+},
+{
+    "pk": 154, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 26, 
+        "sw_memo": "", 
+        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_sn": "00092"
+    }
+},
+{
+    "pk": 155, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 30, 
+        "sw_memo": "", 
+        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_sn": "00092"
+    }
+},
+{
+    "pk": 156, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 31, 
+        "sw_memo": "", 
+        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_sn": "00092"
+    }
+},
+{
+    "pk": 157, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 22, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": ""
+    }
+},
+{
+    "pk": 158, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 22, 
+        "sw_memo": "4ernobyl", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00004"
+    }
+},
+{
+    "pk": 159, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 9, 
+        "sw_memo": "aeoue", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00039"
+    }
+},
+{
+    "pk": 160, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 10, 
+        "sw_memo": "aeoue", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00039"
+    }
+},
+{
+    "pk": 161, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 12, 
+        "sw_memo": "aeoue", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00039"
+    }
+},
+{
+    "pk": 162, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 14, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00099"
+    }
+},
+{
+    "pk": 163, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 5, 
+        "sw_memo": "", 
+        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_sn": "00047"
+    }
+},
+{
+    "pk": 164, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 6, 
+        "sw_memo": "", 
+        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_sn": "00047"
+    }
+},
+{
+    "pk": 165, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 8, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00018"
+    }
+},
+{
+    "pk": 166, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 15, 
+        "sw_memo": "Grinya", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00049"
+    }
+},
+{
+    "pk": 167, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 6, 
+        "sw_memo": "PODMENA IP", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00038"
+    }
+},
+{
+    "pk": 168, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 8, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00040"
+    }
+},
+{
+    "pk": 169, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 2, 
+        "sw_memo": "ARB", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00089"
+    }
+},
+{
+    "pk": 170, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 3, 
+        "sw_memo": "ARB", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00089"
+    }
+},
+{
+    "pk": 171, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 17, 
+        "sw_memo": "", 
+        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_sn": "00030"
+    }
+},
+{
+    "pk": 172, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 23, 
+        "sw_memo": "PMU", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00017"
+    }
+},
+{
+    "pk": 173, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 8, 
+        "sw_memo": "?acaeoea aeciana Ki-15", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00061"
+    }
+},
+{
+    "pk": 174, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 5, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": ""
+    }
+},
+{
+    "pk": 175, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 19, 
+        "sw_memo": "", 
+        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_sn": "00107"
+    }
+},
+{
+    "pk": 176, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 13, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "ZAO"
+    }
+},
+{
+    "pk": 177, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 21, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00127"
+    }
+},
+{
+    "pk": 178, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 17, 
+        "sw_memo": "AP Oniko 10.3.4.116", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00055"
+    }
+},
+{
+    "pk": 179, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 6, 
+        "sw_memo": "", 
+        "sw_info": "\u00d2\u00e5\u00f1\u00f2\u00e8\u00f0\u00ee\u00e2\u00e0\u00ed\u00e8\u00e5", 
+        "sw_sn": "00116"
+    }
+},
+{
+    "pk": 180, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 6, 
+        "sw_memo": "", 
+        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_sn": "00026"
+    }
+},
+{
+    "pk": 181, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 23, 
+        "sw_memo": "Signalka", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00091"
+    }
+},
+{
+    "pk": 182, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 48, 
+        "sw_memo": "Ryabushkina", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00106"
+    }
+},
+{
+    "pk": 183, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 18, 
+        "sw_memo": "AP_13", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "ZAO"
+    }
+},
+{
+    "pk": 184, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 9, 
+        "sw_memo": "", 
+        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_sn": "00034"
+    }
+},
+{
+    "pk": 185, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 21, 
+        "sw_memo": "", 
+        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_sn": "00034"
+    }
+},
+{
+    "pk": 186, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 14, 
+        "sw_memo": "", 
+        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_sn": "00070"
+    }
+},
+{
+    "pk": 187, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 7, 
+        "sw_memo": "Neaiaeea", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00070"
+    }
+},
+{
+    "pk": 188, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 2, 
+        "sw_memo": "", 
+        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_sn": "00005"
+    }
+},
+{
+    "pk": 189, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 14, 
+        "sw_memo": "", 
+        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_sn": "00005"
+    }
+},
+{
+    "pk": 190, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 21, 
+        "sw_memo": "", 
+        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_sn": "00011"
+    }
+},
+{
+    "pk": 191, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 22, 
+        "sw_memo": "", 
+        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_sn": "00011"
+    }
+},
+{
+    "pk": 192, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 6, 
+        "sw_memo": "Sarmat", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00017"
+    }
+},
+{
+    "pk": 193, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 2, 
+        "sw_memo": "ARB", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00091"
+    }
+},
+{
+    "pk": 194, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 3, 
+        "sw_memo": "ARB", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00091"
+    }
+},
+{
+    "pk": 195, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 7, 
+        "sw_memo": "ia oae?aeoa aiaa?aiiue. Dark", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00080"
+    }
+},
+{
+    "pk": 196, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 21, 
+        "sw_memo": "wl3", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00055"
+    }
+},
+{
+    "pk": 197, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 15, 
+        "sw_memo": "A?aaoi aia.i. Ei?iaa", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00063"
+    }
+},
+{
+    "pk": 198, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 22, 
+        "sw_memo": "toropcev", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00072"
+    }
+},
+{
+    "pk": 199, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 47, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": ""
+    }
+},
+{
+    "pk": 200, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 8, 
+        "sw_memo": "", 
+        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_sn": "00096"
+    }
+},
+{
+    "pk": 201, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 22, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "ZAO"
+    }
+},
+{
+    "pk": 202, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 14, 
+        "sw_memo": "", 
+        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_sn": "00106"
+    }
+},
+{
+    "pk": 203, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 23, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "00018"
+    }
+},
+{
+    "pk": 204, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 15, 
+        "sw_memo": "", 
+        "sw_info": "\u00d2\u00e5\u00f1\u00f2\u00e8\u00f0\u00ee\u00e2\u00e0\u00ed\u00e8\u00e5", 
+        "sw_sn": "00099"
+    }
+},
+{
+    "pk": 205, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 16, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01545"
+    }
+},
+{
+    "pk": 206, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 47, 
+        "sw_memo": "\u00d1\u00e8\u00e3\u00ed\u00e0\u00eb\u00ea\u00e0", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01690"
+    }
+},
+{
+    "pk": 207, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 11, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01614"
+    }
+},
+{
+    "pk": 208, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 11, 
+        "sw_memo": "dark", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01690"
+    }
+},
+{
+    "pk": 209, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 9, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01690"
+    }
+},
+{
+    "pk": 210, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 31, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01969"
+    }
+},
+{
+    "pk": 211, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 41, 
+        "sw_memo": "Ayeue", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01546"
+    }
+},
+{
+    "pk": 212, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 41, 
+        "sw_memo": "Ayeue", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01999"
+    }
+},
+{
+    "pk": 213, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 16, 
+        "sw_memo": "Aaiy", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01546"
+    }
+},
+{
+    "pk": 214, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 11, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01578"
+    }
+},
+{
+    "pk": 215, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 47, 
+        "sw_memo": "Kvartal", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01652"
+    }
+},
+{
+    "pk": 216, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 9, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01652"
+    }
+},
+{
+    "pk": 217, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 1, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01783"
+    }
+},
+{
+    "pk": 218, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 31, 
+        "sw_memo": "virus", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01663"
+    }
+},
+{
+    "pk": 219, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 24, 
+        "sw_memo": "neaiaeea", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01555"
+    }
+},
+{
+    "pk": 220, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 47, 
+        "sw_memo": "?EO + Ee-130", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01570"
+    }
+},
+{
+    "pk": 221, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 47, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "02034"
+    }
+},
+{
+    "pk": 222, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 18, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "02022"
+    }
+},
+{
+    "pk": 223, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 7, 
+        "sw_memo": "neo", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01585"
+    }
+},
+{
+    "pk": 224, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 8, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01784"
+    }
+},
+{
+    "pk": 225, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 47, 
+        "sw_memo": "lamer", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01966"
+    }
+},
+{
+    "pk": 226, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 48, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01966"
+    }
+},
+{
+    "pk": 227, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 4, 
+        "sw_memo": "Navarka", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01616"
+    }
+},
+{
+    "pk": 228, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 41, 
+        "sw_memo": "Ayeue", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "02004"
+    }
+},
+{
+    "pk": 229, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 6, 
+        "sw_memo": "ia?aaioaao", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "02007"
+    }
+},
+{
+    "pk": 230, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 17, 
+        "sw_memo": "PromBaza", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01625"
+    }
+},
+{
+    "pk": 231, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 47, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01625"
+    }
+},
+{
+    "pk": 232, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 21, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01625"
+    }
+},
+{
+    "pk": 233, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 48, 
+        "sw_memo": "Neaiaeea", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01100"
+    }
+},
+{
+    "pk": 234, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 45, 
+        "sw_memo": "Neaiaeea", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01655"
+    }
+},
+{
+    "pk": 235, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 16, 
+        "sw_memo": "Neaiaeea", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01691"
+    }
+},
+{
+    "pk": 236, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 6, 
+        "sw_memo": "Sarmat", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01784"
+    }
+},
+{
+    "pk": 237, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 14, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01689"
+    }
+},
+{
+    "pk": 238, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 45, 
+        "sw_memo": "iiaa?ea", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01110"
+    }
+},
+{
+    "pk": 239, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 12, 
+        "sw_memo": "Neaiaeea", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01662"
+    }
+},
+{
+    "pk": 240, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 48, 
+        "sw_memo": "Neaiaeecaoey", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01614"
+    }
+},
+{
+    "pk": 241, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 2, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01643"
+    }
+},
+{
+    "pk": 242, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 17, 
+        "sw_memo": "AP 100", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "02022"
+    }
+},
+{
+    "pk": 243, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 24, 
+        "sw_memo": "signalka", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "02030"
+    }
+},
+{
+    "pk": 244, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 20, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01951"
+    }
+},
+{
+    "pk": 245, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 29, 
+        "sw_memo": "", 
+        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_sn": "01652"
+    }
+},
+{
+    "pk": 246, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 7, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01951"
+    }
+},
+{
+    "pk": 247, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 8, 
+        "sw_memo": "aaia", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01643"
+    }
+},
+{
+    "pk": 248, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 10, 
+        "sw_memo": "neeuii", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01643"
+    }
+},
+{
+    "pk": 249, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 7, 
+        "sw_memo": "umer", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01677"
+    }
+},
+{
+    "pk": 250, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 37, 
+        "sw_memo": "umer", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01677"
+    }
+},
+{
+    "pk": 251, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 38, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01677"
+    }
+},
+{
+    "pk": 252, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 23, 
+        "sw_memo": "Promkomplekt PKF", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01952"
+    }
+},
+{
+    "pk": 253, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 4, 
+        "sw_memo": "signalka", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01679"
+    }
+},
+{
+    "pk": 254, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 47, 
+        "sw_memo": "Neaiaeea+eeeaio", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01677"
+    }
+},
+{
+    "pk": 255, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 21, 
+        "sw_memo": "PMU dir", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "02021"
+    }
+},
+{
+    "pk": 256, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 22, 
+        "sw_memo": "Eooeoa", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01596"
+    }
+},
+{
+    "pk": 257, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 38, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01649"
+    }
+},
+{
+    "pk": 258, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 47, 
+        "sw_memo": "Ri-10", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01591"
+    }
+},
+{
+    "pk": 259, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 12, 
+        "sw_memo": "Adidas", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01687"
+    }
+},
+{
+    "pk": 260, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 12, 
+        "sw_memo": "Sverit MAC i dobavit v bazu", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01670"
+    }
+},
+{
+    "pk": 261, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 5, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "000018"
+    }
+},
+{
+    "pk": 262, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 20, 
+        "sw_memo": "maltsev", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01616"
+    }
+},
+{
+    "pk": 263, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 26, 
+        "sw_memo": "umer", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01677"
+    }
+},
+{
+    "pk": 264, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 46, 
+        "sw_memo": "?acaa?a", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01666"
+    }
+},
+{
+    "pk": 265, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 12, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01951"
+    }
+},
+{
+    "pk": 266, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 46, 
+        "sw_memo": "Green", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "000033"
+    }
+},
+{
+    "pk": 267, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 48, 
+        "sw_memo": "Neaiaeea", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "000033"
+    }
+},
+{
+    "pk": 268, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 11, 
+        "sw_memo": "signalka", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01621"
+    }
+},
+{
+    "pk": 269, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 1, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01678"
+    }
+},
+{
+    "pk": 270, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 31, 
+        "sw_memo": "lapaev", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01961"
+    }
+},
+{
+    "pk": 271, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 27, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01968"
+    }
+},
+{
+    "pk": 272, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 25, 
+        "sw_memo": "Lamer", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01966"
+    }
+},
+{
+    "pk": 273, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 1, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01665"
+    }
+},
+{
+    "pk": 274, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 12, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01665"
+    }
+},
+{
+    "pk": 275, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 31, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01665"
+    }
+},
+{
+    "pk": 276, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 32, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01665"
+    }
+},
+{
+    "pk": 277, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 43, 
+        "sw_memo": "4 \u00f8\u00ea\u00ee\u00eb\u00e0", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "02012"
+    }
+},
+{
+    "pk": 278, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 44, 
+        "sw_memo": "4 \u00f8\u00ea\u00ee\u00eb\u00e0", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "02012"
+    }
+},
+{
+    "pk": 279, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 6, 
+        "sw_memo": "Slim", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01683"
+    }
+},
+{
+    "pk": 280, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 45, 
+        "sw_memo": "oaii?iy", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01784"
+    }
+},
+{
+    "pk": 281, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 10, 
+        "sw_memo": "Silpo", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "02027"
+    }
+},
+{
+    "pk": 282, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 48, 
+        "sw_memo": "signalka", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01682"
+    }
+},
+{
+    "pk": 283, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 46, 
+        "sw_memo": "aioo", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01784"
+    }
+},
+{
+    "pk": 284, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 9, 
+        "sw_memo": "", 
+        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_sn": "01685"
+    }
+},
+{
+    "pk": 285, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 10, 
+        "sw_memo": "", 
+        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_sn": "01685"
+    }
+},
+{
+    "pk": 286, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 2, 
+        "sw_memo": "trank arb", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01681"
+    }
+},
+{
+    "pk": 287, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 3, 
+        "sw_memo": "trank arb", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01681"
+    }
+},
+{
+    "pk": 288, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 37, 
+        "sw_memo": "wifi razdacha", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01600"
+    }
+},
+{
+    "pk": 289, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 47, 
+        "sw_memo": "eaia?", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01577"
+    }
+},
+{
+    "pk": 290, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 36, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "000018"
+    }
+},
+{
+    "pk": 291, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 8, 
+        "sw_memo": "Bulavina", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "02027"
+    }
+},
+{
+    "pk": 292, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 10, 
+        "sw_memo": "Bulavin", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "02022"
+    }
+},
+{
+    "pk": 293, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 13, 
+        "sw_memo": "Aieinie", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "000020"
+    }
+},
+{
+    "pk": 294, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 25, 
+        "sw_memo": "Kluev", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01616"
+    }
+},
+{
+    "pk": 295, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 7, 
+        "sw_memo": "Bridg ne zakryvat", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01626"
+    }
+},
+{
+    "pk": 296, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 15, 
+        "sw_memo": "ianii?oiue", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01951"
+    }
+},
+{
+    "pk": 297, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 41, 
+        "sw_memo": "", 
+        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_sn": "01976"
+    }
+},
+{
+    "pk": 298, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 29, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01665"
+    }
+},
+{
+    "pk": 299, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 37, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01665"
+    }
+},
+{
+    "pk": 300, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 38, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01665"
+    }
+},
+{
+    "pk": 301, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 20, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01676"
+    }
+},
+{
+    "pk": 302, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 13, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01786"
+    }
+},
+{
+    "pk": 303, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 37, 
+        "sw_memo": "Podstancia", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01625"
+    }
+},
+{
+    "pk": 304, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 23, 
+        "sw_memo": "A?", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01666"
+    }
+},
+{
+    "pk": 305, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 21, 
+        "sw_memo": "\u00f1\u00e8\u00e3\u00ed\u00e0\u00eb\u00e8\u00e7\u00e0\u00f6\u00e8\u00ff", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01648"
+    }
+},
+{
+    "pk": 306, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 10, 
+        "sw_memo": "", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01676"
+    }
+},
+{
+    "pk": 307, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 32, 
+        "sw_memo": "\u00f8\u00ea\u00ee\u00eb\u00e0 2", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01614"
+    }
+},
+{
+    "pk": 308, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 29, 
+        "sw_memo": "Ap-1(16)", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01687"
+    }
+},
+{
+    "pk": 309, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 30, 
+        "sw_memo": "lover", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01602"
+    }
+},
+{
+    "pk": 310, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 20, 
+        "sw_memo": "", 
+        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_sn": "01685"
+    }
+},
+{
+    "pk": 311, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 19, 
+        "sw_memo": "\u00d0\u00e0\u00e7\u00e4\u00e0\u00f7\u00e0", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "02012"
+    }
+},
+{
+    "pk": 312, 
+    "model": "ABNS.ports_info", 
+    "fields": {
+        "sw_port": 12, 
+        "sw_memo": "ki-69", 
+        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_sn": "01666"
     }
 }
 ]
