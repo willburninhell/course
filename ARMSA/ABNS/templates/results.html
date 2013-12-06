@@ -94,13 +94,16 @@
     $("a[rel^='del']").click(function (event) {
         event.preventDefault();
         var n = $(this).attr("name").split("/");
+        var data = "id="+n[0];
+        console.log(data);
         
         var action = confirm('Вы уверены, что желаете удалить информацию про клиента '+n[1]+'-'+n[2]+'-'+n[3]+'?');
         if(action){
-            window.location.replace("//127.0.0.1:8000/delete/"+n[0]+"/"+n[1]+"/"+n[2]+"/");
+            $.get( "//127.0.0.1:8000/delete/", data, function() {
+                $("#content").load("//127.0.0.1:8000/clients/"+n[1]+'/'+n[2]+'/');
+            });
         }
     });
-
 
 </script>
 

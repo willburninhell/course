@@ -1,5 +1,5 @@
 # Create your views here.
-from django.shortcuts import render,redirect
+from django.shortcuts import render,HttpResponse
 from .models import client, street
 
 
@@ -34,14 +34,17 @@ def search(request):
 
 
 def clients(request, st="Ba", ho="1"):
-
-
+    print "here"
     entries = client.objects.filter(street=st, house=ho).extra(
         select={'flatint': 'CAST(REPLACE(REPLACE(REPLACE(REPLACE(flat,"b",""),"B",""),"a",""),"A","") AS UNSIGNED)'}).order_by('flatint')
+    print "here2"
     streets = street.objects.all()
+    print "here3"
     entrance = entries[:1].get()
+    print "here4"
 
     if request.method == 'POST':
+        print "here5"
         postdata = request.POST
 
         if "mac" in postdata:
@@ -60,18 +63,21 @@ def clients(request, st="Ba", ho="1"):
             change_client.flat = postdata['flat']
             change_client.save(
                 update_fields=['ip', 'main_ip', 'dogovor', 'street', 'house', 'flat', 'entrance'])
-    return render(request, "clients.html", {'entries': entries, 'streets': streets, 'entrance':entrance.entrance})
+    return render(request, "clients.html", {'entries': entries, 'streets': streets, 'entrance':entrance.entrance, 'st_id':st, 'ho_id':ho})
 
 
 def ports(request, st="Ba", ho="1"):
     entries = client.objects.filter(street=st, house=ho).extra(
         select={'flatint': 'CAST(REPLACE(REPLACE(REPLACE(REPLACE(flat,"b",""),"B",""),"a",""),"A","") AS UNSIGNED)'}).order_by('flatint')
     st = street.objects.get(short_name=st)
-    return render(request, "ports.html", {'entries': entries, 'street': st})
+    return render(request, "ports.html", {'entries': entries, 'street': st, 'st_id':st, 'ho_id':ho})
 
 
-def delete_id(request, del_id, st="Ba", ho="1"):
-    i = int(del_id)
-    e = client.objects.get(id=i)
-    e.delete()
-    return redirect('//127.0.0.1:8000/ABNS/clients/'+st+'/'+ho+'/')
+def delete_id(request):
+    print "delete"
+    if request.method == 'GET':
+        i = int(request.GET['id'])
+        print i
+        e = client.objects.get(id=i)
+        e.delete()
+    return HttpResponse(status=200)

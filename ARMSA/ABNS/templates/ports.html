@@ -1,5 +1,23 @@
 {% extends "base.html" %}
 {% block content %}
+<table class="menu-table">
+        <tr>
+            {% with a=st_id|add:"/"|add:ho_id%}
+            {% with n="users/"|add:a %}
+            <td><a href="." class="menu-grey-button" rel="menu" name={{ n }}>Пользователи</a></td>
+            {% endwith %}
+            {% with n="ports/"|add:a %}
+            <td><a href="." class="menu-grey-button" rel="menu" name={{ n }}>Порты</a></td>
+            {% endwith %}
+            {% with n="switches/"|add:a %}
+            <td><a href="." class="menu-grey-button" rel="menu" name={{ n }}>Коммутаторы</a></td>
+            {% endwith %}
+            {% with n="mac/"|add:a %}
+            <td><a href="." class="menu-grey-button" rel="menu" name={{ n }}>MAC</a></td>
+            {% endwith %}
+            {% endwith %}
+        </tr>
+    </table>
 <table class="users-table" id="#usertable">
     <tr>
         <td>Квартал/улица</td>
@@ -33,4 +51,22 @@
 {% endblock %}
 
 {% block javascript %}
+<script language="javascript" type="text/javascript">
+     $("a[rel^='menu']").click(function (event) {
+        event.preventDefault();
+        var key = $(this).attr("name");
+        var k = key.split("/");
+        console.log(k[0],k[1],k[2]);
+        switch(k[0]){
+            case "users":
+                var path="//127.0.0.1:8000/clients/"+k[1]+"/"+k[2]+"/";
+                break;
+
+            case "ports":
+                var path="//127.0.0.1:8000/ports/"+k[1]+"/"+k[2]+"/";
+                break; 
+        }
+        $("#content").load(path);
+    });
+</script>
 {% endblock %}
