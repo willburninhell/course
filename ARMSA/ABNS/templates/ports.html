@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
+<div id="menu-buttons">
 <table class="menu-table">
         <tr>
             {% with a=st_id|add:"/"|add:ho_id%}
@@ -18,6 +19,9 @@
             {% endwith %}
         </tr>
     </table>
+</div>
+<div id="table-div">
+<br>
 <table class="users-table" id="#usertable">
     <tr>
         <td>Квартал/улица</td>
@@ -36,18 +40,19 @@
             {% csrf_token %}
             <input type="hidden" name="id" value={{ entry.id }}>
             <td>{{ street }}</td>
-            <td><INPUT type="text" name="house" id="id_house" size="4" maxlength="30" value={{ entry.house }}></td>
-            <td><INPUT type="text" name="house" id="id_house" size="4" maxlength="30" value={{ entry.flat }}></td>
-            <td><INPUT type="text" name="house" id="id_house" size="12" maxlength="30" value={{ entry.ip }}></td>
-            <td><INPUT type="text" name="house" id="id_house" size="12" maxlength="30" value={{ entry.main_ip }}></td>
-            <td><INPUT type="text" name="house" id="id_house" size="18" maxlength="30" value={{ entry.mac }}></td>
-            <td><INPUT type="text" name="house" id="id_house" size="12" maxlength="30" value={{ entry.sw_ip }}></td>
-            <td><INPUT type="text" name="house" id="id_house" size="4" maxlength="30" value={{ entry.sw_port }}></td>
+            <td><INPUT type="text" name="house" id="id_house" size="4" maxlength="30" value={{ entry.house }} /></td>
+            <td><INPUT type="text" name="house" id="id_house" size="4" maxlength="30" value={{ entry.flat }} /></td>
+            <td><INPUT type="text" name="house" id="id_house" size="12" maxlength="30" value={{ entry.ip }} /></td>
+            <td><INPUT type="text" name="house" id="id_house" size="12" maxlength="30" value={{ entry.main_ip }} /></td>
+            <td><INPUT type="text" name="house" id="id_house" size="18" maxlength="30" value={{ entry.mac }} /></td>
+            <td><INPUT type="text" name="house" id="id_house" size="12" maxlength="30" value={{ entry.sw_ip }} /></td>
+            <td><INPUT type="text" name="house" id="id_house" size="4" maxlength="30" value={{ entry.sw_port }} /></td>
             <td><a href="." class="flat-grey-button" rel="chg">Изменить</a></td>
         </form>
     </tr>
     {% endfor %}
 </table>
+</div>
 {% endblock %}
 
 {% block javascript %}

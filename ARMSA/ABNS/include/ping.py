@@ -1,21 +1,9 @@
-from django import template
 import time
 import socket
 import struct
 import select
 import random
 
-register = template.Library()
-
-
-@register.filter
-def filter_house(query, arg):
-    qq = query.filter(street=arg)
-    qq = qq.values('house').distinct()
-    qq = qq.extra(select={'houseint': "CAST(house AS SIGNED INTEGER)"})
-    qq = qq.extra(order_by=['houseint'])
-    # print qq
-    return qq
 
 # From /usr/include/linux/icmp.h; your milage may vary.
 ICMP_ECHO_REQUEST = 8  # Seems to be the same on Solaris.
@@ -116,8 +104,3 @@ def receive_ping(my_socket, packet_id, time_sent, timeout):
         time_left -= time_received - time_sent
         if time_left <= 0:
             return
-
-
-@register.filter
-def ping(host):
-    return do_one(host, 0.1)

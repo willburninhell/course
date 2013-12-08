@@ -1,5 +1,7 @@
 {% extends "base.html" %}
+{% load filterfortree %}
 {% block content %}
+<div id="menu-buttons">
 <table class="menu-table">
         <tr>
             {% with a=st_id|add:"/"|add:ho_id%}
@@ -18,6 +20,8 @@
             {% endwith %}
         </tr>
     </table>
+</div>
+<div id="table-div">
 <b>Направление {{ entrance }}</b>
 <br>
 <table class="users-table" id="usertable">
@@ -82,12 +86,30 @@
                 </label>
             </td>
             {% endif %}
-            <td>port</td>
-            <td>link</td>
+            
+
+            {% with switch=entry.sw_ip %}
+            {% with port=entry.port %}
+            {% if switch == "0.0.0.0" or port == 0%}
+                <td><label id="blinklbl">???</label></td>
+                <td><label id="blinklbl">???</label></td>
+            {% else %}
+                {% with sw_ping=entry.sw_ip|ping %}
+                    {% if sw_ping > 0 %}
+                        <td><label id="yeslbl">UP</label></td>
+                    {% else %}
+                        <td><label id="nolbl">DOWN</label></td>
+                    {% endif %}
+                        <td>link</td>
+                {% endwith %}
+            {% endif %}
+            {% endwith %}
+            {% endwith %}
         </form>
     </tr>
     {% endfor %}
 </table>
+</div>
 {% endblock %}
 
 {% block javascript %}

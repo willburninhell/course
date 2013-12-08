@@ -28,7 +28,6 @@ h1 {
   width: -webkit-calc(100% - 220px);
   width: -moz-calc(100% - 220px);
   width: calc(100% - 220px);
-  overflow-y: scroll;
 }
 
 #uppermenu {
@@ -57,6 +56,13 @@ h1 {
     font-size:12px;
     font-weight:normal;
     font-style:normal;
+}
+
+#table-div {
+  height: -webkit-calc(100% - 35px);
+  height: -moz-calc(100% - 35px);
+  height: calc(100% - 35px);  
+  overflow-y: scroll;
 }
 
 .menu-table {
@@ -101,12 +107,48 @@ h1 {
     font-style:normal;
     color:#006B00;
 }
+
 #nolbl {
     font-family:Arial;
     font-size:13px;
     font-weight:bold;
     font-style:normal;
     color:#941515;
+}
+
+@-moz-keyframes blinker {  /* Decimal not necessary, 0 and 1 is enough */
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+@keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+#blinklbl {
+    font-family:Arial;
+    font-size:13px;
+    font-weight:bold;
+    font-style:normal;
+    color:#941515;
+    animation-name: blinker;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+    -webkit-animation-name: blinker;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
 }
 
 .flat-grey-button {
@@ -183,4 +225,8 @@ h1 {
 .menu-grey-button:active {
     position:relative;
     top:1px;
+}
+
+input[name="street"]{
+  background: none;
 }
