@@ -118,7 +118,7 @@
         event.preventDefault();
         var key = $(this).attr("name");
         var k = key.split("/");
-        console.log(k[0],k[1],k[2]);
+
         switch(k[0]){
             case "users":
                 var path="//127.0.0.1:8000/clients/"+k[1]+"/"+k[2]+"/";
@@ -129,6 +129,22 @@
                 break; 
         }
         $("#content").load(path);
+    });
+
+    $("a[rel^='chg']").click(function (event) {
+        event.preventDefault();
+        var path = window.location.href;
+        path = "/clients/";
+        var n = $(this).parents().find("form").eq(parseInt($(this).attr("name"))).attr("name");
+        var addr = n.split("/");
+        var data = $(this).parents().find("form").eq(parseInt($(this).attr("name"))).serialize();
+
+        var action = confirm('Вы уверены, что желаете внести изменения в данные клиента '+addr[0]+'-'+addr[1]+'-'+addr[2]+'?');
+        if(action){
+            $.post( path, data, function() {
+                $("#content").load("//127.0.0.1:8000/clients/"+addr[0]+'/'+addr[1]+'/');
+            });
+        }
     });
 
     $("#activated").change(function (event) {
@@ -167,7 +183,6 @@
         event.preventDefault();
         var n = $(this).attr("name").split("/");
         var data = "id="+n[0];
-        console.log(data);
         
         var action = confirm('Вы уверены, что желаете удалить информацию про клиента '+n[1]+'-'+n[2]+'-'+n[3]+'?');
         if(action){

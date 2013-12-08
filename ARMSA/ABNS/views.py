@@ -28,9 +28,13 @@ def search(request):
                 entries = entries.filter(ip__contains=ip)
                 if (mac != ""):
                     entries = entries.filter(mac__contains=mac)
-#form = UserRowForm()
+        sw_pings = {}
+        for e in entries:
+            if e.sw_ip not in sw_pings:
+                sw_pings[e.sw_ip] = do_one(e.sw_ip)
+                print(e.sw_ip, sw_pings[e.sw_ip])
 
-    return render(request, "results.html", {'entries': entries, 'streets': streets})
+    return render(request, "results.html", {'entries': entries, 'streets': streets, 'pings': sw_pings})
 
 
 def clients(request, st="Ba", ho="1"):
@@ -59,7 +63,7 @@ def clients(request, st="Ba", ho="1"):
         change_client.flat = postdata['flat']
         change_client.save(
             update_fields=['ip', 'main_ip', 'dogovor', 'street', 'house', 'flat', 'entrance'])
-    return render(request, "clients.html", {'entries': entries, 'streets': streets, 'entrance': entrance.entrance, 'st_id': st, 'ho_id': ho, 'pings':sw_pings})
+    return render(request, "clients.html", {'entries': entries, 'streets': streets, 'entrance': entrance.entrance, 'st_id': st, 'ho_id': ho, 'pings': sw_pings})
 
 
 def ports(request, st="Ba", ho="1"):
@@ -67,6 +71,22 @@ def ports(request, st="Ba", ho="1"):
         select={'flatint': 'CAST(REPLACE(REPLACE(REPLACE(REPLACE(flat,"b",""),"B",""),"a",""),"A","") AS UNSIGNED)'}).order_by('flatint')
     entrance = entries[:1].get()
     st = street.objects.get(short_name=st)
+    if request.method == 'POST':
+        postdata = request.POST
+        change_client = client.objects.get(id=postdata['id'])
+        change_client.ip = postdata['ip']
+        if change_client.ip[3] in '1234':
+            change_client.entrance = int(change_client.ip[3])
+        else:
+            change_client.entrance = 51
+        change_client.main_ip = postdata['main_ip']
+        change_client.house = postdata['house']
+        change_client.flat = postdata['flat']
+        change_client.mac = postdata['mac'].replace('%3A', ':')
+        change_client.sw_ip = postdata['sw_ip']
+        change_client.sw_port = postdata['sw_port']
+        change_client.save(
+            update_fields=['ip', 'main_ip', 'house', 'flat', 'entrance', 'mac', 'sw_ip', 'sw_port'])
     return render(request, "ports.html", {'entries': entries, 'street': st, 'st_id': entrance.street, 'ho_id': entrance.house})
 
 
@@ -90,6 +110,7 @@ def activate_id(request):
             e.active_state = False
         e.save()
     return HttpResponse(status=200)
+
 
 def lock_id(request):
     if request.method == 'GET':

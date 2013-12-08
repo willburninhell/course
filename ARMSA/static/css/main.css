@@ -227,6 +227,21 @@ h1 {
     top:1px;
 }
 
-input[name="street"]{
-  background: none;
+input[name='house'],input[name='flat']{
+  width: 4em;
+}
+
+input[name='dogovor']{
+  width: 4em;
+}
+
+input[name='sw_port']{
+  width: 3em;
+}
+
+input[name='ip'],input[name="main_ip"],input[name="sw_ip"]{
+  width: 8em;
+}
+input[name='mac']{
+  width: 9em;
 }

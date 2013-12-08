@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load filterfortree %}
 {% block content %}
 <br>
 <table class="users-table" id="usertable">
@@ -39,33 +40,49 @@
             {% if entry.active_state %}
             <td>
                 <label id="yeslbl">
-                    <input type="checkbox" class="checkbox" value="1" checked="checked" />YES
+                    <input type="checkbox" id="activated" name={{ entry.id|stringformat:"d"|add:"/"|add:entry.street|add:"/"|add:entry.house }} checked="checked" />ДА
                 </label>
             </td>
             {% else %}
             <td>
                 <label id="nolbl">
-                    <input type="checkbox" class="checkbox" value="1" />NO
+                    <input type="checkbox" id="activated" name={{ entry.id|stringformat:"d"|add:"/"|add:entry.street|add:"/"|add:entry.house }}  />НЕТ
                 </label>
             </td>
             {% endif %}
 
             {% if entry.lock_state %}
             <td>
-                <label id="yeslbl">
-                    <input type="checkbox" class="checkbox" value="1" checked="checked" />YES
+                <label id="nolbl">
+                    <input type="checkbox" id="locked" name={{ entry.id|stringformat:"d"|add:"/"|add:entry.street|add:"/"|add:entry.house }} checked="checked" />ДА
                 </label>
             </td>
             {% else %}
             <td>
-                <label id="nolbl">
-                    <input type="checkbox" class="checkbox" value="1" />NO
+                <label id="yeslbl">
+                    <input type="checkbox" id="locked" name={{ entry.id|stringformat:"d"|add:"/"|add:entry.street|add:"/"|add:entry.house }} />НЕТ
                 </label>
             </td>
             {% endif %}
-            <td>port</td>
-            <td>link</td>
-        </form>
+            
+
+            {% with switch=entry.sw_ip %}
+            {% with port=entry.port %}
+            {% if switch == "0.0.0.0" or port == 0%}
+                <td><label id="blinklbl">???</label></td>
+                <td><label id="blinklbl">???</label></td>
+            {% else %}
+                {% with sw=entry.sw_ip|check_sw:pings %}
+                    {% if sw %}
+                        <td><label id="yeslbl">UP</label></td>
+                    {% else %}
+                        <td><label id="nolbl">DOWN</label></td>
+                    {% endif %}
+                        <td>link</td>
+                {% endwith %}
+            {% endif %}
+            {% endwith %}
+            {% endwith %}
     </tr>
     {% endfor %}
 </table>
@@ -100,6 +117,38 @@
         var action = confirm('Вы уверены, что желаете удалить информацию про клиента '+n[1]+'-'+n[2]+'-'+n[3]+'?');
         if(action){
             $.get( "//127.0.0.1:8000/delete/", data, function() {
+                $("#content").load("//127.0.0.1:8000/clients/"+n[1]+'/'+n[2]+'/');
+            });
+        }
+    });
+
+    $("#activated").change(function (event) {
+        var n = ($(this).attr("name")).split("/");
+        if (this.checked){
+            var data = "id="+n[0]+"&act=True";
+            $.get( "//127.0.0.1:8000/activate/", data, function() {
+                $("#content").load("//127.0.0.1:8000/clients/"+n[1]+'/'+n[2]+'/');
+            });
+        }
+        else {
+            var data = "id="+n[0]+"&act=False";
+            $.get( "//127.0.0.1:8000/activate/", data, function() {
+                $("#content").load("//127.0.0.1:8000/clients/"+n[1]+'/'+n[2]+'/');
+            });
+        }
+    });
+
+    $("#locked").change(function (event) {
+        var n = ($(this).attr("name")).split("/");
+        if (this.checked){
+            var data = "id="+n[0]+"&act=True";
+            $.get( "//127.0.0.1:8000/lock/", data, function() {
+                $("#content").load("//127.0.0.1:8000/clients/"+n[1]+'/'+n[2]+'/');
+            });
+        }
+        else {
+            var data = "id="+n[0]+"&act=False";
+            $.get( "//127.0.0.1:8000/lock/", data, function() {
                 $("#content").load("//127.0.0.1:8000/clients/"+n[1]+'/'+n[2]+'/');
             });
         }

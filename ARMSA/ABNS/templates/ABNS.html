@@ -23,9 +23,9 @@
 <div id="uppermenu">
     <form action="//127.0.0.1:8000/ABNS/" method="post" id="search">
         {% csrf_token %}
-        Договор: <INPUT type="text" name="dogovor" size="5" maxlength="6">
-        IP: <INPUT type="text" name="ip" size="12" maxlength="15">
-        MAC: <INPUT type="text" name="mac" size="15" maxlength="17">
+        Договор: <INPUT type="text" name="dogovor" maxlength="6">
+        IP: <INPUT type="text" name="ip" maxlength="15">
+        MAC: <INPUT type="text" name="mac" maxlength="17">
         <a href="." class="flat-grey-button" rel="srch">Найти</a>
     </form>
 

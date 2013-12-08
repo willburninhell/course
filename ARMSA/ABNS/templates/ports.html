@@ -36,18 +36,22 @@
     </tr>
     {% for entry in entries %}
     <tr class="table-row">
-        <form action="." method="post">
+        {% with n=entry.street|add:"/"|add:entry.house|add:"/"|add:entry.flat %}
+        <form action="." method="post" name={{ n }}>
+        {% endwith %}
             {% csrf_token %}
             <input type="hidden" name="id" value={{ entry.id }}>
             <td>{{ street }}</td>
-            <td><INPUT type="text" name="house" id="id_house" size="4" maxlength="30" value={{ entry.house }} /></td>
-            <td><INPUT type="text" name="house" id="id_house" size="4" maxlength="30" value={{ entry.flat }} /></td>
-            <td><INPUT type="text" name="house" id="id_house" size="12" maxlength="30" value={{ entry.ip }} /></td>
-            <td><INPUT type="text" name="house" id="id_house" size="12" maxlength="30" value={{ entry.main_ip }} /></td>
-            <td><INPUT type="text" name="house" id="id_house" size="18" maxlength="30" value={{ entry.mac }} /></td>
-            <td><INPUT type="text" name="house" id="id_house" size="12" maxlength="30" value={{ entry.sw_ip }} /></td>
-            <td><INPUT type="text" name="house" id="id_house" size="4" maxlength="30" value={{ entry.sw_port }} /></td>
-            <td><a href="." class="flat-grey-button" rel="chg">Изменить</a></td>
+            <td><INPUT type="text" name="house" maxlength="5" value={{ entry.house }} /></td>
+            <td><INPUT type="text" name="flat" maxlength="5" value={{ entry.flat }} /></td>
+            <td><INPUT type="text" name="ip" maxlength="15" value={{ entry.ip }} /></td>
+            <td><INPUT type="text" name="main_ip" maxlength="15" value={{ entry.main_ip }} /></td>
+            <td><INPUT type="text" name="mac" maxlength="17" value={{ entry.mac }} /></td>
+            <td><INPUT type="text" name="sw_ip" maxlength="15" value={{ entry.sw_ip }} /></td>
+            <td><INPUT type="text" name="sw_port" maxlength="2" value={{ entry.sw_port }} /></td>
+            {% with r=forloop.counter|stringformat:"d" %}
+            <td><a href="." class="flat-grey-button" name={{ r }} rel="chg">Изменить</a></td>
+            {% endwith %}
         </form>
     </tr>
     {% endfor %}
@@ -61,7 +65,7 @@
         event.preventDefault();
         var key = $(this).attr("name");
         var k = key.split("/");
-        console.log(k[0],k[1],k[2]);
+
         switch(k[0]){
             case "users":
                 var path="//127.0.0.1:8000/clients/"+k[1]+"/"+k[2]+"/";
@@ -73,5 +77,21 @@
         }
         $("#content").load(path);
     });
+
+    $("a[rel^='chg']").click(function (event) {
+        event.preventDefault();
+        var path = "/ports/";
+        var n = $(this).parents().find("form").eq(parseInt($(this).attr("name"))).attr("name");
+        var addr = n.split("/");
+        var data = $(this).parents().find("form").eq(parseInt($(this).attr("name"))).serialize();
+
+        var action = confirm('Вы уверены, что желаете внести изменения в данные клиента '+addr[0]+'-'+addr[1]+'-'+addr[2]+'?');
+        if(action){
+            $.post( path, data, function() {
+                $("#content").load("//127.0.0.1:8000/ports/"+addr[0]+'/'+addr[1]+'/');
+            });
+        }
+    });
+
 </script>
 {% endblock %}
