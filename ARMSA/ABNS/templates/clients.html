@@ -62,27 +62,27 @@
             {% if entry.active_state %}
             <td>
                 <label id="yeslbl">
-                    <input type="checkbox" class="checkbox" value="1" checked="checked" />YES
+                    <input type="checkbox" id="activated" name={{ entry.id|stringformat:"d"|add:"/"|add:entry.street|add:"/"|add:entry.house }} checked="checked" />ДА
                 </label>
             </td>
             {% else %}
             <td>
                 <label id="nolbl">
-                    <input type="checkbox" class="checkbox" value="1" />NO
+                    <input type="checkbox" id="activated" name={{ entry.id|stringformat:"d"|add:"/"|add:entry.street|add:"/"|add:entry.house }}  />НЕТ
                 </label>
             </td>
             {% endif %}
 
             {% if entry.lock_state %}
             <td>
-                <label id="yeslbl">
-                    <input type="checkbox" class="checkbox" value="1" checked="checked" />YES
+                <label id="nolbl">
+                    <input type="checkbox" id="locked" name={{ entry.id|stringformat:"d"|add:"/"|add:entry.street|add:"/"|add:entry.house }} checked="checked" />ДА
                 </label>
             </td>
             {% else %}
             <td>
-                <label id="nolbl">
-                    <input type="checkbox" class="checkbox" value="1" />NO
+                <label id="yeslbl">
+                    <input type="checkbox" id="locked" name={{ entry.id|stringformat:"d"|add:"/"|add:entry.street|add:"/"|add:entry.house }} />НЕТ
                 </label>
             </td>
             {% endif %}
@@ -131,24 +131,38 @@
         $("#content").load(path);
     });
 
-    $("a[rel^='chg']").click(function (event) {
-        event.preventDefault();
-        var path = window.location.href;
-        path = "/clients/";
-        var n = $(this).parents().find("form").eq(parseInt($(this).attr("name"))).attr("name");
-        var addr = n.split("/");
-        var data = $(this).parents().find("form").eq(parseInt($(this).attr("name"))).serialize();
-
-        var action = confirm('Вы уверены, что желаете внести изменения в данные клиента '+addr[0]+'-'+addr[1]+'-'+addr[2]+'?');
-        if(action){
-            $.post( path, data, function() {
-                $("#content").load("//127.0.0.1:8000/clients/"+addr[0]+'/'+addr[1]+'/');
+    $("#activated").change(function (event) {
+        var n = ($(this).attr("name")).split("/");
+        if (this.checked){
+            var data = "id="+n[0]+"&act=True";
+            $.get( "//127.0.0.1:8000/activate/", data, function() {
+                $("#content").load("//127.0.0.1:8000/clients/"+n[1]+'/'+n[2]+'/');
+            });
+        }
+        else {
+            var data = "id="+n[0]+"&act=False";
+            $.get( "//127.0.0.1:8000/activate/", data, function() {
+                $("#content").load("//127.0.0.1:8000/clients/"+n[1]+'/'+n[2]+'/');
             });
         }
     });
-</script>
 
-<script language="javascript" type="text/javascript">
+    $("#locked").change(function (event) {
+        var n = ($(this).attr("name")).split("/");
+        if (this.checked){
+            var data = "id="+n[0]+"&act=True";
+            $.get( "//127.0.0.1:8000/lock/", data, function() {
+                $("#content").load("//127.0.0.1:8000/clients/"+n[1]+'/'+n[2]+'/');
+            });
+        }
+        else {
+            var data = "id="+n[0]+"&act=False";
+            $.get( "//127.0.0.1:8000/lock/", data, function() {
+                $("#content").load("//127.0.0.1:8000/clients/"+n[1]+'/'+n[2]+'/');
+            });
+        }
+    });
+
     $("a[rel^='del']").click(function (event) {
         event.preventDefault();
         var n = $(this).attr("name").split("/");

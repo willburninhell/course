@@ -71,10 +71,34 @@ def ports(request, st="Ba", ho="1"):
 
 
 def delete_id(request):
-    print "delete"
     if request.method == 'GET':
         i = int(request.GET['id'])
         print i
         e = client.objects.get(id=i)
         e.delete()
+    return HttpResponse(status=200)
+
+
+def activate_id(request):
+    if request.method == 'GET':
+        i = int(request.GET['id'])
+        a = request.GET['act']
+        e = client.objects.get(id=i)
+        if a == "True":
+            e.active_state = True
+        else:
+            e.active_state = False
+        e.save()
+    return HttpResponse(status=200)
+
+def lock_id(request):
+    if request.method == 'GET':
+        i = int(request.GET['id'])
+        a = request.GET['act']
+        e = client.objects.get(id=i)
+        if a == "True":
+            e.lock_state = True
+        else:
+            e.lock_state = False
+        e.save()
     return HttpResponse(status=200)

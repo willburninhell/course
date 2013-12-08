@@ -15,6 +15,8 @@ urlpatterns = patterns('',
     url(r'^search/', 'ABNS.views.search'),
     url(r'^clients/(?P<st>\w{2})/(?P<ho>\d{1,4})/', 'ABNS.views.clients'),
     url(r'^delete/', 'ABNS.views.delete_id'),
+    url(r'^activate/', 'ABNS.views.activate_id'),
+    url(r'^lock/', 'ABNS.views.lock_id'),
     url(r'^clients/', 'ABNS.views.clients'),
     url(r'^ports/(?P<st>\w{2})/(?P<ho>\d{1,4})/', 'ABNS.views.ports'),
 
