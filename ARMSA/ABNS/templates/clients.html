@@ -94,8 +94,8 @@
                 <td><label id="blinklbl">???</label></td>
                 <td><label id="blinklbl">???</label></td>
             {% else %}
-                {% with sw_ping=entry.sw_ip|ping %}
-                    {% if sw_ping > 0 %}
+                {% with sw=entry.sw_ip|check_sw:pings %}
+                    {% if sw %}
                         <td><label id="yeslbl">UP</label></td>
                     {% else %}
                         <td><label id="nolbl">DOWN</label></td>

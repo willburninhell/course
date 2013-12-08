@@ -38,6 +38,11 @@ def clients(request, st="Ba", ho="1"):
         select={'flatint': 'CAST(REPLACE(REPLACE(REPLACE(REPLACE(flat,"b",""),"B",""),"a",""),"A","") AS UNSIGNED)'}).order_by('flatint')
     streets = street.objects.all()
     entrance = entries[:1].get()
+    sw_pings = {}
+    for e in entries:
+        if e.sw_ip not in sw_pings:
+            sw_pings[e.sw_ip] = do_one(e.sw_ip)
+            print(e.sw_ip, sw_pings[e.sw_ip])
 
     if request.method == 'POST':
         postdata = request.POST
@@ -54,8 +59,7 @@ def clients(request, st="Ba", ho="1"):
         change_client.flat = postdata['flat']
         change_client.save(
             update_fields=['ip', 'main_ip', 'dogovor', 'street', 'house', 'flat', 'entrance'])
-
-    return render(request, "clients.html", {'entries': entries, 'streets': streets, 'entrance': entrance.entrance, 'st_id': st, 'ho_id': ho})
+    return render(request, "clients.html", {'entries': entries, 'streets': streets, 'entrance': entrance.entrance, 'st_id': st, 'ho_id': ho, 'pings':sw_pings})
 
 
 def ports(request, st="Ba", ho="1"):
