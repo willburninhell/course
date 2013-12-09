@@ -49,13 +49,6 @@
         $("#content").load("//127.0.0.1:8000/search/",data);
     });
 
-    $("#search").submit(function (event) {
-        event.preventDefault();
-        var data = $("#search").serialize();
-        console.log(data);
-        $("#content").load("//127.0.0.1:8000/search/",data);
-    });
-
     $('#search input').keydown(function(e) {
         if (e.keyCode == 13) {
             var data = $("#search").serialize();

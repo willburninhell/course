@@ -35,7 +35,7 @@ class street(models.Model):
         return self.long_name
 
 
-class switches(models.Model):
+class switch(models.Model):
     sw_ip = models.CharField(max_length=15, default="10.254.0.0")
     sw_mac = models.CharField(max_length=17, default="00:00:00:00:00:00")
     sw_sn = models.CharField(max_length=15, default="000000000000000")
@@ -70,3 +70,13 @@ class ports_info(models.Model):
     sw_port = models.IntegerField(default=0)
     sw_info = models.CharField(max_length=32)
     sw_memo = models.CharField(max_length=255)
+
+    def __unicode__(self):
+        return self.sw_sn
+
+
+class macs(models.Model):
+    sw_ip = models.CharField(max_length=15, default="10.254.0.0")
+    sw_port = models.IntegerField(default=0)
+    mac = models.CharField(max_length=17)
+    trusted = models.BooleanField(default=False)

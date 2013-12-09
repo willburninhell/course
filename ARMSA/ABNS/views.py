@@ -1,7 +1,9 @@
 # Create your views here.
+# coding: utf-8
 from django.shortcuts import render, HttpResponse
-from .models import client, street
+from .models import client, street, switch, sw_info, sw_type, ports_info, macs
 from ABNS.include.ping import do_one
+from ABNS.include.snmp import get_ports_links, get_one_ports_links
 
 
 def ABNS(request, st="Ba", ho="1"):
@@ -24,17 +26,23 @@ def search(request):
         entries = client.objects.all()
         if (dogovor != ""):
             entries = entries.filter(dogovor__contains=dogovor)
-            if (ip != ""):
-                entries = entries.filter(ip__contains=ip)
-                if (mac != ""):
-                    entries = entries.filter(mac__contains=mac)
+        if (ip != ""):
+            entries = entries.filter(ip__contains=ip)
+        if (mac != ""):
+            entries = entries.filter(mac__contains=mac)
+
         sw_pings = {}
+        status_ports = {}
+        status_links = {}
         for e in entries:
             if e.sw_ip not in sw_pings:
+                print(e.sw_ip)
                 sw_pings[e.sw_ip] = do_one(e.sw_ip)
-                print(e.sw_ip, sw_pings[e.sw_ip])
+                p, l = get_one_ports_links(e.sw_ip,e.sw_port)
+                status_ports = dict(status_ports.items() + p.items())
+                status_links = dict(status_links.items() + l.items())
 
-    return render(request, "results.html", {'entries': entries, 'streets': streets, 'pings': sw_pings})
+    return render(request, "results.html", {'entries': entries, 'streets': streets, 'pings': sw_pings, 'ports': status_ports, 'links': status_links})
 
 
 def clients(request, st="Ba", ho="1"):
@@ -43,10 +51,17 @@ def clients(request, st="Ba", ho="1"):
     streets = street.objects.all()
     entrance = entries[:1].get()
     sw_pings = {}
+    status_ports = {}
+    status_links = {}
     for e in entries:
-        if e.sw_ip not in sw_pings:
+        if (e.sw_ip not in sw_pings) and (sw_pings != "0.0.0.0"):
             sw_pings[e.sw_ip] = do_one(e.sw_ip)
-            print(e.sw_ip, sw_pings[e.sw_ip])
+            sw = switch.objects.filter(sw_ip=e.sw_ip)
+            if len(sw) > 0:
+                portnumber = sw_type.objects.filter(sw_type=sw.get().sw_type)
+                p, l = get_ports_links(e.sw_ip,portnumber.get().ports)
+                status_ports = dict(status_ports.items() + p.items())
+                status_links = dict(status_links.items() + l.items())
 
     if request.method == 'POST':
         postdata = request.POST
@@ -63,7 +78,7 @@ def clients(request, st="Ba", ho="1"):
         change_client.flat = postdata['flat']
         change_client.save(
             update_fields=['ip', 'main_ip', 'dogovor', 'street', 'house', 'flat', 'entrance'])
-    return render(request, "clients.html", {'entries': entries, 'streets': streets, 'entrance': entrance.entrance, 'st_id': st, 'ho_id': ho, 'pings': sw_pings})
+    return render(request, "clients.html", {'entries': entries, 'streets': streets, 'entrance': entrance.entrance, 'st_id': st, 'ho_id': ho, 'pings': sw_pings, 'ports': status_ports, 'links': status_links})
 
 
 def ports(request, st="Ba", ho="1"):
@@ -122,4 +137,44 @@ def lock_id(request):
         else:
             e.lock_state = False
         e.save()
+    return HttpResponse(status=200)
+
+
+def switches(request, st='Ba', ho='1'):
+    sw_query = switch.objects.filter(street=st, house=ho)
+    for s in sw_query:
+        print(s.sw_ip)
+        port_count = sw_type.objects.filter(sw_type=s.sw_type)[:1].get().ports
+        print s.sw_sn
+        sw = ports_info.objects.filter(sw_sn=s.sw_sn)
+        print ("length of sw_q",len(sw))
+        for p in range(port_count):
+            macs_q = macs.objects.filter(sw_ip=s.sw_ip, sw_port=p+1)
+            if len(macs_q)>0:
+                trust = macs_q[0].trusted
+            else: 
+                trust = False
+            cl_q = client.objects.filter(sw_ip=s.sw_ip, sw_port=p+1)
+            if len(cl_q) > 0:
+                cl = cl_q[0]
+                address = cl.street+'-'+cl.house+'-'+cl.flat
+            else:
+                address = '---'
+            
+            if len(sw)==0:
+                status = "Рабочий"
+                memo = ''
+            else:
+                st_q = sw.filter(sw_port=p)
+                if len(st_q):
+                    status = st_q[0].sw_info
+                    memo = st_q[0].sw_memo
+                else:
+                    status = "Рабочий"
+                    memo = ''
+
+
+            print(p, trust, address, status, memo)
+
+
     return HttpResponse(status=200)

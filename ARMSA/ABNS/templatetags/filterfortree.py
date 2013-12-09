@@ -1,4 +1,5 @@
 from django import template
+from pysnmp.entity.rfc3413.oneliner import cmdgen
 
 register = template.Library()
 
@@ -16,6 +17,21 @@ def filter_house(query, arg):
 @register.filter
 def check_sw(ip, sw_ping):
     if (sw_ping[ip] > 0):
+        return True
+    else:
+        return False
+
+@register.filter
+def check_port(sw_ip_port, ports_data):
+    print("check port",sw_ip_port,ports_data[sw_ip_port])
+    if ports_data[sw_ip_port] == '1':
+        return True
+    else:
+        return False
+
+@register.filter
+def check_link(sw_ip_port, ports_data):
+    if ports_data[sw_ip_port] == '1':
         return True
     else:
         return False
