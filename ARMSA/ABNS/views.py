@@ -3,7 +3,7 @@
 from django.shortcuts import render, HttpResponse
 from .models import client, street, switch, sw_info, sw_type, ports_info, macs
 from ABNS.include.ping import do_one
-from ABNS.include.snmp import get_ports_links, get_one_ports_links
+from ABNS.include.snmp import get_ports_links, get_one_ports_links, openport, closeport
 
 
 def ABNS(request, st="Ba", ho="1"):
@@ -137,6 +137,19 @@ def lock_id(request):
         else:
             e.lock_state = False
         e.save()
+    return HttpResponse(status=200)
+
+
+def portaction(request):
+    if request.method == 'GET':
+        sw = request.GET['sw']
+        port = int(request.GET['port'])
+        act = request.GET['act']
+
+        if act == "open":
+            openport(sw, port)
+        else:
+            closeport(sw, port)
     return HttpResponse(status=200)
 
 

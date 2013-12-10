@@ -1,4 +1,5 @@
 from pysnmp.entity.rfc3413.oneliner import cmdgen
+from pysnmp.proto import rfc1902
 
 def get_ports_links(ip, ports):
     cmdGen = cmdgen.CommandGenerator()
@@ -40,7 +41,6 @@ def get_ports_links(ip, ports):
                 links[ip+':'+str(p+1)] = '2'
         else:
             links[ip+':'+str(p+1)] = '2'
-            
     return port, links
 
 def get_one_ports_links(ip, ports):
@@ -71,6 +71,32 @@ def get_one_ports_links(ip, ports):
             links[ip+':'+str(ports)] = v.prettyPrint()
     else:
         links[ip+':'+str(ports)] = '2'
-
-            
     return port, links
+
+def openport(ip, port):
+    cmdGen = cmdgen.CommandGenerator()
+
+    errorIndication, errorStatus, errorIndex, varBinds = cmdGen.setCmd(
+        cmdgen.CommunityData('SW_wRIT'),
+        cmdgen.UdpTransportTarget((ip, 161)),
+        ('1.3.6.1.2.1.2.2.1.7.'+str(port),rfc1902.Integer(1))
+    )
+
+    if errorIndication or errorStatus:
+        return False
+    else:
+        return True
+
+def closeport(ip, port):
+    cmdGen = cmdgen.CommandGenerator()
+
+    errorIndication, errorStatus, errorIndex, varBinds = cmdGen.setCmd(
+        cmdgen.CommunityData('SW_wRITE'),
+        cmdgen.UdpTransportTarget((ip, 161)),
+        ('1.3.6.1.2.1.2.2.1.7.'+str(port),rfc1902.Integer(2))
+    )
+
+    if errorIndication or errorStatus:
+        return False
+    else:
+        return True

@@ -99,9 +99,9 @@
                         {% with pp=port|stringformat:"d" %}
                         {% with p=switch|add:":"|add:pp %}
                         {% if p|check_port:ports == True %}
-                            <td><label id="yeslbl"><input type="checkbox" id="port" name={{ entry.id|stringformat:"d"|add:"/"|add:entry.street|add:"/"|add:entry.house }} checked="checked" />UP</label></td>
+                            <td><label id="yeslbl"><input type="checkbox" id="portstatus" name={{ p|add:":"|add:entry.street|add:":"|add:entry.house }} checked="checked" />UP</label></td>
                         {% else %}
-                            <td><label id="nolbl"><input type="checkbox" id="port" name={{ entry.id|stringformat:"d"|add:"/"|add:entry.street|add:"/"|add:entry.house }} />DOWN</label></td>
+                            <td><label id="nolbl"><input type="checkbox" id="portstatus" name={{ p|add:":"|add:entry.street|add:":"|add:entry.house }} />DOWN</label></td>
                         {% endif %}
                         {% endwith %}
                         {% endwith %}
@@ -167,7 +167,8 @@
         }
     });
 
-    $("#activated").change(function (event) {
+    $("input[id='activated']").change(function (event) {
+        console.log("active");
         var n = ($(this).attr("name")).split("/");
         if (this.checked){
             var data = "id="+n[0]+"&act=True";
@@ -183,7 +184,8 @@
         }
     });
 
-    $("#locked").change(function (event) {
+    $("input[id='locked']").change(function (event) {
+        console.log("locked");
         var n = ($(this).attr("name")).split("/");
         if (this.checked){
             var data = "id="+n[0]+"&act=True";
@@ -195,6 +197,25 @@
             var data = "id="+n[0]+"&act=False";
             $.get( "//127.0.0.1:8000/lock/", data, function() {
                 $("#content").load("//127.0.0.1:8000/clients/"+n[1]+'/'+n[2]+'/');
+            });
+        }
+    });
+
+    $("input[id='portstatus']").change(function (event) {
+        console.log("ports");
+        var n = ($(this).attr("name")).split(":");
+        if (this.checked){
+            console.log("open");
+            var data = "sw="+n[0]+"&port="+n[1]+"&act=open";
+            $.get( "//127.0.0.1:8000/portaction/", data, function() {
+                $("#content").load("//127.0.0.1:8000/clients/"+n[2]+'/'+n[3]+'/');
+            });
+        }
+        else {
+            console.log("close");
+            var data = "sw="+n[0]+"&port="+n[1]+"&act=close";
+            $.get( "//127.0.0.1:8000/portaction/", data, function() {
+                $("#content").load("//127.0.0.1:8000/clients/"+n[2]+'/'+n[3]+'/');
             });
         }
     });
