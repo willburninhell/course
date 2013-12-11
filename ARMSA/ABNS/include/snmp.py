@@ -91,7 +91,7 @@ def closeport(ip, port):
     cmdGen = cmdgen.CommandGenerator()
 
     errorIndication, errorStatus, errorIndex, varBinds = cmdGen.setCmd(
-        cmdgen.CommunityData('SW_wRITE'),
+        cmdgen.CommunityData('SW_wRIT'),
         cmdgen.UdpTransportTarget((ip, 161)),
         ('1.3.6.1.2.1.2.2.1.7.'+str(port),rfc1902.Integer(2))
     )

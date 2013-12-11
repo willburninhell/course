@@ -83148,7 +83148,7 @@
         "lock_state": true, 
         "block_inet": false, 
         "ip": "10.4.137.26", 
-        "dogovor": "64-\u00d1", 
+        "dogovor": "64-С", 
         "main_ip": "0.0.0.0", 
         "email": ""
     }
@@ -95085,7 +95085,7 @@
     "pk": 1, 
     "model": "ABNS.street", 
     "fields": {
-        "long_name": "\u0422\u0430\u043b\u043b\u0438\u043d\u0441\u043a\u0438\u0439 \u043a\u0432-\u043b", 
+        "long_name": "Таллинский", 
         "short_name": "Ta"
     }
 },
@@ -95093,7 +95093,7 @@
     "pk": 2, 
     "model": "ABNS.street", 
     "fields": {
-        "long_name": "\u0411\u0430\u043a\u0438\u043d\u0441\u043a\u0438\u0439 \u043a\u0432-\u043b", 
+        "long_name": "Бакинский", 
         "short_name": "Ba"
     }
 },
@@ -95101,7 +95101,7 @@
     "pk": 3, 
     "model": "ABNS.street", 
     "fields": {
-        "long_name": "\u041a\u0438\u0435\u0432\u0441\u043a\u0438\u0439 \u043a\u0432-\u043b", 
+        "long_name": "Киевский", 
         "short_name": "Ki"
     }
 },
@@ -95109,7 +95109,7 @@
     "pk": 4, 
     "model": "ABNS.street", 
     "fields": {
-        "long_name": "\u0420\u0438\u0436\u0441\u043a\u0438\u0439 \u043a\u0432-\u043b", 
+        "long_name": "Рижский", 
         "short_name": "Ri"
     }
 },
@@ -95117,7 +95117,7 @@
     "pk": 5, 
     "model": "ABNS.street", 
     "fields": {
-        "long_name": "\u0411\u0435\u043b\u0433\u043e\u0440\u043e\u0434\u0441\u043a\u0438\u0439 \u043a\u0432-\u043b", 
+        "long_name": "Белгородский", 
         "short_name": "Be"
     }
 },
@@ -95125,7 +95125,7 @@
     "pk": 6, 
     "model": "ABNS.street", 
     "fields": {
-        "long_name": "\u041b\u0435\u043d\u0438\u043d\u0433\u0440\u0430\u0434\u0441\u043a\u0438\u0439 \u043a\u0432-\u043b", 
+        "long_name": "Ленинградский", 
         "short_name": "Le"
     }
 },
@@ -95133,7 +95133,7 @@
     "pk": 7, 
     "model": "ABNS.street", 
     "fields": {
-        "long_name": "\u041c\u043e\u0441\u043a\u043e\u0432\u0441\u043a\u0438\u0439 \u043a\u0432-\u043b", 
+        "long_name": "Московский", 
         "short_name": "Mo"
     }
 },
@@ -95141,7 +95141,7 @@
     "pk": 8, 
     "model": "ABNS.street", 
     "fields": {
-        "long_name": "\u0422\u0431\u0438\u043b\u0438\u0441\u0441\u043a\u0438\u0439 \u043a\u0432-\u043b", 
+        "long_name": "Тбилисский", 
         "short_name": "Tb"
     }
 },
@@ -95149,7 +95149,7 @@
     "pk": 9, 
     "model": "ABNS.street", 
     "fields": {
-        "long_name": "\u0415\u0440\u0435\u0432\u0430\u043d\u0441\u043a\u0438\u0439 \u043a\u0432-\u043b", 
+        "long_name": "Ереванский", 
         "short_name": "Er"
     }
 },
@@ -95157,7 +95157,7 @@
     "pk": 10, 
     "model": "ABNS.street", 
     "fields": {
-        "long_name": "\u043f\u0440-\u0442 \u0414\u0440\u0443\u0436\u0431\u044b \u041d\u0430\u0440\u043e\u0434\u043e\u0432", 
+        "long_name": "Дружбы Народов", 
         "short_name": "Dr"
     }
 },
@@ -95165,7 +95165,7 @@
     "pk": 11, 
     "model": "ABNS.street", 
     "fields": {
-        "long_name": "\u0414\u043e\u0431\u0440\u044b\u043d\u0438\u043d\u0441\u043a\u0438\u0439 \u043a\u0432-\u043b", 
+        "long_name": "Добрынинский", 
         "short_name": "Do"
     }
 },
@@ -95173,7 +95173,7 @@
     "pk": 12, 
     "model": "ABNS.street", 
     "fields": {
-        "long_name": "\u0427\u0435\u0440\u043d\u0438\u0433\u043e\u0432\u0441\u043a\u0438\u0439 \u043a\u0432-\u043b", 
+        "long_name": "Черниговский", 
         "short_name": "Ch"
     }
 },
@@ -95181,7 +95181,7 @@
     "pk": 13, 
     "model": "ABNS.street", 
     "fields": {
-        "long_name": "\u0412\u0438\u043b\u044c\u043d\u044e\u0441\u0441\u043a\u0438\u0439 \u043a\u0432-\u043b", 
+        "long_name": "Вильнюсский", 
         "short_name": "Vi"
     }
 },
@@ -95189,7 +95189,7 @@
     "pk": 14, 
     "model": "ABNS.street", 
     "fields": {
-        "long_name": "\u041f\u0435\u0447\u0435\u0440\u0441\u043a\u0438\u0439 \u043a\u0432-\u043b", 
+        "long_name": "Печерский", 
         "short_name": "Pe"
     }
 },
@@ -95197,7 +95197,7 @@
     "pk": 15, 
     "model": "ABNS.street", 
     "fields": {
-        "long_name": "\u0443\u043b. \u0413\u0435\u0440\u043e\u0435\u0432 \u0414\u043d\u0435\u043f\u0440\u0430", 
+        "long_name": "Героев днепра", 
         "short_name": "GD"
     }
 },
@@ -95205,7 +95205,7 @@
     "pk": 16, 
     "model": "ABNS.street", 
     "fields": {
-        "long_name": "\u041f\u0440\u0438\u0432\u043e\u043a\u0437\u0430\u043b\u044c\u043d\u0430\u044f \u043f\u043b.", 
+        "long_name": "Привокзальная пл.", 
         "short_name": "PP"
     }
 },
@@ -95213,7 +95213,7 @@
     "pk": 17, 
     "model": "ABNS.street", 
     "fields": {
-        "long_name": "\u0426\u0435\u043d\u0442\u0440\u0430\u043b\u044c\u043d\u0430\u044f \u043f\u043b.", 
+        "long_name": "Центральная пл.", 
         "short_name": "CP"
     }
 },
@@ -95221,7 +95221,7 @@
     "pk": 18, 
     "model": "ABNS.street", 
     "fields": {
-        "long_name": "\u0443\u043b. \u0412\u043e\u0435\u043d\u043d\u044b\u0445 \u0421\u0442\u0440\u043e\u0438\u0442\u0435\u043b\u0435\u0439", 
+        "long_name": "Военных Строителей", 
         "short_name": "Vs"
     }
 },
@@ -97554,21 +97554,21 @@
     "pk": 1, 
     "model": "ABNS.sw_info", 
     "fields": {
-        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9"
+        "sw_info": "Битый"
     }
 },
 {
     "pk": 2, 
     "model": "ABNS.sw_info", 
     "fields": {
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9"
+        "sw_info": "Рабочий"
     }
 },
 {
     "pk": 3, 
     "model": "ABNS.sw_info", 
     "fields": {
-        "sw_info": "\u00d2\u00e5\u00f1\u00f2\u00e8\u00f0\u00ee\u00e2\u00e0\u00ed\u00e8\u00e5"
+        "sw_info": "Тестирование"
     }
 },
 {
@@ -97601,7 +97601,7 @@
     "fields": {
         "sw_port": 1, 
         "sw_memo": "Nianai ?aai?ee", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "2-102542245-GIS"
     }
 },
@@ -97611,7 +97611,7 @@
     "fields": {
         "sw_port": 24, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "2-102542245-GIS"
     }
 },
@@ -97621,7 +97621,7 @@
     "fields": {
         "sw_port": 1, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "2-102542250-GIS"
     }
 },
@@ -97631,7 +97631,7 @@
     "fields": {
         "sw_port": 21, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "2-102542250-GIS"
     }
 },
@@ -97641,7 +97641,7 @@
     "fields": {
         "sw_port": 10, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "2-102542250-GIS"
     }
 },
@@ -97651,7 +97651,7 @@
     "fields": {
         "sw_port": 11, 
         "sw_memo": "Auea 151 ea. Iaeaiueay nei?inou naoe.", 
-        "sw_info": "\u00d2\u00e5\u00f1\u00f2\u00e8\u00f0\u00ee\u00e2\u00e0\u00ed\u00e8\u00e5", 
+        "sw_info": "Тестирование", 
         "sw_sn": "5-1025451-GIS"
     }
 },
@@ -97661,7 +97661,7 @@
     "fields": {
         "sw_port": 9, 
         "sw_memo": "Auea 12 ea.", 
-        "sw_info": "\u00d2\u00e5\u00f1\u00f2\u00e8\u00f0\u00ee\u00e2\u00e0\u00ed\u00e8\u00e5", 
+        "sw_info": "Тестирование", 
         "sw_sn": "4-102544139-GIS"
     }
 },
@@ -97671,7 +97671,7 @@
     "fields": {
         "sw_port": 13, 
         "sw_memo": "Neeiy?a", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00118"
     }
 },
@@ -97681,7 +97681,7 @@
     "fields": {
         "sw_port": 22, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00002"
     }
 },
@@ -97691,7 +97691,7 @@
     "fields": {
         "sw_port": 2, 
         "sw_memo": "ARB", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00122"
     }
 },
@@ -97701,7 +97701,7 @@
     "fields": {
         "sw_port": 3, 
         "sw_memo": "ARB", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00122"
     }
 },
@@ -97711,7 +97711,7 @@
     "fields": {
         "sw_port": 11, 
         "sw_memo": "dark NE UZAT!!!!!!!", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00060"
     }
 },
@@ -97721,7 +97721,7 @@
     "fields": {
         "sw_port": 2, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": ""
     }
 },
@@ -97731,7 +97731,7 @@
     "fields": {
         "sw_port": 3, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": ""
     }
 },
@@ -97741,7 +97741,7 @@
     "fields": {
         "sw_port": 10, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": ""
     }
 },
@@ -97751,7 +97751,7 @@
     "fields": {
         "sw_port": 18, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00009"
     }
 },
@@ -97761,7 +97761,7 @@
     "fields": {
         "sw_port": 4, 
         "sw_memo": "lover", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00032"
     }
 },
@@ -97771,7 +97771,7 @@
     "fields": {
         "sw_port": 13, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": ""
     }
 },
@@ -97781,7 +97781,7 @@
     "fields": {
         "sw_port": 9, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": ""
     }
 },
@@ -97791,7 +97791,7 @@
     "fields": {
         "sw_port": 5, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00069"
     }
 },
@@ -97801,7 +97801,7 @@
     "fields": {
         "sw_port": 13, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00098"
     }
 },
@@ -97811,7 +97811,7 @@
     "fields": {
         "sw_port": 5, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00048"
     }
 },
@@ -97821,7 +97821,7 @@
     "fields": {
         "sw_port": 14, 
         "sw_memo": "Spamer", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00069"
     }
 },
@@ -97831,7 +97831,7 @@
     "fields": {
         "sw_port": 13, 
         "sw_memo": "Aeoue?", 
-        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_info": "Битый", 
         "sw_sn": "00061"
     }
 },
@@ -97841,7 +97841,7 @@
     "fields": {
         "sw_port": 17, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00032"
     }
 },
@@ -97851,7 +97851,7 @@
     "fields": {
         "sw_port": 9, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00052"
     }
 },
@@ -97861,7 +97861,7 @@
     "fields": {
         "sw_port": 5, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00070"
     }
 },
@@ -97871,7 +97871,7 @@
     "fields": {
         "sw_port": 2, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00038"
     }
 },
@@ -97881,7 +97881,7 @@
     "fields": {
         "sw_port": 12, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00026"
     }
 },
@@ -97891,7 +97891,7 @@
     "fields": {
         "sw_port": 20, 
         "sw_memo": "bitiy", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00095"
     }
 },
@@ -97901,7 +97901,7 @@
     "fields": {
         "sw_port": 7, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00019"
     }
 },
@@ -97911,7 +97911,7 @@
     "fields": {
         "sw_port": 4, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00025"
     }
 },
@@ -97921,7 +97921,7 @@
     "fields": {
         "sw_port": 22, 
         "sw_memo": "spam 011206", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00122"
     }
 },
@@ -97931,7 +97931,7 @@
     "fields": {
         "sw_port": 18, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": ""
     }
 },
@@ -97941,7 +97941,7 @@
     "fields": {
         "sw_port": 9, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00088"
     }
 },
@@ -97951,7 +97951,7 @@
     "fields": {
         "sw_port": 24, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00071"
     }
 },
@@ -97961,7 +97961,7 @@
     "fields": {
         "sw_port": 13, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00056"
     }
 },
@@ -97971,7 +97971,7 @@
     "fields": {
         "sw_port": 22, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00044"
     }
 },
@@ -97981,7 +97981,7 @@
     "fields": {
         "sw_port": 3, 
         "sw_memo": "spamer", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00070"
     }
 },
@@ -97991,7 +97991,7 @@
     "fields": {
         "sw_port": 23, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00106"
     }
 },
@@ -98001,7 +98001,7 @@
     "fields": {
         "sw_port": 22, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00106"
     }
 },
@@ -98011,7 +98011,7 @@
     "fields": {
         "sw_port": 10, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00133"
     }
 },
@@ -98021,7 +98021,7 @@
     "fields": {
         "sw_port": 14, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00027"
     }
 },
@@ -98031,7 +98031,7 @@
     "fields": {
         "sw_port": 19, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00109"
     }
 },
@@ -98041,7 +98041,7 @@
     "fields": {
         "sw_port": 17, 
         "sw_memo": "Polimer Savutich", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00001"
     }
 },
@@ -98051,7 +98051,7 @@
     "fields": {
         "sw_port": 23, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00005"
     }
 },
@@ -98061,7 +98061,7 @@
     "fields": {
         "sw_port": 23, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00027"
     }
 },
@@ -98071,7 +98071,7 @@
     "fields": {
         "sw_port": 19, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00099"
     }
 },
@@ -98081,7 +98081,7 @@
     "fields": {
         "sw_port": 4, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": ""
     }
 },
@@ -98091,7 +98091,7 @@
     "fields": {
         "sw_port": 19, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00083"
     }
 },
@@ -98101,7 +98101,7 @@
     "fields": {
         "sw_port": 24, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00054"
     }
 },
@@ -98111,7 +98111,7 @@
     "fields": {
         "sw_port": 6, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00089"
     }
 },
@@ -98121,7 +98121,7 @@
     "fields": {
         "sw_port": 24, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00117"
     }
 },
@@ -98131,7 +98131,7 @@
     "fields": {
         "sw_port": 22, 
         "sw_memo": "caio", 
-        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_info": "Битый", 
         "sw_sn": "00022"
     }
 },
@@ -98141,7 +98141,7 @@
     "fields": {
         "sw_port": 6, 
         "sw_memo": "spamer", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00077"
     }
 },
@@ -98151,7 +98151,7 @@
     "fields": {
         "sw_port": 5, 
         "sw_memo": "spamer", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00049"
     }
 },
@@ -98161,7 +98161,7 @@
     "fields": {
         "sw_port": 2, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00006"
     }
 },
@@ -98171,7 +98171,7 @@
     "fields": {
         "sw_port": 9, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00098"
     }
 },
@@ -98181,7 +98181,7 @@
     "fields": {
         "sw_port": 7, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00062"
     }
 },
@@ -98191,7 +98191,7 @@
     "fields": {
         "sw_port": 2, 
         "sw_memo": "?eaa 10 aeneo caanu", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00025"
     }
 },
@@ -98201,7 +98201,7 @@
     "fields": {
         "sw_port": 13, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00046"
     }
 },
@@ -98211,7 +98211,7 @@
     "fields": {
         "sw_port": 20, 
         "sw_memo": "Spamer 05.01.2006", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00026"
     }
 },
@@ -98221,7 +98221,7 @@
     "fields": {
         "sw_port": 11, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00012"
     }
 },
@@ -98231,7 +98231,7 @@
     "fields": {
         "sw_port": 21, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00014"
     }
 },
@@ -98241,7 +98241,7 @@
     "fields": {
         "sw_port": 9, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00040"
     }
 },
@@ -98251,7 +98251,7 @@
     "fields": {
         "sw_port": 17, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00058"
     }
 },
@@ -98261,7 +98261,7 @@
     "fields": {
         "sw_port": 16, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00022"
     }
 },
@@ -98271,7 +98271,7 @@
     "fields": {
         "sw_port": 15, 
         "sw_memo": "Geralt = )", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00104"
     }
 },
@@ -98281,7 +98281,7 @@
     "fields": {
         "sw_port": 11, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00013"
     }
 },
@@ -98291,7 +98291,7 @@
     "fields": {
         "sw_port": 23, 
         "sw_memo": "Nedanchichi", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00055"
     }
 },
@@ -98301,7 +98301,7 @@
     "fields": {
         "sw_port": 14, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00026"
     }
 },
@@ -98311,7 +98311,7 @@
     "fields": {
         "sw_port": 8, 
         "sw_memo": "Oaeeei 33/2", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00025"
     }
 },
@@ -98321,7 +98321,7 @@
     "fields": {
         "sw_port": 16, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00043"
     }
 },
@@ -98331,7 +98331,7 @@
     "fields": {
         "sw_port": 19, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00053"
     }
 },
@@ -98341,7 +98341,7 @@
     "fields": {
         "sw_port": 11, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00039"
     }
 },
@@ -98351,7 +98351,7 @@
     "fields": {
         "sw_port": 12, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00120"
     }
 },
@@ -98361,7 +98361,7 @@
     "fields": {
         "sw_port": 11, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00061"
     }
 },
@@ -98371,7 +98371,7 @@
     "fields": {
         "sw_port": 14, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00011"
     }
 },
@@ -98381,7 +98381,7 @@
     "fields": {
         "sw_port": 4, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00011"
     }
 },
@@ -98391,7 +98391,7 @@
     "fields": {
         "sw_port": 17, 
         "sw_memo": "spamer", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00067"
     }
 },
@@ -98401,7 +98401,7 @@
     "fields": {
         "sw_port": 19, 
         "sw_memo": "spamer 1-11-2007", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00117"
     }
 },
@@ -98411,7 +98411,7 @@
     "fields": {
         "sw_port": 21, 
         "sw_memo": "Spamer 11.01.2007", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00081"
     }
 },
@@ -98421,7 +98421,7 @@
     "fields": {
         "sw_port": 17, 
         "sw_memo": "Spamer 11.01.2007", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00010"
     }
 },
@@ -98431,7 +98431,7 @@
     "fields": {
         "sw_port": 21, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": ""
     }
 },
@@ -98441,7 +98441,7 @@
     "fields": {
         "sw_port": 13, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00087"
     }
 },
@@ -98451,7 +98451,7 @@
     "fields": {
         "sw_port": 23, 
         "sw_memo": "aeoue", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "33333"
     }
 },
@@ -98461,7 +98461,7 @@
     "fields": {
         "sw_port": 2, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00022"
     }
 },
@@ -98471,7 +98471,7 @@
     "fields": {
         "sw_port": 2, 
         "sw_memo": "bitui", 
-        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_info": "Битый", 
         "sw_sn": "00098"
     }
 },
@@ -98481,7 +98481,7 @@
     "fields": {
         "sw_port": 18, 
         "sw_memo": "bitui", 
-        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_info": "Битый", 
         "sw_sn": "00098"
     }
 },
@@ -98491,7 +98491,7 @@
     "fields": {
         "sw_port": 19, 
         "sw_memo": "", 
-        "sw_info": "\u00d2\u00e5\u00f1\u00f2\u00e8\u00f0\u00ee\u00e2\u00e0\u00ed\u00e8\u00e5", 
+        "sw_info": "Тестирование", 
         "sw_sn": "00091"
     }
 },
@@ -98501,7 +98501,7 @@
     "fields": {
         "sw_port": 20, 
         "sw_memo": "", 
-        "sw_info": "\u00d2\u00e5\u00f1\u00f2\u00e8\u00f0\u00ee\u00e2\u00e0\u00ed\u00e8\u00e5", 
+        "sw_info": "Тестирование", 
         "sw_sn": "00091"
     }
 },
@@ -98511,7 +98511,7 @@
     "fields": {
         "sw_port": 16, 
         "sw_memo": "", 
-        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_info": "Битый", 
         "sw_sn": "99998"
     }
 },
@@ -98521,7 +98521,7 @@
     "fields": {
         "sw_port": 23, 
         "sw_memo": "N?aa i?eoiaeo n ?eae 9", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00035"
     }
 },
@@ -98531,7 +98531,7 @@
     "fields": {
         "sw_port": 23, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": ""
     }
 },
@@ -98541,7 +98541,7 @@
     "fields": {
         "sw_port": 24, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00074"
     }
 },
@@ -98551,7 +98551,7 @@
     "fields": {
         "sw_port": 5, 
         "sw_memo": "GNTC (Roddom)", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00017"
     }
 },
@@ -98561,7 +98561,7 @@
     "fields": {
         "sw_port": 2, 
         "sw_memo": "Ki-2-7", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00002"
     }
 },
@@ -98571,7 +98571,7 @@
     "fields": {
         "sw_port": 11, 
         "sw_memo": "", 
-        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_info": "Битый", 
         "sw_sn": "00074"
     }
 },
@@ -98581,7 +98581,7 @@
     "fields": {
         "sw_port": 14, 
         "sw_memo": "", 
-        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_info": "Битый", 
         "sw_sn": "00077"
     }
 },
@@ -98591,7 +98591,7 @@
     "fields": {
         "sw_port": 21, 
         "sw_memo": "", 
-        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_info": "Битый", 
         "sw_sn": "00054"
     }
 },
@@ -98601,7 +98601,7 @@
     "fields": {
         "sw_port": 20, 
         "sw_memo": "", 
-        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_info": "Битый", 
         "sw_sn": "00097"
     }
 },
@@ -98611,7 +98611,7 @@
     "fields": {
         "sw_port": 14, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": ""
     }
 },
@@ -98621,7 +98621,7 @@
     "fields": {
         "sw_port": 19, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00023"
     }
 },
@@ -98631,7 +98631,7 @@
     "fields": {
         "sw_port": 1, 
         "sw_memo": "", 
-        "sw_info": "\u00d2\u00e5\u00f1\u00f2\u00e8\u00f0\u00ee\u00e2\u00e0\u00ed\u00e8\u00e5", 
+        "sw_info": "Тестирование", 
         "sw_sn": "00090"
     }
 },
@@ -98641,7 +98641,7 @@
     "fields": {
         "sw_port": 14, 
         "sw_memo": "student mudak", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00090"
     }
 },
@@ -98651,7 +98651,7 @@
     "fields": {
         "sw_port": 6, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00071"
     }
 },
@@ -98661,7 +98661,7 @@
     "fields": {
         "sw_port": 7, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": ""
     }
 },
@@ -98671,7 +98671,7 @@
     "fields": {
         "sw_port": 16, 
         "sw_memo": "", 
-        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_info": "Битый", 
         "sw_sn": "00040"
     }
 },
@@ -98681,7 +98681,7 @@
     "fields": {
         "sw_port": 18, 
         "sw_memo": "", 
-        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_info": "Битый", 
         "sw_sn": "00040"
     }
 },
@@ -98691,7 +98691,7 @@
     "fields": {
         "sw_port": 21, 
         "sw_memo": "", 
-        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_info": "Битый", 
         "sw_sn": "00040"
     }
 },
@@ -98701,7 +98701,7 @@
     "fields": {
         "sw_port": 23, 
         "sw_memo": "", 
-        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_info": "Битый", 
         "sw_sn": "00040"
     }
 },
@@ -98711,7 +98711,7 @@
     "fields": {
         "sw_port": 2, 
         "sw_memo": "", 
-        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_info": "Битый", 
         "sw_sn": "00040"
     }
 },
@@ -98721,7 +98721,7 @@
     "fields": {
         "sw_port": 6, 
         "sw_memo": "ARB", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00125"
     }
 },
@@ -98731,7 +98731,7 @@
     "fields": {
         "sw_port": 7, 
         "sw_memo": "ARB", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00125"
     }
 },
@@ -98741,7 +98741,7 @@
     "fields": {
         "sw_port": 15, 
         "sw_memo": "geralt", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00106"
     }
 },
@@ -98751,7 +98751,7 @@
     "fields": {
         "sw_port": 6, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00011"
     }
 },
@@ -98761,7 +98761,7 @@
     "fields": {
         "sw_port": 5, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00011"
     }
 },
@@ -98771,7 +98771,7 @@
     "fields": {
         "sw_port": 19, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00011"
     }
 },
@@ -98781,7 +98781,7 @@
     "fields": {
         "sw_port": 9, 
         "sw_memo": "ki-rus", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00022"
     }
 },
@@ -98791,7 +98791,7 @@
     "fields": {
         "sw_port": 9, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00083"
     }
 },
@@ -98801,7 +98801,7 @@
     "fields": {
         "sw_port": 21, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00099"
     }
 },
@@ -98811,7 +98811,7 @@
     "fields": {
         "sw_port": 11, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": ""
     }
 },
@@ -98821,7 +98821,7 @@
     "fields": {
         "sw_port": 9, 
         "sw_memo": "aeoue", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00053"
     }
 },
@@ -98831,7 +98831,7 @@
     "fields": {
         "sw_port": 18, 
         "sw_memo": "aeoue", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00053"
     }
 },
@@ -98841,7 +98841,7 @@
     "fields": {
         "sw_port": 14, 
         "sw_memo": "aeoue", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00053"
     }
 },
@@ -98851,7 +98851,7 @@
     "fields": {
         "sw_port": 3, 
         "sw_memo": "ii?o ?eaie", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00043"
     }
 },
@@ -98861,7 +98861,7 @@
     "fields": {
         "sw_port": 14, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00039"
     }
 },
@@ -98871,7 +98871,7 @@
     "fields": {
         "sw_port": 13, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00039"
     }
 },
@@ -98881,7 +98881,7 @@
     "fields": {
         "sw_port": 15, 
         "sw_memo": "nedanchichi", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00039"
     }
 },
@@ -98891,7 +98891,7 @@
     "fields": {
         "sw_port": 17, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00011"
     }
 },
@@ -98901,7 +98901,7 @@
     "fields": {
         "sw_port": 19, 
         "sw_memo": "strum, 27y kottedg", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00092"
     }
 },
@@ -98911,7 +98911,7 @@
     "fields": {
         "sw_port": 6, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": ""
     }
 },
@@ -98921,7 +98921,7 @@
     "fields": {
         "sw_port": 24, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": ""
     }
 },
@@ -98931,7 +98931,7 @@
     "fields": {
         "sw_port": 24, 
         "sw_memo": "matvienko", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00013"
     }
 },
@@ -98941,7 +98941,7 @@
     "fields": {
         "sw_port": 17, 
         "sw_memo": "KronPack", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00039"
     }
 },
@@ -98951,7 +98951,7 @@
     "fields": {
         "sw_port": 15, 
         "sw_memo": "", 
-        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_info": "Битый", 
         "sw_sn": "00107"
     }
 },
@@ -98961,7 +98961,7 @@
     "fields": {
         "sw_port": 17, 
         "sw_memo": "", 
-        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_info": "Битый", 
         "sw_sn": "00107"
     }
 },
@@ -98971,7 +98971,7 @@
     "fields": {
         "sw_port": 12, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": ""
     }
 },
@@ -98981,7 +98981,7 @@
     "fields": {
         "sw_port": 17, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": ""
     }
 },
@@ -98991,7 +98991,7 @@
     "fields": {
         "sw_port": 14, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00032"
     }
 },
@@ -99001,7 +99001,7 @@
     "fields": {
         "sw_port": 5, 
         "sw_memo": "office", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00061"
     }
 },
@@ -99011,7 +99011,7 @@
     "fields": {
         "sw_port": 19, 
         "sw_memo": "", 
-        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_info": "Битый", 
         "sw_sn": "00061"
     }
 },
@@ -99021,7 +99021,7 @@
     "fields": {
         "sw_port": 5, 
         "sw_memo": "", 
-        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_info": "Битый", 
         "sw_sn": "00085"
     }
 },
@@ -99031,7 +99031,7 @@
     "fields": {
         "sw_port": 26, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00099"
     }
 },
@@ -99041,7 +99041,7 @@
     "fields": {
         "sw_port": 16, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": ""
     }
 },
@@ -99051,7 +99051,7 @@
     "fields": {
         "sw_port": 15, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": ""
     }
 },
@@ -99061,7 +99061,7 @@
     "fields": {
         "sw_port": 17, 
         "sw_memo": "", 
-        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_info": "Битый", 
         "sw_sn": "00062"
     }
 },
@@ -99071,7 +99071,7 @@
     "fields": {
         "sw_port": 5, 
         "sw_memo": "", 
-        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_info": "Битый", 
         "sw_sn": "00107"
     }
 },
@@ -99081,7 +99081,7 @@
     "fields": {
         "sw_port": 7, 
         "sw_memo": "", 
-        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_info": "Битый", 
         "sw_sn": "00107"
     }
 },
@@ -99091,7 +99091,7 @@
     "fields": {
         "sw_port": 23, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00008"
     }
 },
@@ -99101,7 +99101,7 @@
     "fields": {
         "sw_port": 15, 
         "sw_memo": "Ki-8-7", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00008"
     }
 },
@@ -99111,7 +99111,7 @@
     "fields": {
         "sw_port": 3, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00063"
     }
 },
@@ -99121,7 +99121,7 @@
     "fields": {
         "sw_port": 12, 
         "sw_memo": "", 
-        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_info": "Битый", 
         "sw_sn": "00092"
     }
 },
@@ -99131,7 +99131,7 @@
     "fields": {
         "sw_port": 26, 
         "sw_memo": "", 
-        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_info": "Битый", 
         "sw_sn": "00092"
     }
 },
@@ -99141,7 +99141,7 @@
     "fields": {
         "sw_port": 30, 
         "sw_memo": "", 
-        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_info": "Битый", 
         "sw_sn": "00092"
     }
 },
@@ -99151,7 +99151,7 @@
     "fields": {
         "sw_port": 31, 
         "sw_memo": "", 
-        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_info": "Битый", 
         "sw_sn": "00092"
     }
 },
@@ -99161,7 +99161,7 @@
     "fields": {
         "sw_port": 22, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": ""
     }
 },
@@ -99171,7 +99171,7 @@
     "fields": {
         "sw_port": 22, 
         "sw_memo": "4ernobyl", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00004"
     }
 },
@@ -99181,7 +99181,7 @@
     "fields": {
         "sw_port": 9, 
         "sw_memo": "aeoue", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00039"
     }
 },
@@ -99191,7 +99191,7 @@
     "fields": {
         "sw_port": 10, 
         "sw_memo": "aeoue", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00039"
     }
 },
@@ -99201,7 +99201,7 @@
     "fields": {
         "sw_port": 12, 
         "sw_memo": "aeoue", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00039"
     }
 },
@@ -99211,7 +99211,7 @@
     "fields": {
         "sw_port": 14, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00099"
     }
 },
@@ -99221,7 +99221,7 @@
     "fields": {
         "sw_port": 5, 
         "sw_memo": "", 
-        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_info": "Битый", 
         "sw_sn": "00047"
     }
 },
@@ -99231,7 +99231,7 @@
     "fields": {
         "sw_port": 6, 
         "sw_memo": "", 
-        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_info": "Битый", 
         "sw_sn": "00047"
     }
 },
@@ -99241,7 +99241,7 @@
     "fields": {
         "sw_port": 8, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00018"
     }
 },
@@ -99251,7 +99251,7 @@
     "fields": {
         "sw_port": 15, 
         "sw_memo": "Grinya", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00049"
     }
 },
@@ -99261,7 +99261,7 @@
     "fields": {
         "sw_port": 6, 
         "sw_memo": "PODMENA IP", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00038"
     }
 },
@@ -99271,7 +99271,7 @@
     "fields": {
         "sw_port": 8, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00040"
     }
 },
@@ -99281,7 +99281,7 @@
     "fields": {
         "sw_port": 2, 
         "sw_memo": "ARB", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00089"
     }
 },
@@ -99291,7 +99291,7 @@
     "fields": {
         "sw_port": 3, 
         "sw_memo": "ARB", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00089"
     }
 },
@@ -99301,7 +99301,7 @@
     "fields": {
         "sw_port": 17, 
         "sw_memo": "", 
-        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_info": "Битый", 
         "sw_sn": "00030"
     }
 },
@@ -99311,7 +99311,7 @@
     "fields": {
         "sw_port": 23, 
         "sw_memo": "PMU", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00017"
     }
 },
@@ -99321,7 +99321,7 @@
     "fields": {
         "sw_port": 8, 
         "sw_memo": "?acaeoea aeciana Ki-15", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00061"
     }
 },
@@ -99331,7 +99331,7 @@
     "fields": {
         "sw_port": 5, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": ""
     }
 },
@@ -99341,7 +99341,7 @@
     "fields": {
         "sw_port": 19, 
         "sw_memo": "", 
-        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_info": "Битый", 
         "sw_sn": "00107"
     }
 },
@@ -99351,7 +99351,7 @@
     "fields": {
         "sw_port": 13, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "ZAO"
     }
 },
@@ -99361,7 +99361,7 @@
     "fields": {
         "sw_port": 21, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00127"
     }
 },
@@ -99371,7 +99371,7 @@
     "fields": {
         "sw_port": 17, 
         "sw_memo": "AP Oniko 10.3.4.116", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00055"
     }
 },
@@ -99381,7 +99381,7 @@
     "fields": {
         "sw_port": 6, 
         "sw_memo": "", 
-        "sw_info": "\u00d2\u00e5\u00f1\u00f2\u00e8\u00f0\u00ee\u00e2\u00e0\u00ed\u00e8\u00e5", 
+        "sw_info": "Тестирование", 
         "sw_sn": "00116"
     }
 },
@@ -99391,7 +99391,7 @@
     "fields": {
         "sw_port": 6, 
         "sw_memo": "", 
-        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_info": "Битый", 
         "sw_sn": "00026"
     }
 },
@@ -99401,7 +99401,7 @@
     "fields": {
         "sw_port": 23, 
         "sw_memo": "Signalka", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00091"
     }
 },
@@ -99411,7 +99411,7 @@
     "fields": {
         "sw_port": 48, 
         "sw_memo": "Ryabushkina", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00106"
     }
 },
@@ -99421,7 +99421,7 @@
     "fields": {
         "sw_port": 18, 
         "sw_memo": "AP_13", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "ZAO"
     }
 },
@@ -99431,7 +99431,7 @@
     "fields": {
         "sw_port": 9, 
         "sw_memo": "", 
-        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_info": "Битый", 
         "sw_sn": "00034"
     }
 },
@@ -99441,7 +99441,7 @@
     "fields": {
         "sw_port": 21, 
         "sw_memo": "", 
-        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_info": "Битый", 
         "sw_sn": "00034"
     }
 },
@@ -99451,7 +99451,7 @@
     "fields": {
         "sw_port": 14, 
         "sw_memo": "", 
-        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_info": "Битый", 
         "sw_sn": "00070"
     }
 },
@@ -99461,7 +99461,7 @@
     "fields": {
         "sw_port": 7, 
         "sw_memo": "Neaiaeea", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00070"
     }
 },
@@ -99471,7 +99471,7 @@
     "fields": {
         "sw_port": 2, 
         "sw_memo": "", 
-        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_info": "Битый", 
         "sw_sn": "00005"
     }
 },
@@ -99481,7 +99481,7 @@
     "fields": {
         "sw_port": 14, 
         "sw_memo": "", 
-        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_info": "Битый", 
         "sw_sn": "00005"
     }
 },
@@ -99491,7 +99491,7 @@
     "fields": {
         "sw_port": 21, 
         "sw_memo": "", 
-        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_info": "Битый", 
         "sw_sn": "00011"
     }
 },
@@ -99501,7 +99501,7 @@
     "fields": {
         "sw_port": 22, 
         "sw_memo": "", 
-        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_info": "Битый", 
         "sw_sn": "00011"
     }
 },
@@ -99511,7 +99511,7 @@
     "fields": {
         "sw_port": 6, 
         "sw_memo": "Sarmat", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00017"
     }
 },
@@ -99521,7 +99521,7 @@
     "fields": {
         "sw_port": 2, 
         "sw_memo": "ARB", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00091"
     }
 },
@@ -99531,7 +99531,7 @@
     "fields": {
         "sw_port": 3, 
         "sw_memo": "ARB", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00091"
     }
 },
@@ -99541,7 +99541,7 @@
     "fields": {
         "sw_port": 7, 
         "sw_memo": "ia oae?aeoa aiaa?aiiue. Dark", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00080"
     }
 },
@@ -99551,7 +99551,7 @@
     "fields": {
         "sw_port": 21, 
         "sw_memo": "wl3", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00055"
     }
 },
@@ -99561,7 +99561,7 @@
     "fields": {
         "sw_port": 15, 
         "sw_memo": "A?aaoi aia.i. Ei?iaa", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00063"
     }
 },
@@ -99571,7 +99571,7 @@
     "fields": {
         "sw_port": 22, 
         "sw_memo": "toropcev", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00072"
     }
 },
@@ -99581,7 +99581,7 @@
     "fields": {
         "sw_port": 47, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": ""
     }
 },
@@ -99591,7 +99591,7 @@
     "fields": {
         "sw_port": 8, 
         "sw_memo": "", 
-        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_info": "Битый", 
         "sw_sn": "00096"
     }
 },
@@ -99601,7 +99601,7 @@
     "fields": {
         "sw_port": 22, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "ZAO"
     }
 },
@@ -99611,7 +99611,7 @@
     "fields": {
         "sw_port": 14, 
         "sw_memo": "", 
-        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_info": "Битый", 
         "sw_sn": "00106"
     }
 },
@@ -99621,7 +99621,7 @@
     "fields": {
         "sw_port": 23, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "00018"
     }
 },
@@ -99631,7 +99631,7 @@
     "fields": {
         "sw_port": 15, 
         "sw_memo": "", 
-        "sw_info": "\u00d2\u00e5\u00f1\u00f2\u00e8\u00f0\u00ee\u00e2\u00e0\u00ed\u00e8\u00e5", 
+        "sw_info": "Тестирование", 
         "sw_sn": "00099"
     }
 },
@@ -99641,7 +99641,7 @@
     "fields": {
         "sw_port": 16, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01545"
     }
 },
@@ -99650,8 +99650,8 @@
     "model": "ABNS.ports_info", 
     "fields": {
         "sw_port": 47, 
-        "sw_memo": "\u00d1\u00e8\u00e3\u00ed\u00e0\u00eb\u00ea\u00e0", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_memo": "Сигналка", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01690"
     }
 },
@@ -99661,7 +99661,7 @@
     "fields": {
         "sw_port": 11, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01614"
     }
 },
@@ -99671,7 +99671,7 @@
     "fields": {
         "sw_port": 11, 
         "sw_memo": "dark", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01690"
     }
 },
@@ -99681,7 +99681,7 @@
     "fields": {
         "sw_port": 9, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01690"
     }
 },
@@ -99691,7 +99691,7 @@
     "fields": {
         "sw_port": 31, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01969"
     }
 },
@@ -99701,7 +99701,7 @@
     "fields": {
         "sw_port": 41, 
         "sw_memo": "Ayeue", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01546"
     }
 },
@@ -99711,7 +99711,7 @@
     "fields": {
         "sw_port": 41, 
         "sw_memo": "Ayeue", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01999"
     }
 },
@@ -99721,7 +99721,7 @@
     "fields": {
         "sw_port": 16, 
         "sw_memo": "Aaiy", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01546"
     }
 },
@@ -99731,7 +99731,7 @@
     "fields": {
         "sw_port": 11, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01578"
     }
 },
@@ -99741,7 +99741,7 @@
     "fields": {
         "sw_port": 47, 
         "sw_memo": "Kvartal", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01652"
     }
 },
@@ -99751,7 +99751,7 @@
     "fields": {
         "sw_port": 9, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01652"
     }
 },
@@ -99761,7 +99761,7 @@
     "fields": {
         "sw_port": 1, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01783"
     }
 },
@@ -99771,7 +99771,7 @@
     "fields": {
         "sw_port": 31, 
         "sw_memo": "virus", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01663"
     }
 },
@@ -99781,7 +99781,7 @@
     "fields": {
         "sw_port": 24, 
         "sw_memo": "neaiaeea", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01555"
     }
 },
@@ -99791,7 +99791,7 @@
     "fields": {
         "sw_port": 47, 
         "sw_memo": "?EO + Ee-130", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01570"
     }
 },
@@ -99801,7 +99801,7 @@
     "fields": {
         "sw_port": 47, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "02034"
     }
 },
@@ -99811,7 +99811,7 @@
     "fields": {
         "sw_port": 18, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "02022"
     }
 },
@@ -99821,7 +99821,7 @@
     "fields": {
         "sw_port": 7, 
         "sw_memo": "neo", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01585"
     }
 },
@@ -99831,7 +99831,7 @@
     "fields": {
         "sw_port": 8, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01784"
     }
 },
@@ -99841,7 +99841,7 @@
     "fields": {
         "sw_port": 47, 
         "sw_memo": "lamer", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01966"
     }
 },
@@ -99851,7 +99851,7 @@
     "fields": {
         "sw_port": 48, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01966"
     }
 },
@@ -99861,7 +99861,7 @@
     "fields": {
         "sw_port": 4, 
         "sw_memo": "Navarka", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01616"
     }
 },
@@ -99871,7 +99871,7 @@
     "fields": {
         "sw_port": 41, 
         "sw_memo": "Ayeue", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "02004"
     }
 },
@@ -99881,7 +99881,7 @@
     "fields": {
         "sw_port": 6, 
         "sw_memo": "ia?aaioaao", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "02007"
     }
 },
@@ -99891,7 +99891,7 @@
     "fields": {
         "sw_port": 17, 
         "sw_memo": "PromBaza", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01625"
     }
 },
@@ -99901,7 +99901,7 @@
     "fields": {
         "sw_port": 47, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01625"
     }
 },
@@ -99911,7 +99911,7 @@
     "fields": {
         "sw_port": 21, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01625"
     }
 },
@@ -99921,7 +99921,7 @@
     "fields": {
         "sw_port": 48, 
         "sw_memo": "Neaiaeea", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01100"
     }
 },
@@ -99931,7 +99931,7 @@
     "fields": {
         "sw_port": 45, 
         "sw_memo": "Neaiaeea", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01655"
     }
 },
@@ -99941,7 +99941,7 @@
     "fields": {
         "sw_port": 16, 
         "sw_memo": "Neaiaeea", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01691"
     }
 },
@@ -99951,7 +99951,7 @@
     "fields": {
         "sw_port": 6, 
         "sw_memo": "Sarmat", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01784"
     }
 },
@@ -99961,7 +99961,7 @@
     "fields": {
         "sw_port": 14, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01689"
     }
 },
@@ -99971,7 +99971,7 @@
     "fields": {
         "sw_port": 45, 
         "sw_memo": "iiaa?ea", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01110"
     }
 },
@@ -99981,7 +99981,7 @@
     "fields": {
         "sw_port": 12, 
         "sw_memo": "Neaiaeea", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01662"
     }
 },
@@ -99991,7 +99991,7 @@
     "fields": {
         "sw_port": 48, 
         "sw_memo": "Neaiaeecaoey", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01614"
     }
 },
@@ -100001,7 +100001,7 @@
     "fields": {
         "sw_port": 2, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01643"
     }
 },
@@ -100011,7 +100011,7 @@
     "fields": {
         "sw_port": 17, 
         "sw_memo": "AP 100", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "02022"
     }
 },
@@ -100021,7 +100021,7 @@
     "fields": {
         "sw_port": 24, 
         "sw_memo": "signalka", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "02030"
     }
 },
@@ -100031,7 +100031,7 @@
     "fields": {
         "sw_port": 20, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01951"
     }
 },
@@ -100041,7 +100041,7 @@
     "fields": {
         "sw_port": 29, 
         "sw_memo": "", 
-        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_info": "Битый", 
         "sw_sn": "01652"
     }
 },
@@ -100051,7 +100051,7 @@
     "fields": {
         "sw_port": 7, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01951"
     }
 },
@@ -100061,7 +100061,7 @@
     "fields": {
         "sw_port": 8, 
         "sw_memo": "aaia", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01643"
     }
 },
@@ -100071,7 +100071,7 @@
     "fields": {
         "sw_port": 10, 
         "sw_memo": "neeuii", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01643"
     }
 },
@@ -100081,7 +100081,7 @@
     "fields": {
         "sw_port": 7, 
         "sw_memo": "umer", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01677"
     }
 },
@@ -100091,7 +100091,7 @@
     "fields": {
         "sw_port": 37, 
         "sw_memo": "umer", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01677"
     }
 },
@@ -100101,7 +100101,7 @@
     "fields": {
         "sw_port": 38, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01677"
     }
 },
@@ -100111,7 +100111,7 @@
     "fields": {
         "sw_port": 23, 
         "sw_memo": "Promkomplekt PKF", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01952"
     }
 },
@@ -100121,7 +100121,7 @@
     "fields": {
         "sw_port": 4, 
         "sw_memo": "signalka", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01679"
     }
 },
@@ -100131,7 +100131,7 @@
     "fields": {
         "sw_port": 47, 
         "sw_memo": "Neaiaeea+eeeaio", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01677"
     }
 },
@@ -100141,7 +100141,7 @@
     "fields": {
         "sw_port": 21, 
         "sw_memo": "PMU dir", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "02021"
     }
 },
@@ -100151,7 +100151,7 @@
     "fields": {
         "sw_port": 22, 
         "sw_memo": "Eooeoa", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01596"
     }
 },
@@ -100161,7 +100161,7 @@
     "fields": {
         "sw_port": 38, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01649"
     }
 },
@@ -100171,7 +100171,7 @@
     "fields": {
         "sw_port": 47, 
         "sw_memo": "Ri-10", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01591"
     }
 },
@@ -100181,7 +100181,7 @@
     "fields": {
         "sw_port": 12, 
         "sw_memo": "Adidas", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01687"
     }
 },
@@ -100191,7 +100191,7 @@
     "fields": {
         "sw_port": 12, 
         "sw_memo": "Sverit MAC i dobavit v bazu", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01670"
     }
 },
@@ -100201,7 +100201,7 @@
     "fields": {
         "sw_port": 5, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "000018"
     }
 },
@@ -100211,7 +100211,7 @@
     "fields": {
         "sw_port": 20, 
         "sw_memo": "maltsev", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01616"
     }
 },
@@ -100221,7 +100221,7 @@
     "fields": {
         "sw_port": 26, 
         "sw_memo": "umer", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01677"
     }
 },
@@ -100231,7 +100231,7 @@
     "fields": {
         "sw_port": 46, 
         "sw_memo": "?acaa?a", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01666"
     }
 },
@@ -100241,7 +100241,7 @@
     "fields": {
         "sw_port": 12, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01951"
     }
 },
@@ -100251,7 +100251,7 @@
     "fields": {
         "sw_port": 46, 
         "sw_memo": "Green", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "000033"
     }
 },
@@ -100261,7 +100261,7 @@
     "fields": {
         "sw_port": 48, 
         "sw_memo": "Neaiaeea", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "000033"
     }
 },
@@ -100271,7 +100271,7 @@
     "fields": {
         "sw_port": 11, 
         "sw_memo": "signalka", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01621"
     }
 },
@@ -100281,7 +100281,7 @@
     "fields": {
         "sw_port": 1, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01678"
     }
 },
@@ -100291,7 +100291,7 @@
     "fields": {
         "sw_port": 31, 
         "sw_memo": "lapaev", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01961"
     }
 },
@@ -100301,7 +100301,7 @@
     "fields": {
         "sw_port": 27, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01968"
     }
 },
@@ -100311,7 +100311,7 @@
     "fields": {
         "sw_port": 25, 
         "sw_memo": "Lamer", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01966"
     }
 },
@@ -100321,7 +100321,7 @@
     "fields": {
         "sw_port": 1, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01665"
     }
 },
@@ -100331,7 +100331,7 @@
     "fields": {
         "sw_port": 12, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01665"
     }
 },
@@ -100341,7 +100341,7 @@
     "fields": {
         "sw_port": 31, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01665"
     }
 },
@@ -100351,7 +100351,7 @@
     "fields": {
         "sw_port": 32, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01665"
     }
 },
@@ -100360,8 +100360,8 @@
     "model": "ABNS.ports_info", 
     "fields": {
         "sw_port": 43, 
-        "sw_memo": "4 \u00f8\u00ea\u00ee\u00eb\u00e0", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_memo": "4 школа", 
+        "sw_info": "Рабочий", 
         "sw_sn": "02012"
     }
 },
@@ -100370,8 +100370,8 @@
     "model": "ABNS.ports_info", 
     "fields": {
         "sw_port": 44, 
-        "sw_memo": "4 \u00f8\u00ea\u00ee\u00eb\u00e0", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_memo": "4 школа", 
+        "sw_info": "Рабочий", 
         "sw_sn": "02012"
     }
 },
@@ -100381,7 +100381,7 @@
     "fields": {
         "sw_port": 6, 
         "sw_memo": "Slim", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01683"
     }
 },
@@ -100391,7 +100391,7 @@
     "fields": {
         "sw_port": 45, 
         "sw_memo": "oaii?iy", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01784"
     }
 },
@@ -100401,7 +100401,7 @@
     "fields": {
         "sw_port": 10, 
         "sw_memo": "Silpo", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "02027"
     }
 },
@@ -100411,7 +100411,7 @@
     "fields": {
         "sw_port": 48, 
         "sw_memo": "signalka", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01682"
     }
 },
@@ -100421,7 +100421,7 @@
     "fields": {
         "sw_port": 46, 
         "sw_memo": "aioo", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01784"
     }
 },
@@ -100431,7 +100431,7 @@
     "fields": {
         "sw_port": 9, 
         "sw_memo": "", 
-        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_info": "Битый", 
         "sw_sn": "01685"
     }
 },
@@ -100441,7 +100441,7 @@
     "fields": {
         "sw_port": 10, 
         "sw_memo": "", 
-        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_info": "Битый", 
         "sw_sn": "01685"
     }
 },
@@ -100451,7 +100451,7 @@
     "fields": {
         "sw_port": 2, 
         "sw_memo": "trank arb", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01681"
     }
 },
@@ -100461,7 +100461,7 @@
     "fields": {
         "sw_port": 3, 
         "sw_memo": "trank arb", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01681"
     }
 },
@@ -100471,7 +100471,7 @@
     "fields": {
         "sw_port": 37, 
         "sw_memo": "wifi razdacha", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01600"
     }
 },
@@ -100481,7 +100481,7 @@
     "fields": {
         "sw_port": 47, 
         "sw_memo": "eaia?", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01577"
     }
 },
@@ -100491,7 +100491,7 @@
     "fields": {
         "sw_port": 36, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "000018"
     }
 },
@@ -100501,7 +100501,7 @@
     "fields": {
         "sw_port": 8, 
         "sw_memo": "Bulavina", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "02027"
     }
 },
@@ -100511,7 +100511,7 @@
     "fields": {
         "sw_port": 10, 
         "sw_memo": "Bulavin", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "02022"
     }
 },
@@ -100521,7 +100521,7 @@
     "fields": {
         "sw_port": 13, 
         "sw_memo": "Aieinie", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "000020"
     }
 },
@@ -100531,7 +100531,7 @@
     "fields": {
         "sw_port": 25, 
         "sw_memo": "Kluev", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01616"
     }
 },
@@ -100541,7 +100541,7 @@
     "fields": {
         "sw_port": 7, 
         "sw_memo": "Bridg ne zakryvat", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01626"
     }
 },
@@ -100551,7 +100551,7 @@
     "fields": {
         "sw_port": 15, 
         "sw_memo": "ianii?oiue", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01951"
     }
 },
@@ -100561,7 +100561,7 @@
     "fields": {
         "sw_port": 41, 
         "sw_memo": "", 
-        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_info": "Битый", 
         "sw_sn": "01976"
     }
 },
@@ -100571,7 +100571,7 @@
     "fields": {
         "sw_port": 29, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01665"
     }
 },
@@ -100581,7 +100581,7 @@
     "fields": {
         "sw_port": 37, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01665"
     }
 },
@@ -100591,7 +100591,7 @@
     "fields": {
         "sw_port": 38, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01665"
     }
 },
@@ -100601,7 +100601,7 @@
     "fields": {
         "sw_port": 20, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01676"
     }
 },
@@ -100611,7 +100611,7 @@
     "fields": {
         "sw_port": 13, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01786"
     }
 },
@@ -100621,7 +100621,7 @@
     "fields": {
         "sw_port": 37, 
         "sw_memo": "Podstancia", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01625"
     }
 },
@@ -100631,7 +100631,7 @@
     "fields": {
         "sw_port": 23, 
         "sw_memo": "A?", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01666"
     }
 },
@@ -100640,8 +100640,8 @@
     "model": "ABNS.ports_info", 
     "fields": {
         "sw_port": 21, 
-        "sw_memo": "\u00f1\u00e8\u00e3\u00ed\u00e0\u00eb\u00e8\u00e7\u00e0\u00f6\u00e8\u00ff", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_memo": "сигнализация", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01648"
     }
 },
@@ -100651,7 +100651,7 @@
     "fields": {
         "sw_port": 10, 
         "sw_memo": "", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01676"
     }
 },
@@ -100660,8 +100660,8 @@
     "model": "ABNS.ports_info", 
     "fields": {
         "sw_port": 32, 
-        "sw_memo": "\u00f8\u00ea\u00ee\u00eb\u00e0 2", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_memo": "школа 2", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01614"
     }
 },
@@ -100671,7 +100671,7 @@
     "fields": {
         "sw_port": 29, 
         "sw_memo": "Ap-1(16)", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01687"
     }
 },
@@ -100681,7 +100681,7 @@
     "fields": {
         "sw_port": 30, 
         "sw_memo": "lover", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01602"
     }
 },
@@ -100691,7 +100691,7 @@
     "fields": {
         "sw_port": 20, 
         "sw_memo": "", 
-        "sw_info": "\u00c1\u00e8\u00f2\u00fb\u00e9", 
+        "sw_info": "Битый", 
         "sw_sn": "01685"
     }
 },
@@ -100700,8 +100700,8 @@
     "model": "ABNS.ports_info", 
     "fields": {
         "sw_port": 19, 
-        "sw_memo": "\u00d0\u00e0\u00e7\u00e4\u00e0\u00f7\u00e0", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_memo": "Раздача", 
+        "sw_info": "Рабочий", 
         "sw_sn": "02012"
     }
 },
@@ -100711,7 +100711,7 @@
     "fields": {
         "sw_port": 12, 
         "sw_memo": "ki-69", 
-        "sw_info": "\u00d0\u00e0\u00e1\u00ee\u00f7\u00e8\u00e9", 
+        "sw_info": "Рабочий", 
         "sw_sn": "01666"
     }
 },

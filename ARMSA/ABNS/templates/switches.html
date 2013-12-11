@@ -1,89 +1,152 @@
 {% extends "base.html" %}
 {% load filterfortree %}
 {% block content %}
-<br>
+<div id="menu-buttons">
+<table class="menu-table">
+        <tr>
+            {% with a=st_id|add:"/"|add:ho_id%}
+            {% with n="users/"|add:a %}
+            <td><a href="." class="menu-grey-button" rel="menu" name={{ n }}>Пользователи</a></td>
+            {% endwith %}
+            {% with n="ports/"|add:a %}
+            <td><a href="." class="menu-grey-button" rel="menu" name={{ n }}>Порты</a></td>
+            {% endwith %}
+            {% with n="switches/"|add:a %}
+            <td><a href="." class="menu-grey-button" rel="menu" name={{ n }}>Коммутаторы</a></td>
+            {% endwith %}
+            {% with n="mac/"|add:a %}
+            <td><a href="." class="menu-grey-button" rel="menu" name={{ n }}>MAC</a></td>
+            {% endwith %}
+            {% endwith %}
+        </tr>
+    </table>
+</div>
+<div id="table-div">
+{% for switch in sw_query %}
+<b>{{ switch.sw_ip }}</b>
 <table class="users-table" id="usertable">
     <tr>
         <td>Порт</td>
         <td>Статус порта</td>
         <td>Состояние линка</td>
         <td>Доверенный</td>
-        <td>IP</td>
         <td>Квартира</td>
         <td>Состояние порта</td>
         <td>Примечание</td>
         <td>Изменить</td>
         <td>PortSecurity</td>
     </tr>
-    {% for entry in entries %}
-    <tr class="table-row">
-        {% with template="//127.0.0.1:8000/ABNS/clients/"|add:entry.street|add:"/"|add:entry.house|add:"/" %}
-        {% with n=entry.street|add:"/"|add:entry.house|add:"/"|add:entry.flat %}
-        <form action={{ template }} method="post" name={{ n }}>
-            {% endwith %}
-            {% endwith %}
-            {% csrf_token %}
-            <input type="hidden" name="id" value={{ entry.id }}>
-            {% include "streetsfield.html" %}
-            {% include "userrowfield.html" %}
-            <td><a href="." class="flat-grey-button" rel="srv">Сервис</a></td>
-            {% with r=forloop.counter|stringformat:"d" %}
-            <td><a href="." class="flat-grey-button" name={{ r }} rel="chg">Изменить</a></td>
-            {% endwith %}
-            {% with i=entry.id|stringformat:"d"|add:"/"|add:entry.street|add:"/"|add:entry.house|add:"/"|add:entry.flat %}
-            <td><a href="." class="flat-grey-button" name={{ i }} rel="del">Удалить</a></td>
-            {% endwith %}
-
-            {% if entry.active_state %}
-            <td>
-                <label id="yeslbl">
-                    <input type="checkbox" id="activated" name={{ entry.id|stringformat:"d"|add:"/"|add:entry.street|add:"/"|add:entry.house }} checked="checked" />ДА
-                </label>
-            </td>
-            {% else %}
-            <td>
-                <label id="nolbl">
-                    <input type="checkbox" id="activated" name={{ entry.id|stringformat:"d"|add:"/"|add:entry.street|add:"/"|add:entry.house }}  />НЕТ
-                </label>
-            </td>
-            {% endif %}
-
-            {% if entry.lock_state %}
-            <td>
-                <label id="nolbl">
-                    <input type="checkbox" id="locked" name={{ entry.id|stringformat:"d"|add:"/"|add:entry.street|add:"/"|add:entry.house }} checked="checked" />ДА
-                </label>
-            </td>
-            {% else %}
-            <td>
-                <label id="yeslbl">
-                    <input type="checkbox" id="locked" name={{ entry.id|stringformat:"d"|add:"/"|add:entry.street|add:"/"|add:entry.house }} />НЕТ
-                </label>
-            </td>
-            {% endif %}
+    {% with portnumber=switch.sw_ip|get_portnumber:ports %}
+    {% for iport in portnumber|times %}
+        {% with port=iport|add:1 %}
+            <tr class="table-row">
+            <td> {{ port }} </td>
             
 
-            {% with switch=entry.sw_ip %}
-            {% with port=entry.port %}
-            {% if switch == "0.0.0.0" or port == 0%}
-                <td><label id="blinklbl">???</label></td>
-                <td><label id="blinklbl">???</label></td>
-            {% else %}
-                {% with sw=entry.sw_ip|check_sw:pings %}
-                    {% if sw %}
-                        <td><label id="yeslbl">UP</label></td>
+            {% with switch_ip=switch.sw_ip %}
+                {% with sw_ping=switch_ip|check_sw:pings %}
+                    {% if sw_ping %}
+                        {% with pp=port|stringformat:"d" %}
+                            {% with p=switch_ip|add:":"|add:pp %}
+                                {% if p|check_port:status_ports == True %}
+                                    <td><label id="yeslbl"><input type="checkbox" id="portstatus" name={{ p|add:":"|add:switch.street|add:":"|add:switch.house }} checked="checked" />UP</label></td>
+                                {% else %}
+                                    <td><label id="nolbl"><input type="checkbox" id="portstatus" name={{ p|add:":"|add:switch.street|add:":"|add:switch.house }} />DOWN</label></td>
+                                {% endif %}
+                            {% endwith %}
+                        {% endwith %}
+                    {% else %}
+                        <td><label id="nolbl"><input type="checkbox" id="portstatus" name={{ p|add:":"|add:switch.street|add:":"|add:switch.house }} />DOWN</label></td>
+                    {% endif %}
+                        
+                    {% if sw_ping %}
+                        {% with pp=port|stringformat:"d" %}
+                            {% with p=switch_ip|add:":"|add:pp %}
+                                {% if p|check_link:status_links == True %}
+                                    <td><label id="yeslbl">UP</label></td>
+                                {% else %}
+                                    <td><label id="nolbl">DOWN</label></td>
+                                {% endif %}
+                            {% endwith %}
+                        {% endwith %}
                     {% else %}
                         <td><label id="nolbl">DOWN</label></td>
                     {% endif %}
-                        <td>link</td>
+
+                    {% with pp=port|stringformat:"d" %}
+                        {% with p=switch_ip|add:":"|add:pp %}
+                            {% if p|check_trust:status_trust %}
+                                <td><label id="yeslbl"><input type="checkbox" id="trust" name={{ p|add:":"|add:switch.street|add:":"|add:switch.house }} checked="checked" />ДА</label></td>
+                            {% else %}
+                                <td><label id="nolbl"><input type="checkbox" id="trust" name={{ p|add:":"|add:switch.street|add:":"|add:switch.house }} />НЕТ</label></td>
+                            {% endif %}
+                        {% endwith %}
+                    {% endwith %}
+
+                    {% with pp=port|stringformat:"d" %}
+                        {% with p=switch_ip|add:":"|add:pp %}
+                            {% with address=p|get_address:port_address %}
+                                <td><b><center>{{ address }}</center></b></td>
+                            {% endwith %}
+                        {% endwith %}
+                    {% endwith %}
+
+                    {% with r=port|stringformat:"d" %}
+                        <form action='.' method="post" id={{ switch.sw_ip|add:':'|add:r }}>
+                    {% endwith %}
+
+                    {% csrf_token %}
+                    
+                    <td>
+                    <select name="type">
+                        {% for type in port_types %}
+                            {% with pp=port|stringformat:"d" %}
+                                {% with p=switch_ip|add:":"|add:pp %}
+                                    {% with t=p|get_type:port_type %}
+                                        {% if t == type.sw_info %}
+                                            <option value={{ type.sw_info }} selected="selected">{{ type.sw_info }}</option>
+                                        {% else %}
+                                            <option value={{ type.sw_info }}>{{ type.sw_info }}</option>
+                                        {% endif %}
+                                    {% endwith %}
+                                {% endwith %}
+                            {% endwith %}
+                        {% endfor %}
+                    </select>
+                    </td>
+
+                    {% with pp=port|stringformat:"d" %}
+                        {% with p=switch_ip|add:":"|add:pp %}
+                            {% with memo=p|get_memo:port_memo %}
+                                <td><INPUT type="text" name="memo" maxlength="5" value={{ memo }}></td>
+                            {% endwith %}
+                        {% endwith %}
+                    {% endwith %}
+
+                    {% with r=port|stringformat:"d" %}
+                        <td><a href="." class="flat-grey-button" name={{ switch.sw_ip|add:':'|add:r }} rel="chg">Изменить</a></td>
+                    {% endwith %}
+
+                    </form>
+
+                    {% with r=forloop.counter|stringformat:"d" %}
+                        <td><a href="." class="flat-grey-button" name={{ r }} rel="portsec">PortSecurity</a></td>
+                    {% endwith %}
+
+
                 {% endwith %}
-            {% endif %}
             {% endwith %}
-            {% endwith %}
-    </tr>
+        {% endwith %}
+        </tr>
     {% endfor %}
+    {% endwith %}
 </table>
+<br>
+</div>
+{% endfor %}
+
 {% endblock %}
+
 
 {% block javascript %}
 <script language="javascript" type="text/javascript">
@@ -91,67 +154,19 @@
         event.preventDefault();
         var path = window.location.href;
         path = "/clients/";
-        var n = $(this).parents().find("form").eq(parseInt($(this).attr("name"))).attr("name");
-        var addr = n.split("/");
-        var data = $(this).parents().find("form").eq(parseInt($(this).attr("name"))).serialize();
-
-        var action = confirm('Вы уверены, что желаете внести изменения в данные клиента '+addr[0]+'-'+addr[1]+'-'+addr[2]+'?');
-        if(action){
-            $.post( path, data, function() {
-                $("#content").load("//127.0.0.1:8000/clients/"+addr[0]+'/'+addr[1]+'/');
-            });
-        }
-    });
-</script>
-
-<script language="javascript" type="text/javascript">
-    $("a[rel^='del']").click(function (event) {
-        event.preventDefault();
-        var n = $(this).attr("name").split("/");
-        var data = "id="+n[0];
+        var t = 'form[id="'+$(this).attr("name")+'"]';
+        //var n = $(this).parents().find("form").find($(this).attr("name")).attr("name");
+        var n = $(t).attr("id");
+        console.log(n);
+        //var addr = n.split("/");
+        var data = $(t).serialize();
         console.log(data);
-        
-        var action = confirm('Вы уверены, что желаете удалить информацию про клиента '+n[1]+'-'+n[2]+'-'+n[3]+'?');
+        var action = confirm('Вы уверены, что желаете внести изменения?');
         if(action){
-            $.get( "//127.0.0.1:8000/delete/", data, function() {
-                $("#content").load("//127.0.0.1:8000/clients/"+n[1]+'/'+n[2]+'/');
-            });
+            // $.post( path, data, function() {
+            //     $("#content").load("//127.0.0.1:8000/switches/"+addr[0]+'/'+addr[1]+'/');
+            // });
         }
     });
-
-    $("#activated").change(function (event) {
-        var n = ($(this).attr("name")).split("/");
-        if (this.checked){
-            var data = "id="+n[0]+"&act=True";
-            $.get( "//127.0.0.1:8000/activate/", data, function() {
-                $("#content").load("//127.0.0.1:8000/clients/"+n[1]+'/'+n[2]+'/');
-            });
-        }
-        else {
-            var data = "id="+n[0]+"&act=False";
-            $.get( "//127.0.0.1:8000/activate/", data, function() {
-                $("#content").load("//127.0.0.1:8000/clients/"+n[1]+'/'+n[2]+'/');
-            });
-        }
-    });
-
-    $("#locked").change(function (event) {
-        var n = ($(this).attr("name")).split("/");
-        if (this.checked){
-            var data = "id="+n[0]+"&act=True";
-            $.get( "//127.0.0.1:8000/lock/", data, function() {
-                $("#content").load("//127.0.0.1:8000/clients/"+n[1]+'/'+n[2]+'/');
-            });
-        }
-        else {
-            var data = "id="+n[0]+"&act=False";
-            $.get( "//127.0.0.1:8000/lock/", data, function() {
-                $("#content").load("//127.0.0.1:8000/clients/"+n[1]+'/'+n[2]+'/');
-            });
-        }
-    });
-
 </script>
-
-
 {% endblock %}

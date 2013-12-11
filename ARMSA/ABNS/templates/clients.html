@@ -106,7 +106,7 @@
                         {% endwith %}
                         {% endwith %}
                     {% else %}
-                        <td><label id="nolbl">DOWN</label></td>
+                        <td><label id="nolbl"><input type="checkbox" id="portstatus" name={{ p|add:":"|add:entry.street|add:":"|add:entry.house }} />DOWN</label></td>  
                     {% endif %}
                     {% if sw %}
                         {% with pp=port|stringformat:"d" %}
