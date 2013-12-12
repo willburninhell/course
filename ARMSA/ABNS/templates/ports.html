@@ -74,6 +74,10 @@
             case "ports":
                 var path="//127.0.0.1:8000/ports/"+k[1]+"/"+k[2]+"/";
                 break; 
+
+            case "switches":
+                var path="//127.0.0.1:8000/switches/"+k[1]+"/"+k[2]+"/";
+                break; 
         }
         $("#content").load(path);
     });

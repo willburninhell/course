@@ -53,15 +53,6 @@ def clients(request, st="Ba", ho="1"):
     sw_pings = {}
     status_ports = {}
     status_links = {}
-    for e in entries:
-        if (e.sw_ip not in sw_pings) and (sw_pings != "0.0.0.0"):
-            sw_pings[e.sw_ip] = do_one(e.sw_ip)
-            sw = switch.objects.filter(sw_ip=e.sw_ip)
-            if len(sw) > 0:
-                portnumber = sw_type.objects.filter(sw_type=sw.get().sw_type)
-                p, l = get_ports_links(e.sw_ip,portnumber.get().ports)
-                status_ports = dict(status_ports.items() + p.items())
-                status_links = dict(status_links.items() + l.items())
 
     if request.method == 'POST':
         postdata = request.POST
@@ -78,6 +69,18 @@ def clients(request, st="Ba", ho="1"):
         change_client.flat = postdata['flat']
         change_client.save(
             update_fields=['ip', 'main_ip', 'dogovor', 'street', 'house', 'flat', 'entrance'])
+        return HttpResponse(status=200)
+
+    for e in entries:
+        if (e.sw_ip not in sw_pings) and (sw_pings != "0.0.0.0"):
+            sw_pings[e.sw_ip] = do_one(e.sw_ip)
+            sw = switch.objects.filter(sw_ip=e.sw_ip)
+            if len(sw) > 0:
+                portnumber = sw_type.objects.filter(sw_type=sw.get().sw_type)
+                p, l = get_ports_links(e.sw_ip,portnumber.get().ports)
+                status_ports = dict(status_ports.items() + p.items())
+                status_links = dict(status_links.items() + l.items())
+
     return render(request, "clients.html", {'entries': entries, 'streets': streets, 'entrance': entrance.entrance, 'st_id': st, 'ho_id': ho, 'pings': sw_pings, 'ports': status_ports, 'links': status_links})
 
 
@@ -102,6 +105,7 @@ def ports(request, st="Ba", ho="1"):
         change_client.sw_port = postdata['sw_port']
         change_client.save(
             update_fields=['ip', 'main_ip', 'house', 'flat', 'entrance', 'mac', 'sw_ip', 'sw_port'])
+        return HttpResponse(status=200)
     return render(request, "ports.html", {'entries': entries, 'street': st, 'st_id': entrance.street, 'ho_id': entrance.house})
 
 
@@ -153,6 +157,30 @@ def portaction(request):
     return HttpResponse(status=200)
 
 
+def trustaction(request):
+    if request.method == 'GET':
+        sw = request.GET['sw']
+        port = int(request.GET['port'])
+        act = request.GET['act']
+
+        e = macs.objects.filter(sw_ip=sw, sw_port=port)
+
+        if len(e) > 0:
+            if act == "check":
+                e[0].trusted = True
+            else:
+                e[0].trusted = False
+            e[0].save()
+        else:
+            if act == "check":
+                a = True
+            else:
+                a = False
+            n = macs(sw_ip=sw, sw_port=port, mac='', trusted=a)
+            n.save()
+    return HttpResponse(status=200)
+
+
 def switches(request, st='Ba', ho='1'):
     sw_query = switch.objects.filter(street=st, house=ho)
     ports = {}
@@ -164,34 +192,53 @@ def switches(request, st='Ba', ho='1'):
     port_type = {}
     port_memo = {}
     port_types = sw_info.objects.all()
-    for s in sw_query:
-        # print(s.sw_ip)
-        sw_pings[s.sw_ip] = do_one(s.sw_ip)
-        portnumber = sw_type.objects.filter(sw_type=s.sw_type).get().ports
-        ports[s.sw_ip] = portnumber
-        p, l = get_ports_links(s.sw_ip, portnumber)
-        status_ports = dict(status_ports.items() + p.items())
-        status_links = dict(status_links.items() + l.items())
 
-        for i in range(portnumber):
-            swp = (s.sw_ip+':'+str(i+1))
-            macs_q = macs.objects.filter(sw_ip=s.sw_ip, sw_port=i+1)
-            if len(macs_q) > 0:
-                status_trust[swp] = macs_q[0].trusted
-            else:
-                status_trust[swp] = False
-            cl_q = client.objects.filter(sw_ip=s.sw_ip, sw_port=i+1)
-            if len(cl_q) > 0:
-                port_address[swp] = cl_q[0].street + '-' + cl_q[0].house + '-' + cl_q[0].flat
-            else:
-                port_address[swp] = '---'
-            info_q = ports_info.objects.filter(sw_sn=s.sw_sn,sw_port=i+1)
-            if len(info_q) > 0:
-                port_type[swp] = info_q[0].sw_info
-                port_memo[swp] = info_q[0].sw_memo
-            else:
-                port_type[swp] = u'Рабочий'
-                port_memo[swp] = ''
+    if request.method == 'POST':
+        postdata = request.POST
+        print postdata['sn']
+        print postdata['port']
+        change_client = ports_info.objects.filter(sw_sn=postdata['sn'],sw_port=postdata['port'])
+        if len(change_client) != 0:
+            change_client[0].sw_info = postdata['type']
+            change_client[0].sw_memo = postdata['memo']
+            change_client[0].save(
+                update_fields=['sw_info', 'sw_memo'])
+        else:
+            new = ports_info(sw_sn=postdata['sn'], 
+                sw_port=postdata['port'], 
+                sw_info = postdata['type'], 
+                sw_memo = postdata['memo'])
+            new.save()
+        return HttpResponse(status=200)
+    else:
+        for s in sw_query:
+            # print(s.sw_ip)
+            sw_pings[s.sw_ip] = do_one(s.sw_ip)
+            portnumber = sw_type.objects.filter(sw_type=s.sw_type).get().ports
+            ports[s.sw_ip] = portnumber
+            p, l = get_ports_links(s.sw_ip, portnumber)
+            status_ports = dict(status_ports.items() + p.items())
+            status_links = dict(status_links.items() + l.items())
+
+            for i in range(portnumber):
+                swp = (s.sw_ip+':'+str(i+1))
+                macs_q = macs.objects.filter(sw_ip=s.sw_ip, sw_port=i+1)
+                if len(macs_q) > 0:
+                    status_trust[swp] = macs_q[0].trusted
+                else:
+                    status_trust[swp] = False
+                cl_q = client.objects.filter(sw_ip=s.sw_ip, sw_port=i+1)
+                if len(cl_q) > 0:
+                    port_address[swp] = cl_q[0].street + '-' + cl_q[0].house + '-' + cl_q[0].flat
+                else:
+                    port_address[swp] = '---'
+                info_q = ports_info.objects.filter(sw_sn=s.sw_sn,sw_port=i+1)
+                if len(info_q) > 0:
+                    port_type[swp] = info_q[0].sw_info
+                    port_memo[swp] = info_q[0].sw_memo
+                else:
+                    port_type[swp] = u'Рабочий'
+                    port_memo[swp] = ''
 
     # for i in status_ports:
     #     print(i+' : '+status_ports[i]+'   '+status_links[i]+'   '+str(status_trust[i])+'   '+port_address[i]+'   '+port_type[i]+'   '+port_memo[i])

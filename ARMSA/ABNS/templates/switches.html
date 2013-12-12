@@ -96,7 +96,8 @@
                     {% endwith %}
 
                     {% csrf_token %}
-                    
+                    <input type="hidden" name="sn" value={{ switch.sw_sn }}>
+                    <input type="hidden" name="port" value={{ port }}>
                     <td>
                     <select name="type">
                         {% for type in port_types %}
@@ -124,7 +125,7 @@
                     {% endwith %}
 
                     {% with r=port|stringformat:"d" %}
-                        <td><a href="." class="flat-grey-button" name={{ switch.sw_ip|add:':'|add:r }} rel="chg">Изменить</a></td>
+                        <td><a href="." class="flat-grey-button" name={{ switch.sw_ip|add:':'|add:r|add:'/'|add:switch.house|add:'/'|add:switch.house }} rel="chg">Изменить</a></td>
                     {% endwith %}
 
                     </form>
@@ -142,31 +143,85 @@
     {% endwith %}
 </table>
 <br>
-</div>
-{% endfor %}
 
+{% endfor %}
+</div>
 {% endblock %}
 
 
 {% block javascript %}
 <script language="javascript" type="text/javascript">
+    $("a[rel^='menu']").click(function (event) {
+        event.preventDefault();
+        var key = $(this).attr("name");
+        var k = key.split("/");
+
+        switch(k[0]){
+            case "users":
+                var path="//127.0.0.1:8000/clients/"+k[1]+"/"+k[2]+"/";
+                break;
+
+            case "ports":
+                var path="//127.0.0.1:8000/ports/"+k[1]+"/"+k[2]+"/";
+                break; 
+
+            case "switches":
+                var path="//127.0.0.1:8000/switches/"+k[1]+"/"+k[2]+"/";
+                break; 
+        }
+        $("#content").load(path);
+    });
+
     $("a[rel^='chg']").click(function (event) {
         event.preventDefault();
-        var path = window.location.href;
-        path = "/clients/";
-        var t = 'form[id="'+$(this).attr("name")+'"]';
+        // console.log($(this).attr("name"));
+        var addr = $(this).attr("name").split('/');
+        var t = 'form[id="'+addr[0]+'"]';
         //var n = $(this).parents().find("form").find($(this).attr("name")).attr("name");
         var n = $(t).attr("id");
-        console.log(n);
+        // console.log(n);
         //var addr = n.split("/");
         var data = $(t).serialize();
-        console.log(data);
+        // console.log(data);
         var action = confirm('Вы уверены, что желаете внести изменения?');
         if(action){
-            // $.post( path, data, function() {
-            //     $("#content").load("//127.0.0.1:8000/switches/"+addr[0]+'/'+addr[1]+'/');
-            // });
+            $.post( "//127.0.0.1:8000/switches/", data, function() {
+                $("#content").load("//127.0.0.1:8000/switches/"+addr[1]+'/'+addr[2]+'/');
+            });
         }
     });
+
+    $("input[id='portstatus']").change(function (event) {
+        var n = ($(this).attr("name")).split(":");
+        if (this.checked){
+            var data = "sw="+n[0]+"&port="+n[1]+"&act=open";
+            $.get( "//127.0.0.1:8000/portaction/", data, function() {
+                $("#content").load("//127.0.0.1:8000/switches/"+n[2]+'/'+n[3]+'/');
+            });
+        }
+        else {
+            var data = "sw="+n[0]+"&port="+n[1]+"&act=close";
+            $.get( "//127.0.0.1:8000/portaction/", data, function() {
+                $("#content").load("//127.0.0.1:8000/switches/"+n[2]+'/'+n[3]+'/');
+            });
+        }
+    });
+
+    $("input[id='trust']").change(function (event) {
+        var n = ($(this).attr("name")).split(":");
+        if (this.checked){
+            var data = "sw="+n[0]+"&port="+n[1]+"&act=check";
+            $.get( "//127.0.0.1:8000/trustaction/", data, function() {
+                $("#content").load("//127.0.0.1:8000/switches/"+n[2]+'/'+n[3]+'/');
+            });
+        }
+        else {
+            var data = "sw="+n[0]+"&port="+n[1]+"&act=uncheck";
+            $.get( "//127.0.0.1:8000/trustaction/", data, function() {
+                $("#content").load("//127.0.0.1:8000/switches/"+n[2]+'/'+n[3]+'/');
+            });
+        }
+    });
+
 </script>
 {% endblock %}

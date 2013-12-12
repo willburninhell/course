@@ -77,7 +77,7 @@ def openport(ip, port):
     cmdGen = cmdgen.CommandGenerator()
 
     errorIndication, errorStatus, errorIndex, varBinds = cmdGen.setCmd(
-        cmdgen.CommunityData('SW_wRIT'),
+        cmdgen.CommunityData('SW_wRITE'),
         cmdgen.UdpTransportTarget((ip, 161)),
         ('1.3.6.1.2.1.2.2.1.7.'+str(port),rfc1902.Integer(1))
     )
@@ -91,7 +91,7 @@ def closeport(ip, port):
     cmdGen = cmdgen.CommandGenerator()
 
     errorIndication, errorStatus, errorIndex, varBinds = cmdGen.setCmd(
-        cmdgen.CommunityData('SW_wRIT'),
+        cmdgen.CommunityData('SW_wRITE'),
         cmdgen.UdpTransportTarget((ip, 161)),
         ('1.3.6.1.2.1.2.2.1.7.'+str(port),rfc1902.Integer(2))
     )
