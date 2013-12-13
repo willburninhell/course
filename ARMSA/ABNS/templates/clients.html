@@ -14,7 +14,7 @@
             {% with n="switches/"|add:a %}
             <td><a href="." class="menu-grey-button" rel="menu" name={{ n }}>Коммутаторы</a></td>
             {% endwith %}
-            {% with n="mac/"|add:a %}
+            {% with n="macs/"|add:a %}
             <td><a href="." class="menu-grey-button" rel="menu" name={{ n }}>MAC</a></td>
             {% endwith %}
             {% endwith %}
@@ -134,7 +134,7 @@
 
 {% block javascript %}
 <script language="javascript" type="text/javascript">
-     $("a[rel^='menu']").click(function (event) {
+    $("a[rel^='menu']").click(function (event) {
         event.preventDefault();
         var key = $(this).attr("name");
         var k = key.split("/");
@@ -150,6 +150,10 @@
 
             case "switches":
                 var path="//127.0.0.1:8000/switches/"+k[1]+"/"+k[2]+"/";
+                break;
+
+            case "macs":
+                var path="//127.0.0.1:8000/macs/"+k[1]+"/"+k[2]+"/";
                 break; 
         }
         $("#content").load(path);

@@ -12,7 +12,10 @@ def ABNS(request, st="Ba", ho="1"):
     clients_query = client.objects.all()
     address_query = client.objects.filter(street=st).filter(house=ho)
     #form = UserRowForm()
-    return render(request, "ABNS.html", {'streets_query': streets_query, 'clients_query': clients_query, 'address_query': address_query})
+    return render(request, "ABNS.html", {
+        'streets_query': streets_query, 
+        'clients_query': clients_query, 
+        'address_query': address_query})
 
 
 def search(request):
@@ -42,7 +45,12 @@ def search(request):
                 status_ports = dict(status_ports.items() + p.items())
                 status_links = dict(status_links.items() + l.items())
 
-    return render(request, "results.html", {'entries': entries, 'streets': streets, 'pings': sw_pings, 'ports': status_ports, 'links': status_links})
+    return render(request, "results.html", {
+        'entries': entries, 
+        'streets': streets, 
+        'pings': sw_pings, 
+        'ports': status_ports, 
+        'links': status_links})
 
 
 def clients(request, st="Ba", ho="1"):
@@ -68,7 +76,8 @@ def clients(request, st="Ba", ho="1"):
         change_client.house = postdata['house']
         change_client.flat = postdata['flat']
         change_client.save(
-            update_fields=['ip', 'main_ip', 'dogovor', 'street', 'house', 'flat', 'entrance'])
+            update_fields=['ip', 'main_ip', 'dogovor', 'street', 
+            'house', 'flat', 'entrance'])
         return HttpResponse(status=200)
 
     for e in entries:
@@ -81,7 +90,15 @@ def clients(request, st="Ba", ho="1"):
                 status_ports = dict(status_ports.items() + p.items())
                 status_links = dict(status_links.items() + l.items())
 
-    return render(request, "clients.html", {'entries': entries, 'streets': streets, 'entrance': entrance.entrance, 'st_id': st, 'ho_id': ho, 'pings': sw_pings, 'ports': status_ports, 'links': status_links})
+    return render(request, "clients.html", {
+        'entries': entries, 
+        'streets': streets, 
+        'entrance': entrance.entrance, 
+        'st_id': st, 
+        'ho_id': ho, 
+        'pings': sw_pings, 
+        'ports': status_ports, 
+        'links': status_links})
 
 
 def ports(request, st="Ba", ho="1"):
@@ -104,9 +121,14 @@ def ports(request, st="Ba", ho="1"):
         change_client.sw_ip = postdata['sw_ip']
         change_client.sw_port = postdata['sw_port']
         change_client.save(
-            update_fields=['ip', 'main_ip', 'house', 'flat', 'entrance', 'mac', 'sw_ip', 'sw_port'])
+            update_fields=['ip', 'main_ip', 'house', 'flat', 
+            'entrance', 'mac', 'sw_ip', 'sw_port'])
         return HttpResponse(status=200)
-    return render(request, "ports.html", {'entries': entries, 'street': st, 'st_id': entrance.street, 'ho_id': entrance.house})
+    return render(request, "ports.html", {
+        'entries': entries, 
+        'street': st, 
+        'st_id': entrance.street, 
+        'ho_id': entrance.house})
 
 
 def delete_id(request):
@@ -256,5 +278,48 @@ def switches(request, st='Ba', ho='1'):
         'port_types': port_types,
         'port_type': port_type,
         'port_memo': port_memo,
+        'st_id': st,
+        'ho_id': ho})
+
+
+def mac(request, st='Ba', ho='1'):
+    macs_dict = {}
+    sw_pings = {}
+    status_ports = {}
+    status_links = {}
+    status_trust = {}
+    port_address = {}
+
+    sw_query = switch.objects.filter(street=st, house=ho)
+    for sw in sw_query:
+        macs_q = macs.objects.filter(sw_ip=sw.sw_ip).order_by('sw_port')
+        macs_dict[sw.sw_ip] = macs_q
+        sw_pings[sw.sw_ip] = do_one(sw.sw_ip)
+        portnumber = sw_type.objects.filter(sw_type=sw.sw_type).get().ports
+        p, l = get_ports_links(sw.sw_ip, portnumber)
+        status_ports = dict(status_ports.items() + p.items())
+        status_links = dict(status_links.items() + l.items())
+
+        for i in range(portnumber):
+            swp = (sw.sw_ip+':'+str(i+1))
+            macsq = macs_q.filter(sw_port=i+1)
+            if len(macsq) > 0:
+                status_trust[swp] = macsq[0].trusted
+            else:
+                status_trust[swp] = False
+            cl_q = client.objects.filter(sw_ip=sw.sw_ip, sw_port=i+1)
+            if len(cl_q) > 0:
+                port_address[swp] = cl_q[0].street + '-' + cl_q[0].house + '-' + cl_q[0].flat
+            else:
+                port_address[swp] = '---'
+    print sw_query
+
+    return render(request, "macs.html",
+        {'sw_query': sw_query,
+        'macs_dict': macs_dict,
+        'status_ports': status_ports,
+        'status_links': status_links,
+        'port_address': port_address,
+        'status_trust': status_trust,
         'st_id': st,
         'ho_id': ho})

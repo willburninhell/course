@@ -24,5 +24,7 @@ urlpatterns = patterns('',
     url(r'^ports/', 'ABNS.views.ports'),
     url(r'^switches/(?P<st>\w{2})/(?P<ho>\d{1,4})/', 'ABNS.views.switches'),
     url(r'^switches/', 'ABNS.views.switches'),
+    url(r'^macs/(?P<st>\w{2})/(?P<ho>\d{1,4})/', 'ABNS.views.mac'),
+    url(r'^macs/', 'ABNS.views.mac'),
 
 )

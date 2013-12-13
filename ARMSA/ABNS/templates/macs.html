@@ -1,0 +1,173 @@
+{% extends "base.html" %}
+{% load filterfortree %}
+{% block content %}
+<div id="menu-buttons">
+<table class="menu-table">
+        <tr>
+            {% with a=st_id|add:"/"|add:ho_id%}
+            {% with n="users/"|add:a %}
+            <td><a href="." class="menu-grey-button" rel="menu" name={{ n }}>Пользователи</a></td>
+            {% endwith %}
+            {% with n="ports/"|add:a %}
+            <td><a href="." class="menu-grey-button" rel="menu" name={{ n }}>Порты</a></td>
+            {% endwith %}
+            {% with n="switches/"|add:a %}
+            <td><a href="." class="menu-grey-button" rel="menu" name={{ n }}>Коммутаторы</a></td>
+            {% endwith %}
+            {% with n="macs/"|add:a %}
+            <td><a href="." class="menu-grey-button" rel="menu" name={{ n }}>MAC</a></td>
+            {% endwith %}
+            {% endwith %}
+        </tr>
+    </table>
+</div>
+
+<div id="table-div">
+
+{% for switch in sw_query %}
+<b>{{ switch.sw_ip }}</b>
+<table class="users-table" id="usertable">
+    <tr>
+        <td>Порт</td>
+        <td>Статус порта</td>
+        <td>Состояние линка</td>
+        <td>Доверенный</td>
+        <td>Базовый MAC-адрес</td>
+        <td></td>
+        <td></td>
+        <td>Адрес</td>
+    </tr>
+    {% with switch_ip=switch.sw_ip %}
+        {% with ports=switch_ip|get_macsq:macs_dict %}
+            {% for port in ports %}
+            <tr>
+                <td> {{ port.sw_port }}</td>
+
+                {% with pp=port.sw_port|stringformat:"d" %}
+                    {% with p=switch_ip|add:":"|add:pp %}
+                        {% if p|check_port:status_ports == True %}
+                            <td><label id="yeslbl"><input type="checkbox" id="portstatus" name={{ p|add:":"|add:switch.street|add:":"|add:switch.house }} checked="checked" />UP</label></td>
+                        {% else %}
+                            <td><label id="nolbl"><input type="checkbox" id="portstatus" name={{ p|add:":"|add:switch.street|add:":"|add:switch.house }} />DOWN</label></td>
+                        {% endif %}
+
+                        {% if p|check_link:status_links == True %}
+                            <td><label id="yeslbl">UP</label></td>
+                        {% else %}
+                            <td><label id="nolbl">DOWN</label></td>
+                        {% endif %}
+
+                        {% if p|check_trust:status_trust %}
+                            <td><label id="yeslbl"><input type="checkbox" id="trust" name={{ p|add:":"|add:switch.street|add:":"|add:switch.house }} checked="checked" />ДА</label></td>
+                        {% else %}
+                            <td><label id="nolbl"><input type="checkbox" id="trust" name={{ p|add:":"|add:switch.street|add:":"|add:switch.house }} />НЕТ</label></td>
+                        {% endif %}
+
+                        <td><INPUT type="text" name="mac" maxlength="17" value={{ port.mac }}></td>
+
+                        <td><a href="." class="flat-grey-button" name={{ switch.sw_ip|add:':'|add:pp|add:'/'|add:switch.street|add:'/'|add:switch.house }} rel="chg">Изменить</a></td>
+
+                        <td><a href="." class="flat-grey-button" name={{ switch.sw_ip|add:':'|add:pp|add:'/'|add:switch.street|add:'/'|add:switch.house }} rel="del">Удалить</a></td>
+
+
+                        {% with address=p|get_address:port_address %}
+                            <td><b><center>{{ address }}</center></b></td>
+                        {% endwith %}
+
+                    {% endwith %}
+                {% endwith %}
+            </tr>
+            {% endfor%}
+        {% endwith %}
+    {% endwith %}
+
+</table>
+<br>
+    
+
+
+{% endfor %}
+</div>
+{% endblock %}
+
+
+{% block javascript %}
+<script language="javascript" type="text/javascript">
+    $("a[rel^='menu']").click(function (event) {
+        event.preventDefault();
+        var key = $(this).attr("name");
+        var k = key.split("/");
+
+        switch(k[0]){
+            case "users":
+                var path="//127.0.0.1:8000/clients/"+k[1]+"/"+k[2]+"/";
+                break;
+
+            case "ports":
+                var path="//127.0.0.1:8000/ports/"+k[1]+"/"+k[2]+"/";
+                break; 
+
+            case "switches":
+                var path="//127.0.0.1:8000/switches/"+k[1]+"/"+k[2]+"/";
+                break;
+
+            case "macs":
+                var path="//127.0.0.1:8000/macs/"+k[1]+"/"+k[2]+"/";
+                break; 
+        }
+        $("#content").load(path);
+    });
+
+    $("a[rel^='chg']").click(function (event) {
+        event.preventDefault();
+        // console.log($(this).attr("name"));
+        var addr = $(this).attr("name").split('/');
+        var t = 'form[id="'+addr[0]+'"]';
+        //var n = $(this).parents().find("form").find($(this).attr("name")).attr("name");
+        var n = $(t).attr("id");
+        // console.log(n);
+        //var addr = n.split("/");
+        var data = $(t).serialize();
+        // console.log(data);
+        var action = confirm('Вы уверены, что желаете внести изменения?');
+        if(action){
+            $.post( "//127.0.0.1:8000/switches/", data, function() {
+                $("#content").load("//127.0.0.1:8000/switches/"+addr[1]+'/'+addr[2]+'/');
+            });
+        }
+    });
+
+    $("input[id='portstatus']").change(function (event) {
+        var n = ($(this).attr("name")).split(":");
+        if (this.checked){
+            var data = "sw="+n[0]+"&port="+n[1]+"&act=open";
+            $.get( "//127.0.0.1:8000/portaction/", data, function() {
+                $("#content").load("//127.0.0.1:8000/switches/"+n[2]+'/'+n[3]+'/');
+            });
+        }
+        else {
+            var data = "sw="+n[0]+"&port="+n[1]+"&act=close";
+            $.get( "//127.0.0.1:8000/portaction/", data, function() {
+                $("#content").load("//127.0.0.1:8000/switches/"+n[2]+'/'+n[3]+'/');
+            });
+        }
+    });
+
+    $("input[id='trust']").change(function (event) {
+        var n = ($(this).attr("name")).split(":");
+        if (this.checked){
+            var data = "sw="+n[0]+"&port="+n[1]+"&act=check";
+            $.get( "//127.0.0.1:8000/trustaction/", data, function() {
+                $("#content").load("//127.0.0.1:8000/switches/"+n[2]+'/'+n[3]+'/');
+            });
+        }
+        else {
+            var data = "sw="+n[0]+"&port="+n[1]+"&act=uncheck";
+            $.get( "//127.0.0.1:8000/trustaction/", data, function() {
+                $("#content").load("//127.0.0.1:8000/switches/"+n[2]+'/'+n[3]+'/');
+            });
+        }
+    });
+
+</script>
+{% endblock %}

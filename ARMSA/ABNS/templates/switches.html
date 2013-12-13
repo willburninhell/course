@@ -14,7 +14,7 @@
             {% with n="switches/"|add:a %}
             <td><a href="." class="menu-grey-button" rel="menu" name={{ n }}>Коммутаторы</a></td>
             {% endwith %}
-            {% with n="mac/"|add:a %}
+            {% with n="macs/"|add:a %}
             <td><a href="." class="menu-grey-button" rel="menu" name={{ n }}>MAC</a></td>
             {% endwith %}
             {% endwith %}
@@ -30,7 +30,7 @@
         <td>Статус порта</td>
         <td>Состояние линка</td>
         <td>Доверенный</td>
-        <td>Квартира</td>
+        <td>Адрес</td>
         <td>Состояние порта</td>
         <td>Примечание</td>
         <td>Изменить</td>
@@ -125,7 +125,7 @@
                     {% endwith %}
 
                     {% with r=port|stringformat:"d" %}
-                        <td><a href="." class="flat-grey-button" name={{ switch.sw_ip|add:':'|add:r|add:'/'|add:switch.house|add:'/'|add:switch.house }} rel="chg">Изменить</a></td>
+                        <td><a href="." class="flat-grey-button" name={{ switch.sw_ip|add:':'|add:r|add:'/'|add:switch.street|add:'/'|add:switch.house }} rel="chg">Изменить</a></td>
                     {% endwith %}
 
                     </form>
@@ -167,6 +167,10 @@
 
             case "switches":
                 var path="//127.0.0.1:8000/switches/"+k[1]+"/"+k[2]+"/";
+                break;
+
+            case "macs":
+                var path="//127.0.0.1:8000/macs/"+k[1]+"/"+k[2]+"/";
                 break; 
         }
         $("#content").load(path);

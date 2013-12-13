@@ -67,3 +67,7 @@ def get_type(sw_ip_port, ports_data):
 @register.filter
 def get_memo(sw_ip_port, ports_data):
     return ports_data[sw_ip_port]
+
+@register.filter
+def get_macsq(sw_ip_port, ports_data):
+    return ports_data[sw_ip_port]

@@ -1,10 +1,14 @@
 from pysnmp.entity.rfc3413.oneliner import cmdgen
 from pysnmp.proto import rfc1902
+from .ping import do_one
 
 def get_ports_links(ip, ports):
     cmdGen = cmdgen.CommandGenerator()
     port = {}
     links = {}
+    ping = False
+    if do_one(ip) > 0:
+        ping = True
     eIndication, eStatus, eIndex, vBinds = cmdGen.getCmd(
             cmdgen.CommunityData('WGS_RO'),
             cmdgen.UdpTransportTarget((ip, 161)),
@@ -13,7 +17,7 @@ def get_ports_links(ip, ports):
 
 
     for p in range(ports):
-        if not (eIndication or eStatus):
+        if ping and not (eIndication or eStatus):
             errorIndication, errorStatus, errorIndex, varBinds = cmdGen.getCmd(
                 cmdgen.CommunityData('WGS_RO'),
                 cmdgen.UdpTransportTarget((ip, 161)),
@@ -28,7 +32,7 @@ def get_ports_links(ip, ports):
             port[ip+':'+str(p+1)] = '2'
 
     for p in range(ports):
-        if not (eIndication or eStatus):
+        if ping and not (eIndication or eStatus):
             errorIndication, errorStatus, errorIndex, varBinds = cmdGen.getCmd(
                 cmdgen.CommunityData('WGS_RO'),
                 cmdgen.UdpTransportTarget((ip, 161)),
@@ -41,6 +45,8 @@ def get_ports_links(ip, ports):
                 links[ip+':'+str(p+1)] = '2'
         else:
             links[ip+':'+str(p+1)] = '2'
+    print port
+    print links
     return port, links
 
 def get_one_ports_links(ip, ports):
