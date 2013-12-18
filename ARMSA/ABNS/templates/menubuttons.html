@@ -1,0 +1,20 @@
+<div id="menu-buttons">
+    <table class="menu-table">
+        <tr>
+            {% with a=st_id|add:"/"|add:ho_id%}
+                {% with n="users/"|add:a %}
+                    <td><a href="." class="menu-grey-button" rel="menu" name={{ n }}>Пользователи</a></td>
+                {% endwith %}
+                {% with n="ports/"|add:a %}
+                    <td><a href="." class="menu-grey-button" rel="menu" name={{ n }}>Порты</a></td>
+                {% endwith %}
+                {% with n="switches/"|add:a %}
+                    <td><a href="." class="menu-grey-button" rel="menu" name={{ n }}>Коммутаторы</a></td>
+                {% endwith %}
+                {% with n="macs/"|add:a %}
+                    <td><a href="." class="menu-grey-button" rel="menu" name={{ n }}>MAC</a></td>
+                {% endwith %}
+            {% endwith %}
+        </tr>
+    </table>
+</div>

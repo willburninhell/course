@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import client, street
+from .models import Client, Street
 
 
 class ClientAdmin(admin.ModelAdmin):
@@ -10,5 +10,5 @@ class StreetAdmin(admin.ModelAdmin):
     pass
 
 
-admin.site.register(client, ClientAdmin)
-admin.site.register(street, StreetAdmin)
+admin.site.register(Client, ClientAdmin)
+admin.site.register(Street, StreetAdmin)

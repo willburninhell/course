@@ -1,25 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
-<div id="menu-buttons">
-<table class="menu-table">
-        <tr>
-            {% with a=st_id|add:"/"|add:ho_id%}
-            {% with n="users/"|add:a %}
-            <td><a href="." class="menu-grey-button" rel="menu" name={{ n }}>Пользователи</a></td>
-            {% endwith %}
-            {% with n="ports/"|add:a %}
-            <td><a href="." class="menu-grey-button" rel="menu" name={{ n }}>Порты</a></td>
-            {% endwith %}
-            {% with n="switches/"|add:a %}
-            <td><a href="." class="menu-grey-button" rel="menu" name={{ n }}>Коммутаторы</a></td>
-            {% endwith %}
-            {% with n="macs/"|add:a %}
-            <td><a href="." class="menu-grey-button" rel="menu" name={{ n }}>MAC</a></td>
-            {% endwith %}
-            {% endwith %}
-        </tr>
-    </table>
-</div>
+{% include "menubuttons.html" %}
 <div id="table-div">
 <br>
 <table class="users-table" id="#usertable">
@@ -36,23 +17,23 @@
     </tr>
     {% for entry in entries %}
     <tr class="table-row">
-        {% with n=entry.street|add:"/"|add:entry.house|add:"/"|add:entry.flat %}
-        <form action="." method="post" name={{ n }}>
-        {% endwith %}
-            {% csrf_token %}
-            <input type="hidden" name="id" value={{ entry.id }}>
-            <td>{{ street }}</td>
-            <td><INPUT type="text" name="house" maxlength="5" value={{ entry.house }} /></td>
-            <td><INPUT type="text" name="flat" maxlength="5" value={{ entry.flat }} /></td>
-            <td><INPUT type="text" name="ip" maxlength="15" value={{ entry.ip }} /></td>
-            <td><INPUT type="text" name="main_ip" maxlength="15" value={{ entry.main_ip }} /></td>
-            <td><INPUT type="text" name="mac" maxlength="17" value={{ entry.mac }} /></td>
-            <td><INPUT type="text" name="sw_ip" maxlength="15" value={{ entry.sw_ip }} /></td>
-            <td><INPUT type="text" name="sw_port" maxlength="2" value={{ entry.sw_port }} /></td>
-            {% with r=forloop.counter|stringformat:"d" %}
-            <td><a href="." class="flat-grey-button" name={{ r }} rel="chg">Изменить</a></td>
+        {% with id=entry.id %}
+            {% with n=id|add:"/"|add:st_id|add:"/"|add:entry.house %}
+            <form action="." method="post" id={{ n }}>
+                {% csrf_token %}
+                <input type="hidden" name="id" value={{ entry.id }}>
+                <td>{{ street.long_name }}</td>
+                <td><INPUT type="text" name="house" maxlength="5" value={{ entry.house }} /></td>
+                <td><INPUT type="text" name="flat" maxlength="5" value={{ entry.flat }} /></td>
+                <td><INPUT type="text" name="ip" maxlength="15" value={{ entry.ip }} /></td>
+                <td><INPUT type="text" name="main_ip" maxlength="15" value={{ entry.main_ip }} /></td>
+                <td><INPUT type="text" name="mac" maxlength="17" value={{ entry.mac }} /></td>
+                <td><INPUT type="text" name="sw_ip" maxlength="15" value={{ entry.switch.sw_ip }} /></td>
+                <td><INPUT type="text" name="sw_port" maxlength="2" value={{ entry.sw_port }} /></td>
+                <td><a href="." class="flat-grey-button" name={{ n }} rel="chg">Изменить</a></td>
+            </form>
             {% endwith %}
-        </form>
+        {% endwith %}
     </tr>
     {% endfor %}
 </table>
@@ -60,46 +41,6 @@
 {% endblock %}
 
 {% block javascript %}
-<script language="javascript" type="text/javascript">
-    $("a[rel^='menu']").click(function (event) {
-        event.preventDefault();
-        var key = $(this).attr("name");
-        var k = key.split("/");
-
-        switch(k[0]){
-            case "users":
-                var path="//127.0.0.1:8000/clients/"+k[1]+"/"+k[2]+"/";
-                break;
-
-            case "ports":
-                var path="//127.0.0.1:8000/ports/"+k[1]+"/"+k[2]+"/";
-                break; 
-
-            case "switches":
-                var path="//127.0.0.1:8000/switches/"+k[1]+"/"+k[2]+"/";
-                break;
-
-            case "macs":
-                var path="//127.0.0.1:8000/macs/"+k[1]+"/"+k[2]+"/";
-                break; 
-        }
-        $("#content").load(path);
-    });
-
-    $("a[rel^='chg']").click(function (event) {
-        event.preventDefault();
-        var path = "/ports/";
-        var n = $(this).parents().find("form").eq(parseInt($(this).attr("name"))).attr("name");
-        var addr = n.split("/");
-        var data = $(this).parents().find("form").eq(parseInt($(this).attr("name"))).serialize();
-
-        var action = confirm('Вы уверены, что желаете внести изменения в данные клиента '+addr[0]+'-'+addr[1]+'-'+addr[2]+'?');
-        if(action){
-            $.post( path, data, function() {
-                $("#content").load("//127.0.0.1:8000/ports/"+addr[0]+'/'+addr[1]+'/');
-            });
-        }
-    });
-
-</script>
+<script type="text/javascript" src='{{ STATIC_URL }}js/menu_buttons.js'></script>
+<script type="text/javascript" src='{{ STATIC_URL }}js/ports.js'></script>
 {% endblock %}

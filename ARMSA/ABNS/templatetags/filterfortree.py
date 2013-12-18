@@ -24,7 +24,6 @@ def check_sw(ip, sw_ping):
 
 @register.filter
 def check_port(sw_ip_port, ports_data):
-    print("check port", sw_ip_port, ports_data[sw_ip_port])
     if ports_data[sw_ip_port] == '1':
         return True
     else:
@@ -45,29 +44,10 @@ def times(number):
 
 
 @register.filter
-def get_portnumber(sw_ip, ports_data):
-    return ports_data[sw_ip]
+def get_string_by_key(k, dictionary):
+    return str(dictionary[k])
 
 
 @register.filter
-def check_trust(sw_ip_port, ports_data):
-    return ports_data[sw_ip_port]
-
-
-@register.filter
-def get_address(sw_ip_port, ports_data):
-    return ports_data[sw_ip_port]
-
-
-@register.filter
-def get_type(sw_ip_port, ports_data):
-    return ports_data[sw_ip_port]
-
-
-@register.filter
-def get_memo(sw_ip_port, ports_data):
-    return ports_data[sw_ip_port]
-
-@register.filter
-def get_macsq(sw_ip_port, ports_data):
-    return ports_data[sw_ip_port]
+def get_by_key(k, dictionary):
+    return dictionary[k]

@@ -245,3 +245,30 @@ input[name='ip'],input[name="main_ip"],input[name="sw_ip"]{
 input[name='mac']{
   width: 9em;
 }
+
+#div-table {
+color: #FFFFFF;
+padding:1px;
+display: table;
+border: 2px solid white;
+}
+
+#div-row  {
+display: table-row;
+}
+
+#div-street {
+width:150px;
+padding:1px;
+background: #CCCCCC;
+border: 2px solid white;
+display: table-cell;
+}
+
+#div-house {
+width:50px;
+padding:0px;
+background: #CCCCCC;
+border: 2px solid white;
+display: table-cell;
+}

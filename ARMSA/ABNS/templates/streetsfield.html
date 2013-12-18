@@ -1,10 +1,10 @@
 <td>
 <select name="street">
         {% for street in streets %}
-        {% if street.short_name != entry.street %}
-        <option value={{ street.short_name }}>{{ street.long_name }}</option>
+        {% if street != entry.street %}
+        <option value={{ street.id }}>{{ street.long_name }}</option>
         {% else %}
-        <option value={{ street.short_name }} selected="selected">{{ street.long_name }}</option>
+        <option value={{ street.id }} selected="selected">{{ street.long_name }}</option>
         {% endif %}
         {% endfor %}
 </select>

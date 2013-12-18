@@ -20,33 +20,30 @@
     </tr>
     {% for entry in entries %}
     <tr class="table-row">
-        {% with template="//127.0.0.1:8000/ABNS/clients/"|add:entry.street|add:"/"|add:entry.house|add:"/" %}
-        {% with n=entry.street|add:"/"|add:entry.house|add:"/"|add:entry.flat %}
-        <form action={{ template }} method="post" name={{ n }}>
-            {% endwith %}
-            {% endwith %}
+        {% with streetid=entry.street.id|stringformat:"d"%}
+        {% with i=entry.id|stringformat:"d"|add:"/"|add:streetid|add:"/"|add:entry.house %}
+
+        <form action="." method="post" id={{ i }}>
+
             {% csrf_token %}
             <input type="hidden" name="id" value={{ entry.id }}>
             {% include "streetsfield.html" %}
             {% include "userrowfield.html" %}
             <td><a href="." class="flat-grey-button" rel="srv">Сервис</a></td>
-            {% with r=forloop.counter|stringformat:"d" %}
-            <td><a href="." class="flat-grey-button" name={{ r }} rel="chg">Изменить</a></td>
-            {% endwith %}
-            {% with i=entry.id|stringformat:"d"|add:"/"|add:entry.street|add:"/"|add:entry.house|add:"/"|add:entry.flat %}
+            <td><a href="." class="flat-grey-button" name={{ i }} rel="chg">Изменить</a></td>
             <td><a href="." class="flat-grey-button" name={{ i }} rel="del">Удалить</a></td>
-            {% endwith %}
+        </form>
 
             {% if entry.active_state %}
             <td>
                 <label id="yeslbl">
-                    <input type="checkbox" id="activated" name={{ entry.id|stringformat:"d"|add:"/"|add:entry.street|add:"/"|add:entry.house }} checked="checked" />ДА
+                    <input type="checkbox" id="activated" name={{ i }} checked="checked" />ДА
                 </label>
             </td>
             {% else %}
             <td>
                 <label id="nolbl">
-                    <input type="checkbox" id="activated" name={{ entry.id|stringformat:"d"|add:"/"|add:entry.street|add:"/"|add:entry.house }}  />НЕТ
+                    <input type="checkbox" id="activated" name={{ i }}  />НЕТ
                 </label>
             </td>
             {% endif %}
@@ -54,55 +51,44 @@
             {% if entry.lock_state %}
             <td>
                 <label id="nolbl">
-                    <input type="checkbox" id="locked" name={{ entry.id|stringformat:"d"|add:"/"|add:entry.street|add:"/"|add:entry.house }} checked="checked" />ДА
+                    <input type="checkbox" id="locked" name={{ i }} checked="checked" />ДА
                 </label>
             </td>
             {% else %}
             <td>
                 <label id="yeslbl">
-                    <input type="checkbox" id="locked" name={{ entry.id|stringformat:"d"|add:"/"|add:entry.street|add:"/"|add:entry.house }} />НЕТ
+                    <input type="checkbox" id="locked" name={{ i }} />НЕТ
                 </label>
             </td>
             {% endif %}
             
 
-            {% with switch=entry.sw_ip %}
-            {% with port=entry.sw_port %}
-            {% if switch == "0.0.0.0" or port == 0%}
-                <td><label id="blinklbl">???</label></td>
-                <td><label id="blinklbl">???</label></td>
-            {% else %}
-                {% with sw=entry.sw_ip|check_sw:pings %}
-                    {% if sw %}
-                        {% with pp=port|stringformat:"d" %}
-                        {% with p=switch|add:":"|add:pp %}
-                        {% if p|check_port:ports == True %}
-                            <td><label id="yeslbl"><input type="checkbox" id="port" name={{ entry.id|stringformat:"d"|add:"/"|add:entry.street|add:"/"|add:entry.house }} checked="checked" />UP</label></td>
-                        {% else %}
-                            <td><label id="nolbl"><input type="checkbox" id="port" name={{ entry.id|stringformat:"d"|add:"/"|add:entry.street|add:"/"|add:entry.house }} />DOWN</label></td>
-                        {% endif %}
-                        {% endwith %}
-                        {% endwith %}
+            {% with switch=entry.switch.sw_ip %}
+                {% with port=entry.sw_port %}
+                    {% if switch == "0.0.0.0" or port == 0%}
+                        <td><label id="blinklbl">???</label></td>
+                        <td><label id="blinklbl">???</label></td>
                     {% else %}
-                        <td><label id="nolbl">DOWN</label></td>
-                    {% endif %}
-                    {% if sw %}
                         {% with pp=port|stringformat:"d" %}
-                        {% with p=switch|add:":"|add:pp %}
-                        {% if p|check_link:links == True %}
-                            <td><label id="yeslbl">UP</label></td>
-                        {% else %}
-                            <td><label id="nolbl">DOWN</label></td>
-                        {% endif %}
+                            {% with p=switch|add:":"|add:pp %}
+                                {% if p|check_port:ports == True %}
+                                    <td><label id="yeslbl"><input type="checkbox" id="portstatus" name={{ entry.id|stringformat:"d"|add:":"|add:streetid|add:":"|add:entry.house }} checked="checked" />UP</label></td>
+                                {% else %}
+                                    <td><label id="nolbl"><input type="checkbox" id="portstatus" name={{ entry.id|stringformat:"d"|add:":"|add:streetid|add:":"|add:entry.house }} />DOWN</label></td>
+                                {% endif %}
+
+                                {% if p|check_link:links == True %}
+                                    <td><label id="yeslbl">UP</label></td>
+                                {% else %}
+                                    <td><label id="nolbl">DOWN</label></td>
+                                {% endif %}
+                            {% endwith %}
                         {% endwith %}
-                        {% endwith %}
-                    {% else %}
-                        <td><label id="nolbl">DOWN</label></td>
                     {% endif %}
                 {% endwith %}
-            {% endif %}
             {% endwith %}
-            {% endwith %}
+        {% endwith %}
+        {% endwith %}
     </tr>
     {% endfor %}
 </table>
@@ -112,22 +98,22 @@
 <script language="javascript" type="text/javascript">
     $("a[rel^='chg']").click(function (event) {
         event.preventDefault();
-        var path = window.location.href;
-        path = "/clients/";
-        var n = $(this).parents().find("form").eq(parseInt($(this).attr("name"))).attr("name");
+        var n = $(this).attr("name");
+        console.log(n);
         var addr = n.split("/");
-        var data = $(this).parents().find("form").eq(parseInt($(this).attr("name"))).serialize();
-
-        var action = confirm('Вы уверены, что желаете внести изменения в данные клиента '+addr[0]+'-'+addr[1]+'-'+addr[2]+'?');
+        var t = 'form[id="'+n+'"]';
+        var data = $(t).serialize();
+        console.log(data);
+        var path = location.host;
+        var action = confirm('Вы уверены, что желаете внести изменения?');
         if(action){
-            $.post( path, data, function() {
-                $("#content").load("//127.0.0.1:8000/clients/"+addr[0]+'/'+addr[1]+'/');
+            $.post( "//"+path+"/clients/", data, function() {
+                $("#content").text("Загружаю...");
+                $("#content").load("//"+path+"/clients/"+addr[1]+'/'+addr[2]+'/');
             });
         }
     });
-</script>
 
-<script language="javascript" type="text/javascript">
     $("a[rel^='del']").click(function (event) {
         event.preventDefault();
         var n = $(this).attr("name").split("/");

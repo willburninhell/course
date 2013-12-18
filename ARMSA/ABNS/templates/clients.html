@@ -1,26 +1,7 @@
 {% extends "base.html" %}
 {% load filterfortree %}
 {% block content %}
-<div id="menu-buttons">
-<table class="menu-table">
-        <tr>
-            {% with a=st_id|add:"/"|add:ho_id%}
-            {% with n="users/"|add:a %}
-            <td><a href="." class="menu-grey-button" rel="menu" name={{ n }}>Пользователи</a></td>
-            {% endwith %}
-            {% with n="ports/"|add:a %}
-            <td><a href="." class="menu-grey-button" rel="menu" name={{ n }}>Порты</a></td>
-            {% endwith %}
-            {% with n="switches/"|add:a %}
-            <td><a href="." class="menu-grey-button" rel="menu" name={{ n }}>Коммутаторы</a></td>
-            {% endwith %}
-            {% with n="macs/"|add:a %}
-            <td><a href="." class="menu-grey-button" rel="menu" name={{ n }}>MAC</a></td>
-            {% endwith %}
-            {% endwith %}
-        </tr>
-    </table>
-</div>
+{% include "menubuttons.html" %}
 <div id="table-div">
 <b>Направление {{ entrance }}</b>
 <br>
@@ -42,90 +23,70 @@
     </tr>
     {% for entry in entries %}
     <tr class="table-row">
-        {% with template="//127.0.0.1:8000/ABNS/clients/"|add:entry.street|add:"/"|add:entry.house|add:"/" %}
-        {% with n=entry.street|add:"/"|add:entry.house|add:"/"|add:entry.flat %}
-        <form action={{ template }} method="post" name={{ n }}>
-            {% endwith %}
-            {% endwith %}
-            {% csrf_token %}
+    {% with i=entry.id|stringformat:"d"|add:"/"|add:st_id|add:"/"|add:ho_id %}
+        <form action="." method="post" id={{ i }}>
+            
             <input type="hidden" name="id" value={{ entry.id }}>
             {% include "streetsfield.html" %}
             {% include "userrowfield.html" %}
-            <td><a href="." class="flat-grey-button" rel="srv">Сервис</a></td>
-            {% with r=forloop.counter|stringformat:"d" %}
-            <td><a href="." class="flat-grey-button" name={{ r }} rel="chg">Изменить</a></td>
-            {% endwith %}
-            {% with i=entry.id|stringformat:"d"|add:"/"|add:entry.street|add:"/"|add:entry.house|add:"/"|add:entry.flat %}
-            <td><a href="." class="flat-grey-button" name={{ i }} rel="del">Удалить</a></td>
-            {% endwith %}
-
-            {% if entry.active_state %}
-            <td>
-                <label id="yeslbl">
-                    <input type="checkbox" id="activated" name={{ entry.id|stringformat:"d"|add:"/"|add:entry.street|add:"/"|add:entry.house }} checked="checked" />ДА
-                </label>
-            </td>
-            {% else %}
-            <td>
-                <label id="nolbl">
-                    <input type="checkbox" id="activated" name={{ entry.id|stringformat:"d"|add:"/"|add:entry.street|add:"/"|add:entry.house }}  />НЕТ
-                </label>
-            </td>
-            {% endif %}
-
-            {% if entry.lock_state %}
-            <td>
-                <label id="nolbl">
-                    <input type="checkbox" id="locked" name={{ entry.id|stringformat:"d"|add:"/"|add:entry.street|add:"/"|add:entry.house }} checked="checked" />ДА
-                </label>
-            </td>
-            {% else %}
-            <td>
-                <label id="yeslbl">
-                    <input type="checkbox" id="locked" name={{ entry.id|stringformat:"d"|add:"/"|add:entry.street|add:"/"|add:entry.house }} />НЕТ
-                </label>
-            </td>
-            {% endif %}
-            
-
-            {% with switch=entry.sw_ip %}
-            {% with port=entry.sw_port %}
-            {% if switch == "0.0.0.0" or port == 0%}
-                <td><label id="blinklbl">???</label></td>
-                <td><label id="blinklbl">???</label></td>
-            {% else %}
-                {% with sw=entry.sw_ip|check_sw:pings %}
-                    {% if sw %}
-                        {% with pp=port|stringformat:"d" %}
-                        {% with p=switch|add:":"|add:pp %}
-                        {% if p|check_port:ports == True %}
-                            <td><label id="yeslbl"><input type="checkbox" id="portstatus" name={{ p|add:":"|add:entry.street|add:":"|add:entry.house }} checked="checked" />UP</label></td>
-                        {% else %}
-                            <td><label id="nolbl"><input type="checkbox" id="portstatus" name={{ p|add:":"|add:entry.street|add:":"|add:entry.house }} />DOWN</label></td>
-                        {% endif %}
-                        {% endwith %}
-                        {% endwith %}
-                    {% else %}
-                        <td><label id="nolbl"><input type="checkbox" id="portstatus" name={{ p|add:":"|add:entry.street|add:":"|add:entry.house }} />DOWN</label></td>  
-                    {% endif %}
-                    {% if sw %}
-                        {% with pp=port|stringformat:"d" %}
-                        {% with p=switch|add:":"|add:pp %}
-                        {% if p|check_link:links == True %}
-                            <td><label id="yeslbl">UP</label></td>
-                        {% else %}
-                            <td><label id="nolbl">DOWN</label></td>
-                        {% endif %}
-                        {% endwith %}
-                        {% endwith %}
-                    {% else %}
-                        <td><label id="nolbl">DOWN</label></td>
-                    {% endif %}
-                {% endwith %}
-            {% endif %}
-            {% endwith %}
-            {% endwith %}
+            <td><a href="." class="flat-grey-button" rel="srv">Сервис</a></td>    
+                <td><a href="." class="flat-grey-button" name={{ i }} rel="chg">Изменить</a></td>
+                <td><a href="." class="flat-grey-button" name={{ i }} rel="del">Удалить</a></td>
+                {% csrf_token %}
         </form>
+
+                <td>
+                {% if entry.active_state %}
+                    <label id="yeslbl">
+                        <input type="checkbox" id="activated" name={{ i }} checked="checked" />ДА
+                    </label>
+                {% else %}
+                    <label id="nolbl">
+                        <input type="checkbox" id="activated" name={{ i }}  />НЕТ
+                    </label>
+                {% endif %}
+                </td>
+                <td>
+                {% if entry.lock_state %}
+                    <label id="nolbl">
+                        <input type="checkbox" id="locked" name={{ i }} checked="checked" />ДА
+                    </label>
+                {% else %}
+                    <label id="yeslbl">
+                        <input type="checkbox" id="locked" name={{ i }} />НЕТ
+                    </label>
+                {% endif %}
+                </td>
+                
+                {% with switch=entry.switch.sw_ip %}
+                    {% with port=entry.sw_port %}
+                        {% with pp=port|stringformat:"d" %}
+                            {% with p=switch|add:":"|add:pp %}
+                                {% if switch == "0.0.0.0" or port == 0%}
+                                    <td><label id="blinklbl">???</label></td>
+                                    <td><label id="blinklbl">???</label></td>
+                                {% else %}
+                                
+                                        
+                                    {% if p|check_port:ports == True %}
+                                        <td><label id="yeslbl"><input type="checkbox" id="portstatus" name={{ p|add:":"|add:st_id|add:":"|add:ho_id }} checked="checked" />UP</label></td>
+                                    {% else %}
+                                        <td><label id="nolbl"><input type="checkbox" id="portstatus" name={{ p|add:":"|add:st_id|add:":"|add:ho_id }} />DOWN</label></td>
+                                    {% endif %}
+
+                                    {% if p|check_link:links == True %}
+                                        <td><label id="yeslbl">UP</label></td>
+                                    {% else %}
+                                        <td><label id="nolbl">DOWN</label></td>
+                                    {% endif %}
+
+                                {% endif %}
+                            {% endwith %}
+                        {% endwith %}
+                    {% endwith %}
+                {% endwith %}
+
+    {% endwith %}
     </tr>
     {% endfor %}
 </table>
@@ -133,110 +94,88 @@
 {% endblock %}
 
 {% block javascript %}
+<script type="text/javascript" src='{{ STATIC_URL }}js/menu_buttons.js'></script>
+
 <script language="javascript" type="text/javascript">
-    $("a[rel^='menu']").click(function (event) {
-        event.preventDefault();
-        var key = $(this).attr("name");
-        var k = key.split("/");
-
-        switch(k[0]){
-            case "users":
-                var path="//127.0.0.1:8000/clients/"+k[1]+"/"+k[2]+"/";
-                break;
-
-            case "ports":
-                var path="//127.0.0.1:8000/ports/"+k[1]+"/"+k[2]+"/";
-                break; 
-
-            case "switches":
-                var path="//127.0.0.1:8000/switches/"+k[1]+"/"+k[2]+"/";
-                break;
-
-            case "macs":
-                var path="//127.0.0.1:8000/macs/"+k[1]+"/"+k[2]+"/";
-                break; 
-        }
-        $("#content").load(path);
-    });
-
     $("a[rel^='chg']").click(function (event) {
         event.preventDefault();
-        var path = window.location.href;
-        path = "/clients/";
-        var n = $(this).parents().find("form").eq(parseInt($(this).attr("name"))).attr("name");
+        var n = $(this).attr("name");
+        console.log(n);
         var addr = n.split("/");
-        var data = $(this).parents().find("form").eq(parseInt($(this).attr("name"))).serialize();
-
-        var action = confirm('Вы уверены, что желаете внести изменения в данные клиента '+addr[0]+'-'+addr[1]+'-'+addr[2]+'?');
+        var t = 'form[id="'+n+'"]';
+        var data = $(t).serialize();
+        console.log(data);
+        var path = location.host;
+        var action = confirm('Вы уверены, что желаете внести изменения?');
         if(action){
-            $.post( path, data, function() {
-                $("#content").load("//127.0.0.1:8000/clients/"+addr[0]+'/'+addr[1]+'/');
+            $.post( "//"+path+"/clients/", data, function() {
+                $("#content").text("Загружаю...");
+                $("#content").load("//"+path+"/clients/"+addr[1]+'/'+addr[2]+'/');
             });
         }
     });
 
     $("input[id='activated']").change(function (event) {
-        console.log("active");
-        var n = ($(this).attr("name")).split("/");
+        var n = $(this).attr("name");
+        var addr = n.split("/");
+        var path = location.host;
+        var data = "";
         if (this.checked){
-            var data = "id="+n[0]+"&act=True";
-            $.get( "//127.0.0.1:8000/activate/", data, function() {
-                $("#content").load("//127.0.0.1:8000/clients/"+n[1]+'/'+n[2]+'/');
-            });
+            data = "id="+addr[0]+"&act=True";
         }
         else {
-            var data = "id="+n[0]+"&act=False";
-            $.get( "//127.0.0.1:8000/activate/", data, function() {
-                $("#content").load("//127.0.0.1:8000/clients/"+n[1]+'/'+n[2]+'/');
-            });
+            data = "id="+addr[0]+"&act=False";
         }
+        $.get( "//"+path+"/activate/", data, function() {
+            $("#content").text("Загружаю...");
+            $("#content").load("//"+path+"/clients/"+addr[1]+'/'+addr[2]+'/');
+        });
     });
 
     $("input[id='locked']").change(function (event) {
-        console.log("locked");
-        var n = ($(this).attr("name")).split("/");
+        var n = $(this).attr("name");
+        var addr = n.split("/");
+        var path = location.host;
+        var data = "";
         if (this.checked){
-            var data = "id="+n[0]+"&act=True";
-            $.get( "//127.0.0.1:8000/lock/", data, function() {
-                $("#content").load("//127.0.0.1:8000/clients/"+n[1]+'/'+n[2]+'/');
-            });
+            data = "id="+addr[0]+"&act=True";
         }
         else {
-            var data = "id="+n[0]+"&act=False";
-            $.get( "//127.0.0.1:8000/lock/", data, function() {
-                $("#content").load("//127.0.0.1:8000/clients/"+n[1]+'/'+n[2]+'/');
-            });
+            data = "id="+addr[0]+"&act=False";
         }
+        $.get( "//"+path+"/lock/", data, function() {
+            $("#content").text("Загружаю...");
+            $("#content").load("//"+path+"/clients/"+addr[1]+'/'+addr[2]+'/');
+        });
     });
 
     $("input[id='portstatus']").change(function (event) {
-        console.log("ports");
         var n = ($(this).attr("name")).split(":");
+        var path = location.host;
+        var data="";
         if (this.checked){
-            console.log("open");
-            var data = "sw="+n[0]+"&port="+n[1]+"&act=open";
-            $.get( "//127.0.0.1:8000/portaction/", data, function() {
-                $("#content").load("//127.0.0.1:8000/clients/"+n[2]+'/'+n[3]+'/');
-            });
+            data = "sw="+n[0]+"&port="+n[1]+"&act=open";
         }
         else {
-            console.log("close");
-            var data = "sw="+n[0]+"&port="+n[1]+"&act=close";
-            $.get( "//127.0.0.1:8000/portaction/", data, function() {
-                $("#content").load("//127.0.0.1:8000/clients/"+n[2]+'/'+n[3]+'/');
-            });
+            data = "sw="+n[0]+"&port="+n[1]+"&act=close";
         }
+        $.get( "//"+path+"/portaction/", data, function() {
+            $("#content").text("Загружаю...");
+            $("#content").load("//"+path+"/clients/"+n[2]+'/'+n[3]+'/');
+        });
     });
 
     $("a[rel^='del']").click(function (event) {
         event.preventDefault();
         var n = $(this).attr("name").split("/");
         var data = "id="+n[0];
+        var path = location.host;
         
-        var action = confirm('Вы уверены, что желаете удалить информацию про клиента '+n[1]+'-'+n[2]+'-'+n[3]+'?');
+        var action = confirm('Вы уверены, что желаете удалить информацию про клиента?');
         if(action){
-            $.get( "//127.0.0.1:8000/delete/", data, function() {
-                $("#content").load("//127.0.0.1:8000/clients/"+n[1]+'/'+n[2]+'/');
+            $.get( "//"+path+"/delete/", data, function() {
+                $("#content").text("Загружаю...");
+                $("#content").load("//"+path+"/clients/"+n[1]+'/'+n[2]+'/');
             });
         }
     });

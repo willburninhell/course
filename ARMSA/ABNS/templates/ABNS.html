@@ -9,9 +9,13 @@
             <label for={{ street.short_name }}>{{ street.long_name }}</label>
             <input type="checkbox" id={{ street.short_name }}>
             <ol id={{ street.short_name }}>
-                {% for houses in clients_query|filter_house:street.short_name %}
-                {% with h=street.short_name|add:"/"|add:houses.house %}
-                <li class="file"><a href="." rel="ids" id={{ h }}>{{ houses.house }}</a></li>
+                {% for houses in clients_query|filter_house:street %}
+                {% with streetname=street.short_name %}
+                    {% with h=streetname|get_string_by_key:streets_pk %}
+                            {% with houseid=h|add:"/"|add:houses.house %}
+                            <li class="file"><a href="." rel="ids" id={{ houseid }}>{{ houses.house }}</a></li>
+                            {% endwith %}
+                    {% endwith %}
                 {% endwith %}
                 {% endfor %}
             </ol>
@@ -38,6 +42,7 @@
 {% endblock %}
 
 {% block javascript %}
+<script type="text/javascript" src='{{ STATIC_URL }}js/streets_tree.js'></script>
 <script language="javascript" type="text/javascript">
    
 
@@ -46,6 +51,7 @@
         event.preventDefault();
         var data = $("#search").serialize();
         console.log(data);
+        $("#content").text("Идет поиск...");
         $("#content").load("//127.0.0.1:8000/search/",data);
     });
 
@@ -53,6 +59,7 @@
         if (e.keyCode == 13) {
             var data = $("#search").serialize();
             console.log(data);
+            $("#content").text("Идет поиск...");
             $("#content").load("//127.0.0.1:8000/search/",data);
         }
         
@@ -60,13 +67,7 @@
     // end search functions block
 
     // left treeview menu functions
-    $("a[rel^='ids']").click(function (event) {
-        event.preventDefault();
-        var host=$(location).attr('host');
-        var addr=$(this).attr('id').split("/");
-        var path="//127.0.0.1:8000/clients/"+addr[0]+"/"+addr[1]+"/";
-        $("#content").load(path);
-    });
+
     // end treeview menu functions
 </script>
 {% endblock %}
