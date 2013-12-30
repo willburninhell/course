@@ -23,4 +23,6 @@ urlpatterns = patterns('',
     url(r'^lock/', 'ABNS.views.lock_id'),
     url(r'^portaction/', 'ABNS.views.portaction'),
     url(r'^trustaction/', 'ABNS.views.trustaction'),
+    url(r'^monitor/', 'monitor.views.monitor'),
+    url(r'^alarm_info/(?P<id>\d{1,6})', 'monitor.views.alarm_info'),
 )

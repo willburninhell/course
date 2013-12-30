@@ -1,0 +1,1634 @@
+[
+{
+    "pk": 1, 
+    "model": "monitor.group", 
+    "fields": {
+        "name": "Servers", 
+        "description": "\u0421\u0435\u0440\u0432\u0435\u0440\u0430 \u0432 \u0441\u0435\u0440\u0432\u0435\u0440\u043d\u043e\u0439"
+    }
+},
+{
+    "pk": 2, 
+    "model": "monitor.group", 
+    "fields": {
+        "name": "Switches", 
+        "description": "\u041c\u0430\u0440\u0448\u0440\u0443\u0442\u0438\u0437\u0430\u0442\u043e\u0440\u044b \u0432 \u0441\u0435\u0440\u0432\u0435\u0440\u043d\u043e\u0439"
+    }
+},
+{
+    "pk": 3, 
+    "model": "monitor.group", 
+    "fields": {
+        "name": "Control points", 
+        "description": "\u041f\u0440\u043e\u0447\u0438\u0435 \u043a\u0430\u043d\u0430\u043b\u044b"
+    }
+},
+{
+    "pk": 4, 
+    "model": "monitor.group", 
+    "fields": {
+        "name": "Clients Ki", 
+        "description": "\u041a\u0438\u0435\u0432\u0441\u043a\u0438\u0439 \u043a\u0432\u0430\u0440\u0442\u0430\u043b"
+    }
+},
+{
+    "pk": 5, 
+    "model": "monitor.group", 
+    "fields": {
+        "name": "Clients Le", 
+        "description": "\u041b\u0435\u043d\u0438\u043d\u0433\u0440\u0430\u0434\u0441\u043a\u0438\u0439 \u043a\u0432\u0430\u0440\u0442\u0430\u043b"
+    }
+},
+{
+    "pk": 6, 
+    "model": "monitor.group", 
+    "fields": {
+        "name": "Clients Be", 
+        "description": "\u0411\u0435\u043b\u0433\u043e\u0440\u043e\u0434\u0441\u043a\u0438\u0439 \u043a\u0432\u0430\u0440\u0442\u0430\u043b"
+    }
+},
+{
+    "pk": 7, 
+    "model": "monitor.group", 
+    "fields": {
+        "name": "Clients DN", 
+        "description": "\u043f\u0440-\u0442 \u0414\u0440\u0443\u0436\u0431\u044b \u041d\u0430\u0440\u043e\u0434\u043e\u0432"
+    }
+},
+{
+    "pk": 8, 
+    "model": "monitor.group", 
+    "fields": {
+        "name": "Clients Tb", 
+        "description": "\u0422\u0431\u0438\u043b\u0438\u0441\u0441\u043a\u0438\u0439 \u043a\u0432\u0430\u0440\u0442\u0430\u043b"
+    }
+},
+{
+    "pk": 9, 
+    "model": "monitor.group", 
+    "fields": {
+        "name": "Clients Ba", 
+        "description": "\u0411\u0430\u043a\u0438\u043d\u0441\u043a\u0438\u0439 \u043a\u0432\u0430\u0440\u0442\u0430\u043b"
+    }
+},
+{
+    "pk": 10, 
+    "model": "monitor.group", 
+    "fields": {
+        "name": "Clients Er", 
+        "description": "\u0415\u0440\u0435\u0432\u0430\u043d\u0441\u043a\u0438\u0439 \u043a\u0432\u0430\u0440\u0442\u0430\u043b"
+    }
+},
+{
+    "pk": 11, 
+    "model": "monitor.group", 
+    "fields": {
+        "name": "Clients Mo", 
+        "description": "\u041c\u043e\u0441\u043a\u043e\u0432\u0441\u043a\u0438\u0439 \u043a\u0432\u0430\u0440\u0442\u0430\u043b"
+    }
+},
+{
+    "pk": 12, 
+    "model": "monitor.group", 
+    "fields": {
+        "name": "Clients Ch", 
+        "description": "\u0427\u0435\u0440\u043d\u0438\u0433\u043e\u0432\u0441\u043a\u0438\u0439 \u043a\u0432\u0430\u0440\u0442\u0430\u043b"
+    }
+},
+{
+    "pk": 13, 
+    "model": "monitor.group", 
+    "fields": {
+        "name": "Clients Do", 
+        "description": "\u0414\u043e\u0431\u0440\u044b\u043d\u0438\u043d\u0441\u043a\u0438\u0439 \u043a\u0432\u0430\u0440\u0442\u0430\u043b"
+    }
+},
+{
+    "pk": 14, 
+    "model": "monitor.group", 
+    "fields": {
+        "name": "Clients Pe", 
+        "description": "\u041f\u0435\u0447\u0435\u0440\u0441\u043a\u0438\u0439 \u043a\u0432\u0430\u0440\u0442\u0430\u043b"
+    }
+},
+{
+    "pk": 1, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.7.1.201", 
+        "group": 1, 
+        "name": "D1", 
+        "description": "\u0421\u0435\u0440\u0432\u0435\u0440 1\u0433\u043e \u043d\u0430\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u044f"
+    }
+},
+{
+    "pk": 2, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.7.1.202", 
+        "group": 1, 
+        "name": "D2", 
+        "description": "\u0421\u0435\u0440\u0432\u0435\u0440 2\u0433\u043e \u043d\u0430\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u044f"
+    }
+},
+{
+    "pk": 3, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.7.1.203", 
+        "group": 1, 
+        "name": "D3", 
+        "description": "\u0421\u0435\u0440\u0432\u0435\u0440 3\u0433\u043e \u043d\u0430\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u044f"
+    }
+},
+{
+    "pk": 4, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.7.1.204", 
+        "group": 1, 
+        "name": "D4", 
+        "description": "\u0421\u0435\u0440\u0432\u0435\u0440 4\u0433\u043e \u043d\u0430\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u044f"
+    }
+},
+{
+    "pk": 5, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.7.1.215", 
+        "group": 1, 
+        "name": "D5", 
+        "description": "\u0421\u0435\u0440\u0432\u0435\u0440 5\u0433\u043e \u043d\u0430\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u044f"
+    }
+},
+{
+    "pk": 6, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.255.255.99", 
+        "group": 2, 
+        "name": "SW1", 
+        "description": ""
+    }
+},
+{
+    "pk": 7, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.255.255.100", 
+        "group": 2, 
+        "name": "SW2", 
+        "description": ""
+    }
+},
+{
+    "pk": 8, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.255.255.95", 
+        "group": 2, 
+        "name": "SW3", 
+        "description": ""
+    }
+},
+{
+    "pk": 9, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "193.108.226.248", 
+        "group": 3, 
+        "name": "ChNPP", 
+        "description": ""
+    }
+},
+{
+    "pk": 10, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "193.108.227.5", 
+        "group": 3, 
+        "name": "ARS", 
+        "description": ""
+    }
+},
+{
+    "pk": 11, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.1.1", 
+        "group": 4, 
+        "name": "Ki-1", 
+        "description": ""
+    }
+},
+{
+    "pk": 12, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.1.2", 
+        "group": 4, 
+        "name": "Ki-2", 
+        "description": ""
+    }
+},
+{
+    "pk": 13, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.1.3", 
+        "group": 4, 
+        "name": "Ki-3", 
+        "description": ""
+    }
+},
+{
+    "pk": 14, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.3.14", 
+        "group": 5, 
+        "name": "Le-1", 
+        "description": ""
+    }
+},
+{
+    "pk": 15, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.3.11", 
+        "group": 5, 
+        "name": "Le-3", 
+        "description": ""
+    }
+},
+{
+    "pk": 16, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.3.15", 
+        "group": 5, 
+        "name": "Le-5", 
+        "description": ""
+    }
+},
+{
+    "pk": 17, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.3.16", 
+        "group": 6, 
+        "name": "Be-2", 
+        "description": ""
+    }
+},
+{
+    "pk": 18, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.3.24", 
+        "group": 6, 
+        "name": "Be-4", 
+        "description": ""
+    }
+},
+{
+    "pk": 19, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.3.17", 
+        "group": 6, 
+        "name": "Be-6", 
+        "description": ""
+    }
+},
+{
+    "pk": 20, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.1.101.106", 
+        "group": 3, 
+        "name": "Ki-90 Novarka", 
+        "description": ""
+    }
+},
+{
+    "pk": 21, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "193.108.226.29", 
+        "group": 3, 
+        "name": "\u0423\u043a\u0440\u0410\u0442\u043e\u043c\u0418\u0437\u0434\u0430\u0442", 
+        "description": ""
+    }
+},
+{
+    "pk": 22, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.7.1.238", 
+        "group": 1, 
+        "name": "Portal", 
+        "description": ""
+    }
+},
+{
+    "pk": 23, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.7.1.237", 
+        "group": 1, 
+        "name": "BB", 
+        "description": ""
+    }
+},
+{
+    "pk": 24, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.7.1.135", 
+        "group": 1, 
+        "name": "Bacula", 
+        "description": ""
+    }
+},
+{
+    "pk": 25, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.7.1.133", 
+        "group": 1, 
+        "name": "VPNS", 
+        "description": ""
+    }
+},
+{
+    "pk": 26, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.7.1.143", 
+        "group": 1, 
+        "name": "VPNS2", 
+        "description": ""
+    }
+},
+{
+    "pk": 27, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.7.1.144", 
+        "group": 1, 
+        "name": "VPNS3", 
+        "description": ""
+    }
+},
+{
+    "pk": 28, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.7.1.145", 
+        "group": 1, 
+        "name": "VPNS4", 
+        "description": ""
+    }
+},
+{
+    "pk": 29, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.7.1.232", 
+        "group": 1, 
+        "name": "Bomba", 
+        "description": ""
+    }
+},
+{
+    "pk": 30, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "193.108.226.1", 
+        "group": 1, 
+        "name": "Roadster", 
+        "description": ""
+    }
+},
+{
+    "pk": 31, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "193.108.226.2", 
+        "group": 1, 
+        "name": "Earth", 
+        "description": ""
+    }
+},
+{
+    "pk": 32, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "193.108.226.8", 
+        "group": 1, 
+        "name": "Sun", 
+        "description": ""
+    }
+},
+{
+    "pk": 33, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "193.108.226.9", 
+        "group": 1, 
+        "name": "Alpha", 
+        "description": ""
+    }
+},
+{
+    "pk": 34, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "193.108.226.5", 
+        "group": 1, 
+        "name": "Vesta", 
+        "description": ""
+    }
+},
+{
+    "pk": 35, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.255.255.97", 
+        "group": 2, 
+        "name": "SW4", 
+        "description": ""
+    }
+},
+{
+    "pk": 36, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.255.255.201", 
+        "group": 2, 
+        "name": "SW8", 
+        "description": ""
+    }
+},
+{
+    "pk": 37, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.1.101", 
+        "group": 4, 
+        "name": "Ki-1(2)", 
+        "description": ""
+    }
+},
+{
+    "pk": 38, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.1.4", 
+        "group": 4, 
+        "name": "Ki-4", 
+        "description": ""
+    }
+},
+{
+    "pk": 39, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.1.5", 
+        "group": 4, 
+        "name": "Ki-5", 
+        "description": ""
+    }
+},
+{
+    "pk": 40, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.1.6", 
+        "group": 4, 
+        "name": "Ki-6", 
+        "description": ""
+    }
+},
+{
+    "pk": 41, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.1.7", 
+        "group": 4, 
+        "name": "Ki-7", 
+        "description": ""
+    }
+},
+{
+    "pk": 42, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.1.107", 
+        "group": 4, 
+        "name": "Ki-7(2)", 
+        "description": ""
+    }
+},
+{
+    "pk": 43, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.1.8", 
+        "group": 4, 
+        "name": "Ki-8", 
+        "description": ""
+    }
+},
+{
+    "pk": 44, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.1.11", 
+        "group": 4, 
+        "name": "Ki-11", 
+        "description": ""
+    }
+},
+{
+    "pk": 45, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.1.12", 
+        "group": 4, 
+        "name": "Ki-12", 
+        "description": ""
+    }
+},
+{
+    "pk": 46, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.1.13", 
+        "group": 4, 
+        "name": "Ki-13", 
+        "description": ""
+    }
+},
+{
+    "pk": 47, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.1.201", 
+        "group": 4, 
+        "name": "Ki-14", 
+        "description": ""
+    }
+},
+{
+    "pk": 48, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.1.130", 
+        "group": 4, 
+        "name": "Ki-130", 
+        "description": ""
+    }
+},
+{
+    "pk": 49, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.1.200", 
+        "group": 4, 
+        "name": "VS-3a", 
+        "description": ""
+    }
+},
+{
+    "pk": 50, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.1.220", 
+        "group": 4, 
+        "name": "VS-3b", 
+        "description": ""
+    }
+},
+{
+    "pk": 51, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.3.10", 
+        "group": 5, 
+        "name": "Le-2a", 
+        "description": ""
+    }
+},
+{
+    "pk": 52, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.3.9", 
+        "group": 5, 
+        "name": "Le-2b", 
+        "description": ""
+    }
+},
+{
+    "pk": 53, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.3.12", 
+        "group": 5, 
+        "name": "Le-4a", 
+        "description": ""
+    }
+},
+{
+    "pk": 54, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.3.13", 
+        "group": 5, 
+        "name": "Le-4b", 
+        "description": ""
+    }
+},
+{
+    "pk": 55, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.3.115", 
+        "group": 5, 
+        "name": "Le-5(2)", 
+        "description": ""
+    }
+},
+{
+    "pk": 56, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.3.117", 
+        "group": 6, 
+        "name": "Be-6(2)", 
+        "description": ""
+    }
+},
+{
+    "pk": 57, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.3.18", 
+        "group": 6, 
+        "name": "Be-7", 
+        "description": ""
+    }
+},
+{
+    "pk": 58, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.3.19", 
+        "group": 6, 
+        "name": "Be-8", 
+        "description": ""
+    }
+},
+{
+    "pk": 59, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.3.119", 
+        "group": 6, 
+        "name": "Be-8(2)", 
+        "description": ""
+    }
+},
+{
+    "pk": 60, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.3.20", 
+        "group": 6, 
+        "name": "Be-9a", 
+        "description": ""
+    }
+},
+{
+    "pk": 61, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.3.21", 
+        "group": 6, 
+        "name": "Be-9b", 
+        "description": ""
+    }
+},
+{
+    "pk": 62, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.3.22", 
+        "group": 6, 
+        "name": "Be-10a", 
+        "description": ""
+    }
+},
+{
+    "pk": 63, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.3.23", 
+        "group": 6, 
+        "name": "Be-10b", 
+        "description": ""
+    }
+},
+{
+    "pk": 64, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.3.1", 
+        "group": 7, 
+        "name": "DN-11", 
+        "description": ""
+    }
+},
+{
+    "pk": 65, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.3.2", 
+        "group": 7, 
+        "name": "DN-13a", 
+        "description": ""
+    }
+},
+{
+    "pk": 66, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.3.102", 
+        "group": 7, 
+        "name": "DN-13b", 
+        "description": ""
+    }
+},
+{
+    "pk": 67, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.3.3", 
+        "group": 7, 
+        "name": "DN-15a", 
+        "description": ""
+    }
+},
+{
+    "pk": 68, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.3.103", 
+        "group": 7, 
+        "name": "DN-15b", 
+        "description": ""
+    }
+},
+{
+    "pk": 69, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.3.4", 
+        "group": 7, 
+        "name": "DN-17a", 
+        "description": ""
+    }
+},
+{
+    "pk": 70, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.3.104", 
+        "group": 7, 
+        "name": "DN-17b", 
+        "description": ""
+    }
+},
+{
+    "pk": 71, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.4.1", 
+        "group": 8, 
+        "name": "Tb-1a", 
+        "description": ""
+    }
+},
+{
+    "pk": 72, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.4.111", 
+        "group": 8, 
+        "name": "Tb-1b", 
+        "description": ""
+    }
+},
+{
+    "pk": 73, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.4.211", 
+        "group": 8, 
+        "name": "Tb-1c", 
+        "description": ""
+    }
+},
+{
+    "pk": 74, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.4.3", 
+        "group": 8, 
+        "name": "Tb-3", 
+        "description": ""
+    }
+},
+{
+    "pk": 75, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.4.4", 
+        "group": 8, 
+        "name": "Tb-4", 
+        "description": ""
+    }
+},
+{
+    "pk": 76, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.4.5", 
+        "group": 8, 
+        "name": "Tb-5", 
+        "description": ""
+    }
+},
+{
+    "pk": 77, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.4.6", 
+        "group": 8, 
+        "name": "Tb-6", 
+        "description": ""
+    }
+},
+{
+    "pk": 78, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.4.11", 
+        "group": 9, 
+        "name": "Ba-1", 
+        "description": ""
+    }
+},
+{
+    "pk": 79, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.4.12", 
+        "group": 9, 
+        "name": "Ba-2", 
+        "description": ""
+    }
+},
+{
+    "pk": 80, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.4.13", 
+        "group": 9, 
+        "name": "Ba-3", 
+        "description": ""
+    }
+},
+{
+    "pk": 81, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.4.14", 
+        "group": 9, 
+        "name": "Ba-4", 
+        "description": ""
+    }
+},
+{
+    "pk": 82, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.4.15", 
+        "group": 9, 
+        "name": "Ba-5", 
+        "description": ""
+    }
+},
+{
+    "pk": 83, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.4.16", 
+        "group": 9, 
+        "name": "Ba-6", 
+        "description": ""
+    }
+},
+{
+    "pk": 84, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.4.17", 
+        "group": 9, 
+        "name": "Ba-7", 
+        "description": ""
+    }
+},
+{
+    "pk": 85, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.4.134", 
+        "group": 9, 
+        "name": "Ba-34", 
+        "description": ""
+    }
+},
+{
+    "pk": 86, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.4.135", 
+        "group": 9, 
+        "name": "Ba-35", 
+        "description": ""
+    }
+},
+{
+    "pk": 87, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.4.136", 
+        "group": 10, 
+        "name": "Er-1", 
+        "description": ""
+    }
+},
+{
+    "pk": 88, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.4.137", 
+        "group": 10, 
+        "name": "Er-2", 
+        "description": ""
+    }
+},
+{
+    "pk": 89, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.4.138", 
+        "group": 10, 
+        "name": "Er-3", 
+        "description": ""
+    }
+},
+{
+    "pk": 90, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.4.139", 
+        "group": 10, 
+        "name": "Er-4", 
+        "description": ""
+    }
+},
+{
+    "pk": 91, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.4.140", 
+        "group": 10, 
+        "name": "Er-4(2)", 
+        "description": ""
+    }
+},
+{
+    "pk": 92, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.4.240", 
+        "group": 10, 
+        "name": "PP-6", 
+        "description": ""
+    }
+},
+{
+    "pk": 93, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.5.1", 
+        "group": 11, 
+        "name": "Mo-1a", 
+        "description": ""
+    }
+},
+{
+    "pk": 94, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.5.2", 
+        "group": 11, 
+        "name": "Mo-1b", 
+        "description": ""
+    }
+},
+{
+    "pk": 95, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.5.102", 
+        "group": 11, 
+        "name": "Mo-1b(2)", 
+        "description": ""
+    }
+},
+{
+    "pk": 96, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.5.3", 
+        "group": 11, 
+        "name": "Mo-2", 
+        "description": ""
+    }
+},
+{
+    "pk": 97, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.5.103", 
+        "group": 11, 
+        "name": "Mo-2(2)", 
+        "description": ""
+    }
+},
+{
+    "pk": 98, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.5.4", 
+        "group": 11, 
+        "name": "Mo-4", 
+        "description": ""
+    }
+},
+{
+    "pk": 99, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.5.5", 
+        "group": 11, 
+        "name": "Mo-5a", 
+        "description": ""
+    }
+},
+{
+    "pk": 100, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.5.6", 
+        "group": 11, 
+        "name": "Mo-5b", 
+        "description": ""
+    }
+},
+{
+    "pk": 101, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.5.7", 
+        "group": 11, 
+        "name": "Mo-7", 
+        "description": ""
+    }
+},
+{
+    "pk": 102, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.3.7", 
+        "group": 11, 
+        "name": "Mo-9", 
+        "description": ""
+    }
+},
+{
+    "pk": 103, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.3.8", 
+        "group": 11, 
+        "name": "Mo-10", 
+        "description": ""
+    }
+},
+{
+    "pk": 104, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.3.5", 
+        "group": 11, 
+        "name": "Mo-11a", 
+        "description": ""
+    }
+},
+{
+    "pk": 105, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.3.105", 
+        "group": 11, 
+        "name": "Mo-11a(2)", 
+        "description": ""
+    }
+},
+{
+    "pk": 106, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.3.6", 
+        "group": 11, 
+        "name": "Mo-11b", 
+        "description": ""
+    }
+},
+{
+    "pk": 107, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.5.108", 
+        "group": 11, 
+        "name": "Mo-13", 
+        "description": ""
+    }
+},
+{
+    "pk": 108, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.5.9", 
+        "group": 11, 
+        "name": "Mo-14", 
+        "description": ""
+    }
+},
+{
+    "pk": 109, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.5.109", 
+        "group": 11, 
+        "name": "Mo-14(2)", 
+        "description": ""
+    }
+},
+{
+    "pk": 110, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.5.10", 
+        "group": 11, 
+        "name": "Mo-15", 
+        "description": ""
+    }
+},
+{
+    "pk": 111, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.5.11", 
+        "group": 11, 
+        "name": "Mo-16", 
+        "description": ""
+    }
+},
+{
+    "pk": 112, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.5.37", 
+        "group": 12, 
+        "name": "Ch-1", 
+        "description": ""
+    }
+},
+{
+    "pk": 113, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.5.35", 
+        "group": 12, 
+        "name": "Ch-2", 
+        "description": ""
+    }
+},
+{
+    "pk": 114, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.5.36", 
+        "group": 12, 
+        "name": "Ch-3", 
+        "description": ""
+    }
+},
+{
+    "pk": 115, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.5.39", 
+        "group": 12, 
+        "name": "GD-2", 
+        "description": ""
+    }
+},
+{
+    "pk": 116, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.5.31", 
+        "group": 12, 
+        "name": "Ch-7", 
+        "description": ""
+    }
+},
+{
+    "pk": 117, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.5.32", 
+        "group": 12, 
+        "name": "Ch-8", 
+        "description": ""
+    }
+},
+{
+    "pk": 118, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.5.33", 
+        "group": 12, 
+        "name": "Ch-10", 
+        "description": ""
+    }
+},
+{
+    "pk": 119, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.5.133", 
+        "group": 12, 
+        "name": "Ch-10(2)", 
+        "description": ""
+    }
+},
+{
+    "pk": 120, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.5.34", 
+        "group": 12, 
+        "name": "Ch-12", 
+        "description": ""
+    }
+},
+{
+    "pk": 121, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.5.29", 
+        "group": 12, 
+        "name": "Ch-15", 
+        "description": ""
+    }
+},
+{
+    "pk": 122, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.5.30", 
+        "group": 12, 
+        "name": "Ch-16", 
+        "description": ""
+    }
+},
+{
+    "pk": 123, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.5.28", 
+        "group": 12, 
+        "name": "Ch-17", 
+        "description": ""
+    }
+},
+{
+    "pk": 124, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.5.38", 
+        "group": 12, 
+        "name": "Ch-19", 
+        "description": ""
+    }
+},
+{
+    "pk": 125, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.5.138", 
+        "group": 12, 
+        "name": "Ch-19(2)", 
+        "description": ""
+    }
+},
+{
+    "pk": 126, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.5.13", 
+        "group": 13, 
+        "name": "Do-1", 
+        "description": ""
+    }
+},
+{
+    "pk": 127, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.5.14", 
+        "group": 13, 
+        "name": "Do-3", 
+        "description": ""
+    }
+},
+{
+    "pk": 128, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.5.114", 
+        "group": 13, 
+        "name": "Do-3(2)", 
+        "description": ""
+    }
+},
+{
+    "pk": 129, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.5.12", 
+        "group": 13, 
+        "name": "Do-4", 
+        "description": ""
+    }
+},
+{
+    "pk": 130, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.5.112", 
+        "group": 13, 
+        "name": "Do-4(2)", 
+        "description": ""
+    }
+},
+{
+    "pk": 131, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.5.15", 
+        "group": 13, 
+        "name": "Do-5a", 
+        "description": ""
+    }
+},
+{
+    "pk": 132, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.5.16", 
+        "group": 13, 
+        "name": "Do-5b", 
+        "description": ""
+    }
+},
+{
+    "pk": 133, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.5.17", 
+        "group": 13, 
+        "name": "Do-6", 
+        "description": ""
+    }
+},
+{
+    "pk": 134, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.5.18", 
+        "group": 13, 
+        "name": "Do-7", 
+        "description": ""
+    }
+},
+{
+    "pk": 135, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.5.19", 
+        "group": 13, 
+        "name": "Do-9", 
+        "description": ""
+    }
+},
+{
+    "pk": 136, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.5.119", 
+        "group": 13, 
+        "name": "Do-9(2)", 
+        "description": ""
+    }
+},
+{
+    "pk": 137, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.5.20", 
+        "group": 13, 
+        "name": "Do-10", 
+        "description": ""
+    }
+},
+{
+    "pk": 138, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.5.21", 
+        "group": 13, 
+        "name": "Do-11", 
+        "description": ""
+    }
+},
+{
+    "pk": 139, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.5.121", 
+        "group": 13, 
+        "name": "Do-11(2)", 
+        "description": ""
+    }
+},
+{
+    "pk": 140, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.5.27", 
+        "group": 13, 
+        "name": "Do-12", 
+        "description": ""
+    }
+},
+{
+    "pk": 141, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.5.127", 
+        "group": 13, 
+        "name": "Do-12(2)", 
+        "description": ""
+    }
+},
+{
+    "pk": 142, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.5.26", 
+        "group": 13, 
+        "name": "Do-13", 
+        "description": ""
+    }
+},
+{
+    "pk": 143, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.5.126", 
+        "group": 13, 
+        "name": "Do-13(2)", 
+        "description": ""
+    }
+},
+{
+    "pk": 144, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.5.25", 
+        "group": 13, 
+        "name": "Do-14", 
+        "description": ""
+    }
+},
+{
+    "pk": 145, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.5.125", 
+        "group": 13, 
+        "name": "Do-14(2)", 
+        "description": ""
+    }
+},
+{
+    "pk": 146, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.5.24", 
+        "group": 13, 
+        "name": "Do-15", 
+        "description": ""
+    }
+},
+{
+    "pk": 147, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.5.23", 
+        "group": 13, 
+        "name": "Do-16", 
+        "description": ""
+    }
+},
+{
+    "pk": 148, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.5.22", 
+        "group": 13, 
+        "name": "Do-18", 
+        "description": ""
+    }
+},
+{
+    "pk": 149, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.3.25", 
+        "group": 14, 
+        "name": "Pe-1", 
+        "description": ""
+    }
+},
+{
+    "pk": 150, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.3.125", 
+        "group": 14, 
+        "name": "Pe-1(2)", 
+        "description": ""
+    }
+},
+{
+    "pk": 151, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.2.543.30", 
+        "group": 14, 
+        "name": "Pe-2a", 
+        "description": ""
+    }
+},
+{
+    "pk": 152, 
+    "model": "monitor.controlpoint", 
+    "fields": {
+        "ip": "10.254.3.130", 
+        "group": 14, 
+        "name": "Pe-2b", 
+        "description": ""
+    }
+}
+]

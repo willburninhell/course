@@ -1,0 +1,100 @@
+{% extends "base.html" %}
+{% load filterfortree %}
+{% block page_title %}Network monitor{% endblock %}
+{% block content %}
+<audio id="bgsound">
+  <source src="{{ STATIC_URL }}snd/alarm.wav" />
+</audio>
+
+<div id='monitor-top-div'>
+    blah blah blah
+</div>
+
+<div id='reload-container'>
+<div id='reload-div' name={{alarm}}>
+<div id='monitor-table-div'>
+    <table id='monitor-table'>
+        <tr>
+            <td>Group name</td>
+            <td>UP</td>
+            <td>DOWN</td>
+        </tr>
+        {% for group in groups_query %}
+        <tr>
+            {% with name=group.name %}
+                <td>{{ name }}</td>
+                {% with res=name|get_by_key:groups_results %}
+                    {% with true=0|get_by_key:res %}
+                        {% with false=1|get_by_key:res %}
+                            <td bgcolor="#47D147"> {{ true }} </td>
+                            {% if false != 0 %}
+                                <td bgcolor="#FF3333"> {{ false }} </td>
+                            {% else %}
+                                <td width="150px"> {{ false }} </td>
+                            {% endif %}
+                        {% endwith %}
+                    {% endwith %}    
+                {% endwith %}
+            {% endwith %}
+        </tr>
+        {% endfor%}
+    </table>
+</div>
+
+<div id='monitor-log-down-div'>
+    {% for alarm in alarm_query_down %}
+        <a href="." class="alarm-down" id={{alarm.id}} rel='alarm'>
+        {% if alarm.comment == ''%}
+            &emsp;
+        {% else %}
+            &#x2713;
+        {% endif %}
+        {{ alarm.down|date:'H:i d/m/y' }}&emsp;{{ alarm.control_point.name }}</a>
+    {% endfor %}
+</div>
+<div id='monitor-log-up-div'>
+    {% for alarm in alarm_query_up %}
+        <a href="." class="alarm-up" id={{alarm.id}} rel='alarm'>
+        {% if alarm.comment == ''%}
+            &emsp;
+        {% else %}
+            &#x2713;
+        {% endif %}
+        {{ alarm.down|date:'H:i d/m/y' }}&emsp;{{ alarm.control_point.name }}</a>
+    {% endfor %}
+</div>
+</div>
+</div>
+
+<div id='monitor-info-div'>
+</div>
+
+
+{% endblock %}
+
+{% block javascript %}
+<script language="javascript" type="text/javascript">
+    $("a[rel^='alarm']").click(function (event) {
+            event.preventDefault();
+            var id = $(this).attr('id');
+            console.log(id);
+            var path = location.host;
+            $('#monitor-info-div').load("//"+path+"/alarm_info/"+id);
+    });
+
+    
+
+    window.setInterval(function(){
+        var path = location.host;
+        $('#reload-container').load("//"+path+"/monitor/ #reload-div", function(){
+            var alarm = $('#reload-div').attr('name');
+            if (alarm == 'True') {
+                document.getElementById('bgsound').play();
+            }
+            console.log(alarm);
+            pressable = true;
+        });
+
+    }, 60000);
+</script>
+{% endblock %}
