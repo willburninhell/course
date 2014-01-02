@@ -31,13 +31,25 @@
             </td>
         </tr>
         <tr>
+            <td colspan="2">Down time</td>
+        </tr>
+        <tr>
+            <td colspan="2">
+            {% if alarm.up != NULL %}
+                {{ alarm.down|timesince:alarm.up }}
+            {% else %}
+                {{ alarm.down|timesince }}
+            {% endif %}
+            </td>
+        </tr>
+        <tr>
             <td colspan="2">Комментарий</td>
         </tr>
         <tr>
             <td colspan="2"><textarea id='alarm-comment'>{{ alarm.comment}}</textarea></td>
         </tr>
         <tr>
-            <td colspan="2"> <a href="." class="menu-grey-button" id={{alarm.id}} rel='submit-comment'>Сохранить</a></td>
+            <td colspan="2"> <a href="javascript:void(0)" onclick="submit_comment({{alarm.id}});" class="menu-grey-button">Сохранить</a></td>
         </tr>
     </table>
    
@@ -46,13 +58,12 @@
 
 {% block javascript %}
 <script language="javascript" type="text/javascript">
-    $("a[rel^='submit-comment']").click(function (event) {
-            event.preventDefault();
-            var comment = $('#alarm-comment').val();
-            console.log(comment);
-            var path = location.host;
-            var id = $(this).attr('id');
-            $.get( "//"+path+"/alarm_info/"+id, 'comment='+comment);
-    });
+
+    function submit_comment(id){
+        var path = location.host;
+        var id = $(this).attr('id');
+        var comment = $('#alarm-comment').val();
+        $.get( "//"+path+"/alarm_info/"+id, 'comment='+comment);
+    }
 </script>
 {% endblock %}

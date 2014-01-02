@@ -15,25 +15,20 @@
 <div id='monitor-table-div'>
     <table id='monitor-table'>
         <tr>
-            <td>Group name</td>
-            <td>UP</td>
-            <td>DOWN</td>
+            <td align="center">Control point</td>
+            <td align="center">Status</td>
         </tr>
-        {% for group in groups_query %}
+        {% for cp in cp_query %}
         <tr>
-            {% with name=group.name %}
-                <td style="padding: 0px;"><a href="../show_group/{{group.id}}" class="group-button">{{ name }}</a></td>
-                {% with res=name|get_by_key:groups_results %}
-                    {% with true=0|get_by_key:res %}
-                        {% with false=1|get_by_key:res %}
-                            <td bgcolor="#47D147"> {{ true }} </td>
-                            {% if false != 0 %}
-                                <td bgcolor="#FF3333"> {{ false }} </td>
-                            {% else %}
-                                <td width="150px"> {{ false }} </td>
-                            {% endif %}
-                        {% endwith %}
-                    {% endwith %}    
+            {% with name=cp.name %}
+                <td>{{ name }}</td>
+                {% with res=name|get_by_key:cp_ping %}
+                    {% if res %}
+                    <td bgcolor="#47D147" align="center">UP</td>
+                    {% else %}
+                    <td bgcolor="#FF3333" align="center">DOWN</td>
+                    {% endif %}
+                    
                 {% endwith %}
             {% endwith %}
         </tr>
@@ -76,6 +71,7 @@
 
 {% block javascript %}
 <script language="javascript" type="text/javascript">
+
     function showalarminfo(id){
         console.log(id);
         var path = location.host;
@@ -84,13 +80,11 @@
 
     window.setInterval(function(){
         var path = location.host;
-        $('#reload-container').load("//"+path+"/monitor/ #reload-div", function(){
+        $('#reload-container').load("//"+path+"/show_group/"+{{group.id}}+" #reload-div", function(){
             var alarm = $('#reload-div').attr('name');
             if (alarm == 'True') {
                 document.getElementById('bgsound').play();
             }
-            console.log(alarm);
-            pressable = true;
         });
 
     }, 60000);

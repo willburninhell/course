@@ -120,12 +120,14 @@ h1 {
   font-weight:normal;
   font-style:normal;
   color:#000000;
+  background-color: #ededed;
 }
 
 #monitor-table td{
   border: 2px solid white;
   padding: 2px;
-  width: 150px;
+  width: 100px;
+  text-align: center;
 }
 
 #alarm-info-table {
@@ -413,6 +415,29 @@ input[name='mac']{
   background-color:#dfdfdf;
 }
 .alarm-up:active {
+  position:relative;
+  top:1px;
+}
+
+.group-button {
+  background-color:#ededed;
+  text-indent: 0px;
+  display:inline-block;
+  color:#000000;
+  font-family:Arial;
+  font-size:14px;
+  font-weight:normal;
+  font-style:normal;
+  height:18px;
+  line-height:18px;
+  width:152px;
+  text-decoration:none;
+  text-align:left;
+}
+.group-button:hover {
+  background-color:#dfdfdf;
+}
+.group-button-up:active {
   position:relative;
   top:1px;
 }

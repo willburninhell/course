@@ -21,6 +21,7 @@ class Alarm(models.Model):
     down = models.DateTimeField(auto_now_add=True)
     up = models.DateTimeField(null=True)
     comment = models.TextField(default="")
+    shown = models.BooleanField(default=False)
 
     def __unicode__(self):
         return self.name
