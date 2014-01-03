@@ -1,0 +1,10 @@
+Здравствуйте!
+
+Перед вами отчет об аварийных ситуациях за период с {{ start_date }} по {{ end_date }}.
+
+Происшествия за неделю:
+{% for alarm in alarms %}
+	{{ alarm.control_point.name }}: c {{ alarm.down }} по {% if alarm.up == None %}текущее время{% else %}{{alarm.up}}{% endif %} {{alarm.comment}}
+{% endfor %}
+
+С уважением, отдел администрирования и технической поддержки пользователей.

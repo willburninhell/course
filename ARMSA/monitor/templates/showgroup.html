@@ -7,7 +7,29 @@
 </audio>
 
 <div id='monitor-top-div'>
-    blah blah blah
+<table class='menu-tbl'>
+    <tr>
+        <td>
+            <table>
+                <tr>
+                    <td width="75px">
+                        Группа:
+                    </td>
+                    <td width="225px">
+                        {{group.name}}
+                    </td>
+                    <td>
+                        {{group.description}}
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td align="right">
+        <a href="javascript:void(0)" class="menu-grey-button" onclick="window.history.back();">Все группы</a>
+        <a href="javascript:void(0)" class="menu-grey-button" onclick="window.location.href=window.location.href;">Обновить</a>
+        </td>
+    </tr>
+</table>
 </div>
 
 <div id='reload-container'>
@@ -15,13 +37,13 @@
 <div id='monitor-table-div'>
     <table id='monitor-table'>
         <tr>
-            <td align="center">Control point</td>
-            <td align="center">Status</td>
+            <td align="center" bgcolor="white">Контрольная точка</td>
+            <td align="center" bgcolor="white">Состояние</td>
         </tr>
         {% for cp in cp_query %}
         <tr>
             {% with name=cp.name %}
-                <td>{{ name }}</td>
+               <td style="padding: 0px;"><a href="../show_cp/{{cp.id}}" class="group-button">{{ name }}</a></td>
                 {% with res=name|get_by_key:cp_ping %}
                     {% if res %}
                     <td bgcolor="#47D147" align="center">UP</td>
@@ -37,7 +59,7 @@
 </div>
 
 <div id='monitor-log-down-div'>
-    CURRENT ALARMS
+    Current alarms
     {% for alarm in alarm_query_down %}
         <a href="javascript:void(0)" onclick="showalarminfo({{alarm.id}});" class="alarm-down">
         {% if alarm.comment == ''%}
@@ -49,7 +71,7 @@
     {% endfor %}
 </div>
 <div id='monitor-log-up-div'>
-    PREVIOUS ALARMS
+    Previous alarms
     {% for alarm in alarm_query_up %}
         <a href="javascript:void(0)" onclick="showalarminfo({{alarm.id}});" class="alarm-up">
         {% if alarm.comment == ''%}

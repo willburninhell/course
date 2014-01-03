@@ -7,7 +7,12 @@
 </audio>
 
 <div id='monitor-top-div'>
-    blah blah blah
+<table class='menu-tbl'>
+    <tr>
+        <td></td>
+        <td align="right"><a href="javascript:void(0)" class="menu-grey-button" onclick="window.location.href=window.location.href;">Обновить</a></td>
+    </tr>
+</table>
 </div>
 
 <div id='reload-container'>
@@ -15,9 +20,9 @@
 <div id='monitor-table-div'>
     <table id='monitor-table'>
         <tr>
-            <td>Group name</td>
-            <td>UP</td>
-            <td>DOWN</td>
+            <td bgcolor="white">Название группы</td>
+            <td bgcolor="white">UP</td>
+            <td bgcolor="white">DOWN</td>
         </tr>
         {% for group in groups_query %}
         <tr>
@@ -42,7 +47,7 @@
 </div>
 
 <div id='monitor-log-down-div'>
-    CURRENT ALARMS
+    Текущие проблемы
     {% for alarm in alarm_query_down %}
         <a href="javascript:void(0)" onclick="showalarminfo({{alarm.id}});" class="alarm-down">
         {% if alarm.comment == ''%}
@@ -54,7 +59,7 @@
     {% endfor %}
 </div>
 <div id='monitor-log-up-div'>
-    PREVIOUS ALARMS
+    Решенные проблемы
     {% for alarm in alarm_query_up %}
         <a href="javascript:void(0)" onclick="showalarminfo({{alarm.id}});" class="alarm-up">
         {% if alarm.comment == ''%}

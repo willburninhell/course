@@ -69,16 +69,15 @@ h1 {
   * position: absolute;position: fixed;
   height: 40px;
   width: 100%;
-  background: #CCCCCC;
 }
 
 #monitor-table-div {
   * position: absolute;position: fixed;
   width: 480px;
   top: 40px;
-  height: -webkit-calc(100% - 42px);
-  height: -moz-calc(100% - 42px);
-  height: calc(100% - 42px);
+  height: -webkit-calc(100% - 40px);
+  height: -moz-calc(100% - 40px);
+  height: calc(100% - 40px);
 }
 
 #monitor-log-down-div {
@@ -86,10 +85,15 @@ h1 {
   width: 252px;
   top: 40px;
   left:480px;
-  height: -webkit-calc(100% - 42px);
-  height: -moz-calc(100% - 42px);
-  height: calc(100% - 42px); 
-  overflow-y: scroll;
+  height: -webkit-calc(100% - 40px);
+  height: -moz-calc(100% - 40px);
+  height: calc(100% - 40px); 
+  overflow-y: auto;
+  font-family:Arial;
+  font-size:14px;
+  font-weight: normal;
+  font-style: normal;
+  text-align: center;
 }
 
 #monitor-log-up-div {
@@ -97,19 +101,29 @@ h1 {
   width: 252px;
   top: 40px;
   left:735px;
-  height: -webkit-calc(100% - 42px);
-  height: -moz-calc(100% - 42px);
-  height: calc(100% - 42px); 
-  overflow-y: scroll;
+  height: -webkit-calc(100% - 40px);
+  height: -moz-calc(100% - 40px);
+  height: calc(100% - 40px); 
+  overflow-y: auto;
+  font-family:Arial;
+  font-size:14px;
+  font-weight:normal;
+  font-style:normal;
+  text-align: center;
 }
 
 #monitor-info-div {
   * position: absolute;position: fixed;
   top: 40px;
   left:990px;
-  height: -webkit-calc(100% - 42px);
-  height: -moz-calc(100% - 42px);
-  height: calc(100% - 42px);
+  height: -webkit-calc(100% - 40px);
+  height: -moz-calc(100% - 40px);
+  height: calc(100% - 40px);
+  font-family:Arial;
+  font-size:14px;
+  font-weight:normal;
+  font-style:normal;
+  text-align: center;
 }
 
 #monitor-table {
@@ -126,7 +140,7 @@ h1 {
 #monitor-table td{
   border: 2px solid white;
   padding: 2px;
-  width: 100px;
+  width: 120px;
   text-align: center;
 }
 
@@ -161,6 +175,15 @@ h1 {
   width: 270px;
 }
 
+.menu-tbl {
+  width: 100%;
+  font-family:Arial;
+  font-size:14px;
+  font-weight:normal;
+  font-style:normal;
+  color:#000000;
+}
+
 .menu-table {
   width: 500px;
   margin: 0 auto;
@@ -176,7 +199,7 @@ h1 {
   background-color: #ededed;
   font-family:Arial;
   font-size:12px;
-  font-weight:normal;
+  font-weight:bold;
   font-style:normal;
   color:#000000;
 }

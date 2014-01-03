@@ -1,4 +1,5 @@
 from django.db import models
+import datetime
 
 
 class Group(models.Model):
@@ -18,7 +19,7 @@ class ControlPoint(models.Model):
 
 class Alarm(models.Model):
     control_point = models.ForeignKey(ControlPoint)
-    down = models.DateTimeField(auto_now_add=True)
+    down = models.DateTimeField(default=datetime.datetime.now())
     up = models.DateTimeField(null=True)
     comment = models.TextField(default="")
     shown = models.BooleanField(default=False)

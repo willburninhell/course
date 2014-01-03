@@ -75,7 +75,7 @@ DATABASES = {
 
 LANGUAGE_CODE = 'ru-RU'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Europe/Kiev'
 
 USE_I18N = True
 
@@ -102,3 +102,10 @@ TEMPLATE_DIRS = (
     os.path.join(BASE_DIR, "templates"),
 )
 
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'willburninhell@gmail.com'
+EMAIL_HOST_PASSWORD = 'enigma666'
+DEFAULT_FROM_EMAIL = 'willburninhell@gmail.com'
+DEFAULT_TO_EMAIL = 'willburninhell@gmail.com'

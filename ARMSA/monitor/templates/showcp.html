@@ -1,0 +1,245 @@
+{% extends "base.html" %}
+{% load filterfortree %}
+{% block page_title %}Network monitor{% endblock %}
+{% block content %}
+<audio id="bgsound">
+  <source src="{{ STATIC_URL }}snd/alarm.wav" />
+</audio>
+
+<div id='monitor-top-div'>
+<table class='menu-tbl'>
+    <tr>
+        <td>
+            <table>
+                <tr>
+                    <td width="300px">
+                        <table>
+                            <tr>
+                                <td width="150px">Контрольная точка:</td>
+                                <td>{{ cpoint.name }}</td>
+                            </tr>
+                            <tr>
+                                <td>IP:</td>
+                                <td>{{ cpoint.ip }}</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        {{ cpoint.description }}
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td align="right">
+        <a href="javascript:void(0)" class="menu-grey-button" onclick="window.history.back();">Группа</a>
+        <a href="javascript:void(0)" class="menu-grey-button" onclick="window.location.href='http://127.0.0.1:8000/monitor'">Все группы</a>
+        <a href="javascript:void(0)" class="menu-grey-button" onclick="window.location.href=window.location.href;">Обновить</a>
+        </td>
+    </tr>
+</table>
+</div>
+
+<div id='reload-container'>
+<div id='reload-div' name={{alarm}}>
+<div id='monitor-table-div'>
+    <table id='monitor-table'>
+        <tr>
+            <td>Период</td>
+            <td>Downtime</td>
+            <td>% DOWN</td>
+            <td>% UP</td>
+            <td>Количество падений</td>
+        </tr>
+        <tr>
+            {% with today='today'|get_by_key:info %}
+            <td>Сегодня</td>
+                {% with downtime='downtime'|get_by_key:today%}
+                    <td>{{downtime}}</td>
+                {% endwith %}
+                {% with down='down'|get_by_key:today%}
+                    <td>{{down|floatformat}}</td>
+                {% endwith %}
+                {% with up='up'|get_by_key:today%}
+                    <td>{{up|floatformat}}</td>
+                {% endwith %}
+                {% with times='times'|get_by_key:today%}
+                    <td>{{times}}</td>
+                {% endwith %}
+            {% endwith %}
+        </tr>
+        <tr>
+            {% with yesterday='yesterday'|get_by_key:info %}
+            <td>Вчера</td>
+                {% with downtime='downtime'|get_by_key:yesterday%}
+                    <td>{{downtime}}</td>
+                {% endwith %}
+                {% with down='down'|get_by_key:yesterday%}
+                    <td>{{down|floatformat}}</td>
+                {% endwith %}
+                {% with up='up'|get_by_key:yesterday%}
+                    <td>{{up|floatformat}}</td>
+                {% endwith %}
+                {% with times='times'|get_by_key:yesterday%}
+                    <td>{{times}}</td>
+                {% endwith %}
+            {% endwith %}
+        </tr>
+        <tr>
+            {% with thisweek='thisweek'|get_by_key:info %}
+            <td>Эта неделя</td>
+                {% with downtime='downtime'|get_by_key:thisweek%}
+                    <td>{{downtime}}</td>
+                {% endwith %}
+                {% with down='down'|get_by_key:thisweek%}
+                    <td>{{down|floatformat}}</td>
+                {% endwith %}
+                {% with up='up'|get_by_key:thisweek%}
+                    <td>{{up|floatformat}}</td>
+                {% endwith %}
+                {% with times='times'|get_by_key:thisweek%}
+                    <td>{{times}}</td>
+                {% endwith %}
+            {% endwith %}
+        </tr>
+        <tr>
+            {% with lastweek='lastweek'|get_by_key:info %}
+            <td>Пред. неделя</td>
+                {% with downtime='downtime'|get_by_key:lastweek%}
+                    <td>{{downtime}}</td>
+                {% endwith %}
+                {% with down='down'|get_by_key:lastweek%}
+                    <td>{{down|floatformat}}</td>
+                {% endwith %}
+                {% with up='up'|get_by_key:lastweek%}
+                    <td>{{up|floatformat}}</td>
+                {% endwith %}
+                {% with times='times'|get_by_key:lastweek%}
+                    <td>{{times}}</td>
+                {% endwith %}
+            {% endwith %}
+        </tr>
+        <tr>
+            {% with thismonth='thismonth'|get_by_key:info %}
+            <td>Этот месяц</td>
+                {% with downtime='downtime'|get_by_key:thismonth%}
+                    <td>{{downtime}}</td>
+                {% endwith %}
+                {% with down='down'|get_by_key:thismonth%}
+                    <td>{{down|floatformat}}</td>
+                {% endwith %}
+                {% with up='up'|get_by_key:thismonth%}
+                    <td>{{up|floatformat}}</td>
+                {% endwith %}
+                {% with times='times'|get_by_key:thismonth%}
+                    <td>{{times}}</td>
+                {% endwith %}
+            {% endwith %}
+        </tr>
+        <tr>
+            {% with lastmonth='lastmonth'|get_by_key:info %}
+            <td>Пред. месяц</td>
+                {% with downtime='downtime'|get_by_key:lastmonth%}
+                    <td>{{downtime}}</td>
+                {% endwith %}
+                {% with down='down'|get_by_key:lastmonth%}
+                    <td>{{down|floatformat}}</td>
+                {% endwith %}
+                {% with up='up'|get_by_key:lastmonth%}
+                    <td>{{up|floatformat}}</td>
+                {% endwith %}
+                {% with times='times'|get_by_key:lastmonth%}
+                    <td>{{times}}</td>
+                {% endwith %}
+            {% endwith %}
+        </tr>
+        <tr>
+            {% with thisyear='thisyear'|get_by_key:info %}
+            <td>Этот год</td>
+                {% with downtime='downtime'|get_by_key:thisyear%}
+                    <td>{{downtime}}</td>
+                {% endwith %}
+                {% with down='down'|get_by_key:thisyear%}
+                    <td>{{down|floatformat}}</td>
+                {% endwith %}
+                {% with up='up'|get_by_key:thisyear%}
+                    <td>{{up|floatformat}}</td>
+                {% endwith %}
+                {% with times='times'|get_by_key:thisyear%}
+                    <td>{{times}}</td>
+                {% endwith %}
+            {% endwith %}
+        </tr>
+        <tr>
+            {% with lastyear='lastyear'|get_by_key:info %}
+            <td>Пред. год</td>
+                {% with downtime='downtime'|get_by_key:lastyear%}
+                    <td>{{downtime}}</td>
+                {% endwith %}
+                {% with down='down'|get_by_key:lastyear%}
+                    <td>{{down|floatformat}}</td>
+                {% endwith %}
+                {% with up='up'|get_by_key:lastyear%}
+                    <td>{{up|floatformat}}</td>
+                {% endwith %}
+                {% with times='times'|get_by_key:lastyear%}
+                    <td>{{times}}</td>
+                {% endwith %}
+            {% endwith %}
+        </tr>
+    </table>
+</div>
+
+<div id='monitor-log-down-div'>
+    Current alarms
+    {% for alarm in alarm_query_down %}
+        <a href="javascript:void(0)" onclick="showalarminfo({{alarm.id}});" class="alarm-down">
+        {% if alarm.comment == ''%}
+            &emsp;
+        {% else %}
+            &#x2713;
+        {% endif %}
+        {{ alarm.down|date:'H:i d/m/y' }}&emsp;{{ alarm.control_point.name }}</a>
+    {% endfor %}
+</div>
+<div id='monitor-log-up-div'>
+    Previous alarms
+    {% for alarm in alarm_query_up %}
+        <a href="javascript:void(0)" onclick="showalarminfo({{alarm.id}});" class="alarm-up">
+        {% if alarm.comment == ''%}
+            &emsp;
+        {% else %}
+            &#x2713;
+        {% endif %}
+        {{ alarm.down|date:'H:i d/m/y' }}&emsp;{{ alarm.control_point.name }}</a>
+    {% endfor %}
+</div>
+</div>
+</div>
+
+<div id='monitor-info-div'>
+</div>
+
+
+{% endblock %}
+
+{% block javascript %}
+<script language="javascript" type="text/javascript">
+
+    function showalarminfo(id){
+        console.log(id);
+        var path = location.host;
+        $('#monitor-info-div').load("//"+path+"/alarm_info/"+id);
+    }
+
+    window.setInterval(function(){
+        var path = location.host;
+        $('#reload-container').load("//"+path+"/show_cp/{{cpoint.id}} #reload-div", function(){
+            var alarm = $('#reload-div').attr('name');
+            if (alarm == 'True') {
+                document.getElementById('bgsound').play();
+            }
+        });
+
+    }, 60000);
+</script>
+{% endblock %}

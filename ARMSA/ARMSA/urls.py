@@ -27,4 +27,6 @@ urlpatterns = patterns('',
     url(r'^alarm_info/(?P<id>\d{1,6})', 'monitor.views.alarm_info'),
     url(r'^alarm_update/', 'monitor.views.update'),
     url(r'^show_group/(?P<gr>\d{1,6})', 'monitor.views.show_group'),
+    url(r'^show_cp/(?P<cp>\d{1,6})', 'monitor.views.show_cp'),
+    url(r'^send_mail', 'monitor.views.sendmail'),
 )
