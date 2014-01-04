@@ -1,10 +1,15 @@
 Здравствуйте!
 
-Перед вами отчет об аварийных ситуациях за период с {{ start_date }} по {{ end_date }}.
+Перед вами отчет об аварийных ситуациях за {% if start_date == 'None' %}{{ end_date|date:"D d.m.y" }}{% else %}период с {{ start_date|date:"d.m.y" }} по {{ end_date|date:"d.m.y" }}{% endif %}.
 
-Происшествия за неделю:
+Происшествия за отчетный период:
 {% for alarm in alarms %}
-	{{ alarm.control_point.name }}: c {{ alarm.down }} по {% if alarm.up == None %}текущее время{% else %}{{alarm.up}}{% endif %} {{alarm.comment}}
-{% endfor %}
+{% if start_date != 'None'%}{{ alarm.control_point.name }}: c {{ alarm.down|date:"d.m.y H:i" }} по {% if alarm.up == None %}текущее время{% else %}{{alarm.up|date:"d.m.y H:i"}}{% endif %}. {% if alarm.comment == '' %} Описание не указано.{% else %} Описание: {{alarm.comment}}{% endif %}{%else%}{{ alarm.control_point.name }}: c {{ alarm.down|date:"H:i" }} по {% if alarm.up == None %}текущее время{% else %}{{alarm.up|date:"H:i"}}{% endif %}. {% if alarm.comment == '' %} Описание не указано.{% else %} Описание: {{alarm.comment}}{% endif %}{% endif %}{% endfor %}
+
+Итого:
+Количество "падений" оборудования: {{ counter }}
+Из них решено проблем: {{ done }}
+Не решено на данный момент: {{ notdone }}
+Среднее время решения проблемы (с учетом нерешенных проблем): {{ mean }}
 
 С уважением, отдел администрирования и технической поддержки пользователей.

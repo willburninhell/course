@@ -4,36 +4,85 @@ from ABNS.include.ping import do_one
 import datetime
 from dateutil.relativedelta import relativedelta
 from django.utils import timezone
+import pytz
 from django.conf import settings
 from django.core.mail import send_mail
 from django.template import loader, Context
+import logging
+from django.contrib.auth.decorators import login_required
+
+log = logging.getLogger(__name__)
 
 
-def sendmail(request=None):
+def daily_mail(request=None):
     t = loader.get_template('mail_template.txt')
     end_date = datetime.date.today()
-    start_date = datetime.date.today() + relativedelta(days=-6)
-    alarms = Alarm.objects.filter(down__gt=datetime.datetime.combine(start_date, datetime.time.min),
-                                  down__lt=datetime.datetime.combine(end_date, datetime.time.max)).order_by('control_point__group','control_point','down').reverse()
-    # downtime = datetime.timedelta(0)
-    # for al in alarms:
-    #     if al.up is None:
-    #         downtime += ((now + relativedelta(hours=-2))-al.down)
-    #     else:
-    #         downtime += (al.up-al.down)
-    # secs = downtime.total_seconds()
-    # down = 100*downtime.total_seconds()/(
-    #     (((now.weekday()*24)+now.hour)*60+now.minute)*60+now.second)
-    # up = 100 - down
-    # counter = len(alarms)
-    # downtime = downtime - datetime.timedelta(microseconds=downtime.microseconds)
+    start_date = 'None'
+    alarms = Alarm.objects.filter(down__gt=datetime.datetime.combine(end_date, datetime.time.min),
+                                  down__lt=datetime.datetime.combine(end_date, datetime.time.max)).order_by('control_point__group','control_point__name','down')
+    downtime = datetime.timedelta(0)
+    now = timezone.now() + relativedelta(hours=2)
+    done = 0
+    notdone = 0
+    for al in alarms:
+        if al.up is None:
+            downtime += ((now + relativedelta(hours=-2))-al.down)
+            notdone += 1
+        else:
+            downtime += (al.up-al.down)
+            done += 1
+    counter = len(alarms)
+    downtime = downtime - datetime.timedelta(microseconds=downtime.microseconds)
+    mean = downtime / counter
+    mean = mean - datetime.timedelta(microseconds=mean.microseconds)
 
     c = Context({
         'end_date': end_date,
         'start_date': start_date,
         'alarms': alarms,
+        'counter': counter,
+        'notdone': notdone,
+        'done': done,
+        'mean': mean,
         })
     send_mail('Subject here', t.render(c), settings.EMAIL_HOST_USER, ['willburninhell@gmail.com'], fail_silently=False)
+    log.info("Daily mail was sent")
+    return HttpResponse(status=200)
+
+
+def weekly_mail(request=None):
+    t = loader.get_template('mail_template.txt')
+    end_date = datetime.date.today()
+    start_date = datetime.date.today() + relativedelta(days=-6)
+    alarms = Alarm.objects.filter(down__gt=datetime.datetime.combine(start_date, datetime.time.min),
+                                  down__lt=datetime.datetime.combine(end_date, datetime.time.max)).order_by('control_point__group','control_point__name','down')
+    downtime = datetime.timedelta(0)
+    now = timezone.now() + relativedelta(hours=2)
+    done = 0
+    notdone = 0
+    for al in alarms:
+        if al.up is None:
+            downtime += ((now + relativedelta(hours=-2))-al.down)
+            notdone += 1
+        else:
+            downtime += (al.up-al.down)
+            done += 1
+    counter = len(alarms)
+    downtime = downtime - datetime.timedelta(microseconds=downtime.microseconds)
+    mean = downtime / counter
+    mean = mean - datetime.timedelta(microseconds=mean.microseconds)
+
+    c = Context({
+        'end_date': end_date,
+        'start_date': start_date,
+        'alarms': alarms,
+        'counter': counter,
+        'notdone': notdone,
+        'done': done,
+        'mean': mean,
+        })
+    send_mail('Subject here', t.render(c), settings.EMAIL_HOST_USER, ['willburninhell@gmail.com'], fail_silently=False)
+    log.info("Weekly mail was sent")
     return HttpResponse(status=200)
 
 
@@ -63,7 +112,7 @@ def update(request=None):
                 a.save()
     return HttpResponse(status=200)
 
-
+@login_required
 def monitor(request):
     groups_results = {}
     groups_query = Group.objects.all().order_by('name')
@@ -110,7 +159,7 @@ def monitor(request):
         'total_down': total_down,
         'alarm': alarm})
 
-
+@login_required
 def show_group(request, gr=1):
     group = Group.objects.get(id=gr)
     cp_query = ControlPoint.objects.filter(group=group)
@@ -146,7 +195,7 @@ def show_group(request, gr=1):
         'alarm_query_down': alarm_query_down,
         'alarm': alarm})
 
-
+@login_required
 def show_cp(request, cp=1):
     cpoint = ControlPoint.objects.get(id=cp)
     info = {}
@@ -160,7 +209,7 @@ def show_cp(request, cp=1):
     info['lastyear'] = {}
 
     now = timezone.now() + relativedelta(hours=2)
-    today = datetime.datetime(now.year, now.month, now.day, 0, 0, 0, 0) + relativedelta(hours=2)
+    today = datetime.datetime(now.year, now.month, now.day, 0, 0, 0, 0, pytz.timezone('Europe/Lisbon')) + relativedelta(hours=2)
     yesterday = today + relativedelta(days=-1) + relativedelta(hours=2)
     thisweek = today + relativedelta(days=-(now.weekday())) + relativedelta(hours=2)
     lastweek = thisweek + relativedelta(weeks=-1) + relativedelta(hours=2)
@@ -202,7 +251,7 @@ def show_cp(request, cp=1):
     info['yesterday']['times'] = 0
     downtime = datetime.timedelta(0)
     for al in alarms:
-        if (al.up - today) > 0:
+        if (al.up - today).total_seconds() > 0:
             downtime += (today-al.down)
         else:
             downtime += (al.up-al.down)

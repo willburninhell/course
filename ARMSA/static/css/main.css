@@ -11,7 +11,7 @@ h1 {
   left: 0;
   height: 100%;
   width: 220px;
-  overflow-y: scroll;
+  overflow-y: auto;
   font-family:Arial;
   font-size:15px;
   font-weight:normal;
@@ -62,7 +62,7 @@ h1 {
   height: -webkit-calc(100% - 35px);
   height: -moz-calc(100% - 35px);
   height: calc(100% - 35px);  
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 #monitor-top-div {

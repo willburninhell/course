@@ -3,6 +3,7 @@
 {% block page_title %}Users{% endblock %}
 {% block content %}
 <div id="leftmenu">
+    &emsp;&emsp;<a href="/logout" class="menu-grey-button">{{ user.username }}</a>
     <ol>
         {% for street in streets_query %}
         <li>

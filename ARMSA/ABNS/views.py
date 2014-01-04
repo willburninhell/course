@@ -1,11 +1,25 @@
 # Create your views here.
 # coding: utf-8
-from django.shortcuts import render, HttpResponse
+from django.shortcuts import render, HttpResponse, redirect
 from .models import *
 from ABNS.include.ping import do_one
 from ABNS.include.snmp import *
+from django.contrib.auth import logout
+import logging
+from django.contrib.auth.decorators import login_required
+
+log = logging.getLogger(__name__)
 
 
+def logout_page(request):
+    """
+    Log users out and re-direct them to the main page.
+    """
+    logout(request)
+    return redirect('/login')
+
+
+@login_required
 def ABNS(request):
     street = {}
     streets_query = Street.objects.all().order_by('long_name')
@@ -17,6 +31,7 @@ def ABNS(request):
                                          'clients_query': clients_query})
 
 
+@login_required
 def search(request):
     if request.method == 'GET':
         postdata = request.GET
@@ -46,6 +61,7 @@ def search(request):
                                             'links': status_links})
 
 
+@login_required
 def clients(request, st='2', ho='1'):
     entries = Client.objects.filter(street=int(st)).filter(house=ho).extra(
         select={'flatint': 'CAST(REPLACE(REPLACE(REPLACE(REPLACE(flat,"b",""),\
@@ -89,6 +105,7 @@ def clients(request, st='2', ho='1'):
     return render(request, "clients.html", c)
 
 
+@login_required
 def ports(request, st='2', ho='1'):
     entries = Client.objects.filter(street=int(st)).filter(house=ho).extra(
         select={'flatint': 'CAST(REPLACE(REPLACE(REPLACE(REPLACE(flat,"b",""),\
@@ -121,15 +138,18 @@ def ports(request, st='2', ho='1'):
                                           'ho_id': ho})
 
 
+@login_required
 def delete_id(request):
     if request.method == 'GET':
         i = int(request.GET['id'])
         print i
         e = Client.objects.get(id=i)
+        log.info(request.user.username + " deleted client " + str(e))
         e.delete()
     return HttpResponse(status=200)
 
 
+@login_required
 def delete_mac(request):
     if request.method == 'GET':
         i = int(request.GET['id'])
@@ -139,6 +159,7 @@ def delete_mac(request):
     return HttpResponse(status=200)
 
 
+@login_required
 def activate_id(request):
     if request.method == 'GET':
         i = int(request.GET['id'])
@@ -148,10 +169,12 @@ def activate_id(request):
             e.active_state = True
         else:
             e.active_state = False
+        log.info(request.user.username + " activated client " + str(e))
         e.save()
     return HttpResponse(status=200)
 
 
+@login_required
 def lock_id(request):
     if request.method == 'GET':
         i = int(request.GET['id'])
@@ -161,10 +184,12 @@ def lock_id(request):
             e.lock_state = True
         else:
             e.lock_state = False
+        log.info(request.user.username + " locked client " + str(e))
         e.save()
     return HttpResponse(status=200)
 
 
+@login_required
 def portaction(request):
     if request.method == 'GET':
         sw = request.GET['sw']
@@ -173,11 +198,14 @@ def portaction(request):
 
         if act == "open":
             openport(sw, port)
+            log.info(request.user.username + " opened port " + sw + ':' + port)
         else:
+            log.info(request.user.username + " closed port " + sw + ':' + port)
             closeport(sw, port)
     return HttpResponse(status=200)
 
 
+@login_required
 def trustaction(request):
     if request.method == 'GET':
         sw = request.GET['sw']
@@ -189,8 +217,10 @@ def trustaction(request):
         if len(e) > 0:
             if act == "check":
                 e[0].trusted = True
+                log.info(request.user.username + " set trusted " + sw + ':' + port)
             else:
                 e[0].trusted = False
+                log.info(request.user.username + " set untrusted " + sw + ':' + port)
             e[0].save()
         else:
             if act == "check":
@@ -203,6 +233,7 @@ def trustaction(request):
     return HttpResponse(status=200)
 
 
+@login_required
 def switches(request, st='2', ho='1'):
     sw_query = Switch.objects.filter(street=int(st), house=ho)
     ports = {}
@@ -277,6 +308,7 @@ def switches(request, st='2', ho='1'):
                                              'ho_id': ho})
 
 
+@login_required
 def mac(request, st='2', ho='1'):
     macs_dict = {}
     sw_pings = {}

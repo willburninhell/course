@@ -13,13 +13,18 @@ def get_ports_links(ip, ports):
         ping = True
         eInd, eS, eI, vB = cmdGen.getCmd(cmdgen.CommunityData('WGS_RO'),
                                          cmdgen.UdpTransportTarget((ip, 161)),
-                                         '1.3.6.1.2.1.1.5.0')
+                                         '1.3.6.1.2.1.2.2.1.7.1')
+        print eInd
+        print 'es', eS
+        print 'ei', eI
+        if not (eInd is None):
+            eInd = 'error'
     else:
         print ip, 'do not ping'
-        eInd = "No SNMP response received before timeout"
+        eInd = "error"
 
     for p in range(ports):
-        if ping and (eInd != "No SNMP response received before timeout"):
+        if ping and (eInd != "error"):
             print 'port status checked'
             errorIndication, errorStatus, errorIndex, varBinds = cmdGen.getCmd(
                 cmdgen.CommunityData('WGS_RO'),
@@ -36,7 +41,7 @@ def get_ports_links(ip, ports):
             port[ip+':'+str(p+1)] = '2'
 
     for p in range(ports):
-        if ping and (eInd != "No SNMP response received before timeout"):
+        if ping and (eInd != "error"):
             print 'link status checked'
             errorIndication, errorStatus, errorIndex, varBinds = cmdGen.getCmd(
                 cmdgen.CommunityData('WGS_RO'),

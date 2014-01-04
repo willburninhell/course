@@ -55,7 +55,7 @@ class Client(models.Model):
     email = models.EmailField(default='')
 
     def __unicode__(self):
-        return self.street.short_name + "-" + self.house + "-" + self.flat
+        return self.street.short_name + "-" + self.house + "-" + self.flat + " " + self.dogovor + " " + self.switch.sw_ip + ":" + str(self.sw_port)
 
 
 class SwInfo(models.Model):
